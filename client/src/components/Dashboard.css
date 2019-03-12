@@ -1,0 +1,19 @@
+.dashboard{
+    
+    height: 100%;
+    margin-top: 0;
+}
+
+.dash-title{
+    padding-top: 50px;
+}
+.welcome{
+    padding: 25px;
+}
+.centered{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

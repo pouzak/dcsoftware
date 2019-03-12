@@ -1,0 +1,18 @@
+<configuration>
+  <configSections>
+    <section name="ftpConfiguration" type="FileTransferHelper.FtpLibrary.FtpConfigurationSection, FileTransferHelper.FtpLibrary" />
+  </configSections>
+
+  <ftpConfiguration>
+      <Environment name="QA">
+        <sourceServer hostname="QA_hostname"
+                      username="QA_username"
+                      password="QA_password"
+                      port="21"
+                      remoteDirectory ="QA_remoteDirectory" />
+        <targetServer downloadDirectory ="QA_downloadDirectory" />
+
+      </Environment>
+  </ftpConfiguration>
+
+</configuration>
