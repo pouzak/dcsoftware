@@ -6,6 +6,7 @@ import Navbar2 from './components/Navbar2';
 import Dashboard from './components/Dashboard';
 import Ethernet from './components/Ethernet';
 import BlackList from './components/BlackList';
+import MeterStats from './components/MeterStats';
 import {BrowserRouter,  Route,  Switch} from 'react-router-dom';
 import {MDBCol,MDBRow } from 'mdbreact';
 import { Provider } from './Context';
@@ -64,6 +65,7 @@ class App extends Component {
                   <Route exact path="/" component={Dashboard}/>
                   <Route exact path="/black_List" component={BlackList}/>
                   <Route exact path="/ethernet" component={Ethernet}/>
+                  <Route exact path="/meterstats" component={MeterStats}/>
                   
                 </Switch>
                 </MDBCol>

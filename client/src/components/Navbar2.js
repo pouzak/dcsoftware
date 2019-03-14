@@ -15,7 +15,7 @@ export class Navbar2 extends Component {
 <MDBAnimation type="fadeInUp" duration="550ms">
   <li><a href="">PLC Network</a>
   <ul class="submenu">
-      <li><a href="">Meter Statistics</a></li>
+  <Link to="/meterstats"><li><a href="">Meter Statistics</a></li></Link>
       <li><a href="" >Topology</a></li>
       <Link to="/black_list">
       <li><a >Black List</a></li>
