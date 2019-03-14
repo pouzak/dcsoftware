@@ -12,29 +12,13 @@ class Ethernet extends Component {
   }
 
   dataChange = () => {
-   
-        //console.log(this.state.data)
-        //console.log(this.props.context.data)
-       
         let st = this.props.context.data;
         st.config.settings.ethernet.ethernet_type.dhcp['@bool'] === "true" ? st.config.settings.ethernet.ethernet_type.dhcp['@bool'] ="false" : st.config.settings.ethernet.ethernet_type.dhcp['@bool'] = "true"
         this.setState({
           dataa: st
         })
-        
-        //this.props.context.valueChange()
-        
-      
-        
-
+        this.props.context.valueChange()
   }
-  /* componentDidMount(){
-    if(this.props.context.data != undefined){
-      this.setState({
-        data: this.props.context.data
-      })
-    }
-  } */
 
   render() {
     return (
@@ -56,7 +40,7 @@ class Ethernet extends Component {
                     color="secondary"
                     
                     />
-                    <MDBBtn color="primary" onClick={() => this.dataChange()}>run</MDBBtn>
+                    <MDBBtn color="primary" onClick={() => this.props.context.valueChange()}>run</MDBBtn>
                 </MDBCol>
               </MDBRow>
                 ):(

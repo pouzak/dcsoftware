@@ -20,14 +20,23 @@ export class Provider extends Component {
         .catch(err => console.log(err));
       }
       valueChange = (item) => {
-        /* this.setState({
-          dc_data: item
-        })  */ 
-        //console.log(item)
-        //console.log('contexxt: ')
-        //console.log(this.state.dc_data)
+        axios
+        .post('api/save',this.state.dc_data)
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => console.log(err));
         
       }
+      saveXml = () => {
+        axios
+        .post('api/save',this.state.dc_data)
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => console.log(err));
+      }
+      
 
   render() {
     return (

@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, g
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow 
 import xml.etree.ElementTree as et
@@ -6,6 +6,7 @@ import xmltodict
 import json
 import os
 import pprint
+import sqlite3 as sql
 
 #init app
 app = Flask(__name__)
@@ -20,6 +21,28 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 #init ma
 ma = Marshmallow(app)
+
+#sqlite
+@app.route('/sql',methods = ['GET'])
+def list():
+   con = sql.connect("disk.db")
+   con.row_factory = sql.Row
+   
+   cur = con.cursor()
+   #cur.execute("select * from IC_Data")
+   
+   cur.execute("SELECT * FROM sqlite_master")
+   
+   rows = cur.fetchall()
+   for row in rows:
+       print(row[2])
+   con.close()
+   return (jsonify({"msg":"ok"}))
+   
+
+
+
+##
 
 #product class/model
 class Product(db.Model):
@@ -79,14 +102,10 @@ full_file = os.path.abspath(os.path.join('data', file_name))
 
 @app.route('/xml', methods=['GET'])
 def get_data():
-    dom = et.parse(full_file)
-    rez = []
-    products = dom.findall('PLANT')
-    for x in products:
-        rez.append(x)
+    res = "ok"
     return jsonify(rez)
 
-
+#xml to json
 @app.route('/api/cfg', methods=['GET'])
 def get_xml():
     with open('config.xml') as fd:
@@ -96,6 +115,22 @@ def get_xml():
     response = jsonify(doc)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
+
+@app.route('/api/save', methods=['POST'])
+def save_xml():
+    #with open('config.xml') as fd:
+        #doc = xmltodict.parse(fd.read())
+    #rez = xmltodict.unparse(item)
+    data = request.data
+    dataDict = json.loads(data)
+    #print(dataDict)
+    parsed = xmltodict.unparse(dataDict, pretty=True)
+    with open('config.xml', 'w') as file:
+        file.write(parsed)
+    #return (jsonify(dataDict), 200)
+    print('xml parsed')
+    return (jsonify(dataDict), 200)
 
     #run server
 if __name__ == '__main__':
