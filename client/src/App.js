@@ -15,12 +15,22 @@ import { Provider } from './Context';
 class App extends Component {
   state = {
     navOpen: false,
-    dc_data: null
+    dc_data: null,
+    width: 0,
+    height: 0
   }
   hoverHandler = () => {
     this.setState({
       navOpen: !this.state.navOpen
     })
+  }
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
+  componentDidMount() {
+    //this.updateWindowDimensions();
+    window.addEventListener('resize', () => this.updateWindowDimensions());
   }
 
 /* componentDidMount(){
@@ -40,7 +50,7 @@ class App extends Component {
 
   
   render() {
-    
+    console.log(this.state.width)
     const nav = this.state.navOpen ? (
       <MDBCol size="3" className="nav-bar float-right">
               <Navbar2 />
@@ -56,9 +66,12 @@ class App extends Component {
             <div className="gradient">
               <MDBRow className="dash">
               <MDBCol className="nav-container" size="2">
+              {this.state.width > 1279? (
                 <div className="nav-bar">
                 <Navbar2 />
                 </div>
+              ): (null)}
+                
                 </MDBCol>
                 <MDBCol className="main">
                 <Switch>

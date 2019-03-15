@@ -6,7 +6,7 @@ z-index: 0;
 padding: 100px 120px;
 margin: 0;
 padding-top: 20px;
-height: 100vh;
+height: 100%;
 background: #bdc3c7;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -33,7 +33,7 @@ z-index: 2;
   padding: 0;
   margin: 0;
   z-index: 1;
-height: 90vh;
+min-height: 90vh;
 color: #fff;
 text-align: center;
 border-radius: 8px 8px 8px 8px;

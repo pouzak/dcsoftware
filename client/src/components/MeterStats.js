@@ -13,7 +13,7 @@ let fruits = [
     "payaya", "peach",
     "pear", "plum"
   ];
-  var size = 8; 
+  var size = 18; 
   var arrayOfArrays = [];
  
   //console.log(Math.round(fruits.length/5));

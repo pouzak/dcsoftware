@@ -12,7 +12,7 @@ class Test extends Component {
       <Consumer>
       {value => {
             const {data} = value;
-            console.log(data)
+            //console.log(data)
             return (
             <div className="centered">
               {data ? (
