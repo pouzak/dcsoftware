@@ -23,7 +23,7 @@ export class Provider extends Component {
         axios
         .post('api/save',this.state.dc_data)
         .then(res => {
-          console.log(res);
+          //console.log(res);
         })
         .catch(err => console.log(err));
         

@@ -28,6 +28,9 @@ class BlackList extends Component {
             { primary: true, type: "linear", position: "bottom" },
             { type: "linear", position: "left" }
           ]}
+          primaryCursor
+        secondaryCursor
+        tooltip
         />
       )
     return (

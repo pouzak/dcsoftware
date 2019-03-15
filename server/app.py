@@ -23,7 +23,7 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 #sqlite
-@app.route('/sql',methods = ['GET'])
+@app.route('/api/meters',methods = ['GET'])
 def list():
    con = sql.connect("disk.db")
    con.row_factory = sql.Row
@@ -31,13 +31,16 @@ def list():
    cur = con.cursor()
    #cur.execute("select * from IC_Data")
    
-   cur.execute("SELECT * FROM sqlite_master")
-   
+   cur.execute("SELECT * FROM LogicDevice_Information")
+   res = []
    rows = cur.fetchall()
    for row in rows:
-       print(row[2])
+       if(row[3] != ''):
+            res.append(row[3])
    con.close()
-   return (jsonify({"msg":"ok"}))
+   return (jsonify(res))
+
+   #return (jsonify({"msg":"ok"}))
    
 
 
