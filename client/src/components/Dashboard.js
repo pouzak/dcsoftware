@@ -6,7 +6,14 @@ import './Dashboard.css';
 import {Link} from 'react-router-dom';
 
 
+let memory;
+let cpu;
+
 class Test extends Component {
+  componentDidMount() {
+    memory = <CountUp end={Math.floor(Math.random() * 400) + 6000} duration={0.4}/>
+    cpu = <CountUp end={Math.floor(Math.random() * 15) + 2} duration={1}/>
+  }
   render() {
     return (
       <Consumer>
@@ -26,8 +33,8 @@ class Test extends Component {
                     <p className="lead">
                       Current DCU Stats: 
                     </p>
-                    <p>Memory Usage: <CountUp end={Math.floor(Math.random() * 400) + 6000} duration={0.4}/> KB</p>
-                    <p>CPU Load: <CountUp end={Math.floor(Math.random() * 15) + 2} duration={1}/> %</p>
+                    <p>Memory Usage: {memory} KB</p>
+                    <p>CPU Load: {cpu} %</p>
                     <p className="lead">
                     <Link to="/">
                       <MDBBtn color="primary">Refresh</MDBBtn>

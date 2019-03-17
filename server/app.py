@@ -12,6 +12,7 @@ import sqlite3 as sql
 app = Flask(__name__)
 app.route('/', methods=['GET'])
 basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['JSON_SORT_KEYS'] = False
 
 #db
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'db.sqlite')
@@ -134,6 +135,63 @@ def save_xml():
     #return (jsonify(dataDict), 200)
     print('xml parsed')
     return (jsonify(dataDict), 200)
+
+
+
+
+@app.route('/api/txt', methods=['GET'])
+def txt():
+    con = sql.connect("disk.db")
+    con.row_factory = sql.Row
+   
+    cur = con.cursor()
+   #cur.execute("select * from IC_Data")
+   
+    cur.execute("SELECT * FROM LogicDevice_Information")
+   
+    rows = cur.fetchall()
+    
+    lines = [line.rstrip('\n') for line in open('data/NETWORK_MAP_FILE.txt')]
+    stats = [line.rstrip('\n') for line in open('data/STATISTICS.txt')]
+    res = []  
+    #liness = " ".join(lines[1].split())
+    #linesss = liness.split(' ')
+    
+    statsArray = []
+    for line in lines:
+        obj = {}
+        nospace = " ".join(line.split())
+        item = nospace.split(' ')
+        obj["name"] = item[0] 
+        obj["mac"] = item[1] 
+        obj["lnid"] = item[2] 
+        obj["availability"] = "0%"
+        for row in rows:
+            if(row[3] == item[0]):
+                obj["fw"] = row[10]
+
+        for stat in stats:
+            nospaces = " ".join(stat.split())
+            statitem = nospaces.split(' ')
+            #statsArray.append(statitem)
+            if item[0] == statitem[0]:
+                obj["availability"] = statitem[3] + "%"
+
+        res.append(obj)
+    con.close()
+    return (jsonify(res), 200)
+
+
+"""     [
+  "EGM0002091691", 
+  "02AA781FEAAB", 
+  "0846", 
+  "FF", 
+  "01", 
+  "00", 
+  "00"
+] """
+    
 
     #run server
 if __name__ == '__main__':

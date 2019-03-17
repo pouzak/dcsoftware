@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Consumer} from '../Context';
 import './Dashboard.css';
 import Checkbox from '@material-ui/core/Checkbox';
-import {MDBRow, MDBCol, MDBBtn } from "mdbreact";
+import {MDBRow, MDBCol, MDBBtn, MDBInput } from "mdbreact";
 import {dcdata} from '../Context';
 
 

@@ -1,175 +1,190 @@
 import React, { Component } from 'react'
-import Pagination from "react-paginating";
+import { MDBDataTable,MDBBtnGroup, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdbreact';
 import axios from 'axios';
-import './MeterStats.css';
-import { MDBBtn } from "mdbreact";
 
 
 
-let fruits = [
-    "apple",
-    "banana", "avocado",
-    "coconut", "blueberry",
-    "payaya", "peach",
-    "pear", "plum"
-  ];
-  var size = 18; 
-  var arrayOfArrays = [];
- 
-  //console.log(Math.round(fruits.length/5));
+/* const data = {
+  columns: [
+    { */
 
-const limit = 2;
-//const pageCount =Math.round(fruits.length/5);
-//const total = fruits.length * limit;
+const columns = [
+    {
+      label: 'Name',
+      field: 'name',
+      sort: 'asc',
+      width: 150
+    },
+    {
+      label: 'Mac',
+      field: 'mac',
+      sort: 'asc',
+      width: 200
+    },
+    {
+      label: 'LNID',
+      field: 'lnid',
+      sort: 'asc',
+      width: 100
+    },
+    {
+      label: 'Availability',
+      field: 'availability',
+      sort: 'asc',
+      width: 60
+    },
+    {
+      label: 'FW',
+      field: 'fw',
+      sort: 'asc',
+      width: 50
+    },
+    {
+      label: 'Statistics',
+      field: 'stats',
+      sort: 'asc',
+      width: 100
+    }
+  ]
+  const rowsz =  [
+    {
+      name: 'Tiger Nixon',
+      position: 'System Architect',
+      office: 'Edinburgh',
+      age: '61',
+      date: '2011/04/25',
+      name: "Alex", 
+      
+    },
+    
+  ] 
 
+  
 
-
-
-class MeterStats extends React.Component {
+export class List extends Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 1,
       data: null
     };
   }
+  handleRowClick = (e) => {
+   //e.preventDefault();
+    console.log(e)
+  }
+
   componentDidMount(){
     axios
-    .get('api/meters')
+    .get('api/txt')
     .then(res => {
-      for (var i=0; i<res.data.length; i+=size) {
-        arrayOfArrays.push(res.data.slice(i,i+size));
-      this.setState({data: res.data});
-      
-      //console.log(this.state.dc_data)
-      //console.log(this.state.data)
-      
-   }
+     
+    
+    //this.setState({data: {columns, rows: res.data}});
+    //console.log(res.data)
+  //const data = this.state.data ? ({columns, rows: this.state.data}): (null)
+  const datule = res.data.map(item => {
+    let obj = {}
+    obj.name = item.name;
+    obj.mac = item.mac.slice(0, 2) + ":" + item.mac.slice(2,4)+ ":" + item.mac.slice(4,6) + ":" + item.mac.slice(6,8) + ":" + item.mac.slice(8,10) + ":" + item.mac.slice(10,12);
+    obj.lnid = item.lnid;
+    obj.availability = item.availability;
+    obj.FW = item.fw;
+    obj.stats = [
+      <MDBBtnGroup>
+      <MDBDropdown>
+        <MDBDropdownToggle caret color="info" className="h-100" size="sm">
+          Stats
+        </MDBDropdownToggle>
+        <MDBDropdownMenu basic color="info">
+          <MDBDropdownItem onClick={() => this.handleRowClick(item.name)}>Billing</MDBDropdownItem>
+          <MDBDropdownItem onClick={() => this.handleRowClick(item.name)}>Statistics</MDBDropdownItem>
+        </MDBDropdownMenu>
+      </MDBDropdown>
+    </MDBBtnGroup>
+    ]
+    return obj;
+  }) 
+
+  {/* <MDBBtn color="purple" onClick={() => this.handleRowClick(item.name)} outline size="sm">Billing</MDBBtn>
+    ,<MDBBtn color="purple" onClick={() => this.handleRowClick(item.name)} outline size="sm">Billing</MDBBtn>]
+ */}
+  //console.log(res)
+  datule.shift();
+  this.setState({data: {columns, rows: datule}});
+
     })
     .catch(err => console.log(err));
   }
-  handlePageChange = (page, e) => {
-    this.setState({
-      currentPage: page
-    });
-  };
 
+  
+   
   render() {
-    const { currentPage } = this.state;
+    const dataa = {
+      columns : [
+        {
+          label: 'Name',
+          field: 'name',
+          sort: 'asc',
+          width: 150
+        },
+        {
+          label: 'Mac',
+          field: 'mac',
+          sort: 'asc',
+          width: 270
+        },
+        {
+          label: 'LNID',
+          field: 'lnid',
+          sort: 'asc',
+          width: 100
+        },
+        {
+          label: 'Availability',
+          field: 'availability',
+          sort: 'asc',
+          width: 100
+        },
+        {
+          label: 'FW',
+          field: 'fw',
+          sort: 'asc',
+          width: 100
+        }],
+      rows:  [
+        {
+          name: 'Tiger Nixon',
+          clickEvent: this.handleRowClick,
+          position: 'System Architect',
+          office: 'Edinburgh',
+          age: '61',
+          //buttun: <MDBBtn color="purple" clickEvent={() => this.handleRowClick(this.name)} outline size="sm">Button</MDBBtn>
+
+         
+          
+        }
+        
+      ] }
+    //console.log(data)
+    const table = this.state.data ? (
+      <MDBDataTable
+        //striped
+        sortable={false}
+        bordered
+        hover
+        //data={this.state.data}
+        data={this.state.data}
+        entries={5} 
+        entriesOptions={[ 5, 10, 15, 100 ]}
+
+  />) : (<div>Loading...</div>)
     return (
       <div>
-        {this.state.data ? (
-      <div>
-        <ul>
-          {arrayOfArrays[currentPage -1].map(item => (
-            <li className="list-item" key={item}>{item}<MDBBtn color="grey" size="sm">Billing</MDBBtn><MDBBtn color="#424242 grey darken-3" size="sm">Stats</MDBBtn></li>
-          ))}
-        </ul>
-        <Pagination
-          total={arrayOfArrays.length * limit}
-          limit={limit}
-          pageCount={5}
-          currentPage={currentPage}
-        >
-          {({
-            pages,
-            currentPage,
-            hasNextPage,
-            hasPreviousPage,
-            previousPage,
-            nextPage,
-            totalPages,
-            getPageItemProps
-          }) => (
-            <div>
-              <button
-                {...getPageItemProps({
-                  pageValue: 1,
-                  onPageChange: this.handlePageChange
-                })}
-              >
-                first
-              </button>
-
-              {hasPreviousPage && (
-                <button
-                  {...getPageItemProps({
-                    pageValue: previousPage,
-                    onPageChange: this.handlePageChange
-                  })}
-                >
-                  {"<"}
-                </button>
-              )}
-
-              {pages.map(page => {
-                let activePage = null;
-                if (currentPage === page) {
-                  activePage = { backgroundColor: "#fdce09" };
-                }
-                return (
-                  <button
-                    {...getPageItemProps({
-                      pageValue: page,
-                      key: page,
-                      style: activePage,
-                      onPageChange: this.handlePageChange
-                    })}
-                  >
-                    {page}
-                  </button>
-                );
-              })}
-
-              {hasNextPage && (
-                <button
-                  {...getPageItemProps({
-                    pageValue: nextPage,
-                    onPageChange: this.handlePageChange
-                  })}
-                >
-                  {">"}
-                </button>
-              )}
-
-              <button
-                {...getPageItemProps({
-                  pageValue: totalPages,
-                  onPageChange: this.handlePageChange
-                })}
-              >
-                last
-              </button>
-              {this.state.data.length}
-            </div>
-          )}
-        </Pagination>
+        {table}
       </div>
-      ) : (<p className="centered">loading</p>)}
-      </div>
-    );
+    )
   }
 }
 
-export default MeterStats;
-
-/*
-let fruits = [
-  "apple",
-  "banana", "avocado",
-  "coconut", "blueberry",
-  "payaya", "peach",
-  "pear", "plum"
-];
-var size = 5; 
-var arrayOfArrays = [];
-for (var i=0; i<fruits.length; i+=size) {
-     arrayOfArrays.push(fruits.slice(i,i+size));
-}
-console.log(Math.round(fruits.length/5));
-
-const limit = 2;
-const pageCount =Math.round(fruits.length/5);
-const total = fruits.length * limit;
-*/
+export default List
 

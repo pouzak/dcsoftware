@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Navbar.css';
+import './Navbar2.css';
 import { MDBAnimation } from "mdbreact";
 import {Link} from 'react-router-dom';
 
@@ -16,7 +16,7 @@ export class Navbar2 extends Component {
   <li><a href="">PLC Network</a>
   <ul class="submenu">
   <Link to="/meterstats"><li><a href="">Meter Statistics</a></li></Link>
-      <li><a href="" >Topology</a></li>
+  <Link to="/topology"><li><a >Topology</a></li></Link>
       <Link to="/black_list">
       <li><a >Black List</a></li>
       </Link>

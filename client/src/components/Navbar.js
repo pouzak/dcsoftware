@@ -1,118 +1,157 @@
-import React, { Fragment,Component } from 'react';
-import './Navbar.css'
+import React, { Fragment,  Component } from 'react';
 import posed from 'react-pose';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import './Navbar.css';
+import {Link} from 'react-router-dom';
+import { ReactComponent as YourSvg }from './icons/home.svg'
+
+const Content = posed.div({
+  closed: { height: 0 },
+  open: { height: 'auto' }
+});
 
 
-const styles = {
- 
- fullList: {
-    width: 200,
-    height: 500,
-    position: 'absolute',
-    display: 'flex'
-  }
-  
-};
+const  data= [ {
+  title: 'Short story',
+  content: ['lol','ok']
+},
+{
+  title: 'Long story',
+  content: `It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.`
+}
+];
 
-class Navbar extends Component {
+export class Navbar extends Component {
+  state = { open: false };
 
-  state = {
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  };
-
-  toggleDrawer = (side, open) => () => {
-    this.setState({
-      [side]: open,
-    });
-  };
-
-  
-  
   render() {
-    const { classes } = this.props;
-
-    const fullList = (
-      <div className={classes.fullList}>
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-      </div>
-    );
-
+    const { open } = this.state;
     return (
-      <div className="navv">
-        <Button onClick={this.toggleDrawer('top', true)}>Open Top</Button>
-      <SwipeableDrawer
-          anchor="left"
-          open={this.state.top}
-          onClose={this.toggleDrawer('top', false)}
-          onOpen={this.toggleDrawer('top', true)}
-        >
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer('top', false)}
-            onKeyDown={this.toggleDrawer('top', false)}
-          >
-            {fullList}
-          </div>
-        </SwipeableDrawer>
+      <div>
+         <Fragment>
+         {/* <Link to="/"><h1>Home</h1></Link> */}
+         <Link to="/"> <div className="home-div"><YourSvg className="home-svg"/></div></Link>
+     
+        
+            <h2
+              className="title"
+              onClick={() => this.setState({ open: open === 'plc' ? false : 'plc' })}
+            >
+             {/*  {open === 'plc' ? '🤯 ' : '🙂 '} */}
+              PLC Network
+            </h2>
+            <Content className="content" pose={open === 'plc' ? 'open' : 'closed'}>
+            <Link to="/meterstats"><div className="content-wrapper">Meter Statistics</div></Link>
+            <Link to="/topology"><div className="content-wrapper">Topology</div></Link>
+            <Link to="/black_list"><div className="content-wrapper">Black List</div></Link>
+            </Content>
+
+
+            <h2
+              className="title"
+              onClick={() => this.setState({ open: open === 'set' ? false : 'set' })}
+            >
+              
+              Settings
+            </h2>
+            <Content className="content" pose={open === 'set' ? 'open' : 'closed'}>
+            <Link to="/"><div className="content-wrapper">DCU Configuration</div></Link>
+            <Link to="/"><div className="content-wrapper">Date / time</div></Link>
+              <Link to="/ethernet"><div className="content-wrapper">Ethernet</div></Link>
+              <Link to="/"><div className="content-wrapper">Modem</div></Link>
+              <Link to="/"><div className="content-wrapper">Security</div></Link>
+            </Content>
+
+
+            <h2
+              className="title"
+              onClick={() => this.setState({ open: open === 'stats' ? false : 'stats' })}
+            >
+             
+              Statistics
+            </h2>
+            <Content className="content" pose={open === 'stats' ? 'open' : 'closed'}>
+            <Link to="/"><div className="content-wrapper">DCU Statistics</div></Link>
+            <Link to="/"><div className="content-wrapper">PLC Statistics</div></Link>
+            <Link to="/"><div className="content-wrapper">Connection Statistics</div></Link>
+            <Link to="/"><div className="content-wrapper">System Info</div></Link>
+            </Content>
+        
+
+            <h2
+              className="title"
+              onClick={() => this.setState({ open: open === 'task' ? false : 'task' })}
+            >
+             
+              Tasks
+            </h2>
+            <Content className="content" pose={open === 'task' ? 'open' : 'closed'}>
+            <Link to="/"><div className="content-wrapper">Add Task</div></Link>
+            <Link to="/"><div className="content-wrapper">Schedulle</div></Link>
+            </Content>
+
+
+            <h2
+              className="title"
+              onClick={() => this.setState({ open: open === 'fw' ? false : 'fw' })}
+            >
+            
+              Firmware Update
+            </h2>
+            <Content className="content" pose={open === 'fw' ? 'open' : 'closed'}>
+            <Link to="/"><div className="content-wrapper">DCU Firmware</div></Link>
+            <Link to="/"><div className="content-wrapper">Meters Firmware</div></Link>
+            </Content>
+     
+      </Fragment>
       </div>
     )
   }
 }
 
-export default withStyles(styles)(Navbar)
+export default Navbar
 
 
-{/* <nav class="navigation">
-<ul class="mainmenu">
-  <li><a href="">Home</a>
-  <ul class="submenu">
-      <li><a href="" >Tops</a></li>
-      <li><a href="">Bottoms</a></li>
-      <li><a href="">Footwear</a></li>
-    </ul>
-  </li>
-  <li><a href="">About</a>
-  <ul class="submenu">
-      <li><a href="">Tops</a></li>
-      <li><a href="">Bottoms</a></li>
-      <li><a href="">Footwear</a></li>
-    </ul></li>
-  <li><a href="">Products</a>
-    <ul class="submenu">
-      <li><a href="">Tops</a></li>
-      <li><a href="">Bottoms</a></li>
-      <li><a href="">Footwear</a></li>
-    </ul>
-  </li>
-  <li><a href="">Contact us</a></li>
-</ul>
-</nav> */}
+{/* <Fragment>
+<h1>Accordian demo</h1>
+{data.map(({ title, content }, i) => (
+  <Fragment>
+    <h2
+      className="title"
+      onClick={() => this.setState({ open: open === i ? false : i })}
+    >
+      {open === i ? '🤯 ' : '🙂 '}
+      {title}
+    </h2>
+    <Content className="content" pose={open === i ? 'open' : 'closed'}>
+      <div className="content-wrapper">{content}</div>
+    </Content>
+  </Fragment>
+))}
+</Fragment> */}
+
+
+
+
+
+{/* <Fragment>
+        <h1>Accordian demo</h1>
+     
+        
+            <h2
+              className="title"
+              onClick={() => this.setState({ open: open === 'plc' ? false : 'plc' })}
+            >
+              {open === 'plc' ? '🤯 ' : '🙂 '}
+              Laba diena
+            </h2>
+            <Content className="content" pose={open === 'plc' ? 'open' : 'closed'}>
+              <div className="content-wrapper">labas</div>
+              <div className="content-wrapper">labas</div>
+            </Content>
+        
+     
+      </Fragment> */}
+
+
+
+

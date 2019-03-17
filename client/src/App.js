@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-//import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
 //import axios from 'axios';
 import Dashboard from './components/Dashboard';
 import Ethernet from './components/Ethernet';
 import BlackList from './components/BlackList';
 import MeterStats from './components/MeterStats';
+import NavMobile from './components/NavMobile';
 import {BrowserRouter,  Route,  Switch} from 'react-router-dom';
 import {MDBCol,MDBRow } from 'mdbreact';
 import { Provider } from './Context';
+
 
  
 class App extends Component {
@@ -29,9 +31,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    //this.updateWindowDimensions();
+    this.updateWindowDimensions();
     window.addEventListener('resize', () => this.updateWindowDimensions());
   }
+  
 
 /* componentDidMount(){
   axios
@@ -65,20 +68,22 @@ class App extends Component {
           <div className="App">
             <div className="gradient">
               <MDBRow className="dash">
-              <MDBCol className="nav-container" size="2">
-              {this.state.width > 1279? (
+              {this.state.width > 1000? (
+                <MDBCol className="nav-container" size="2">
                 <div className="nav-bar">
-                <Navbar2 />
+                <Navbar />
                 </div>
-              ): (null)}
-                
                 </MDBCol>
+              ): (<NavMobile />)}
                 <MDBCol className="main">
                 <Switch>
                   <Route exact path="/" component={Dashboard}/>
                   <Route exact path="/black_List" component={BlackList}/>
                   <Route exact path="/ethernet" component={Ethernet}/>
                   <Route exact path="/meterstats" component={MeterStats}/>
+                  <Route exact path="/topology" component={Navbar}/>
+
+                  
                   
                 </Switch>
                 </MDBCol>
