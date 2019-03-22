@@ -2,7 +2,9 @@ import React, { Fragment,  Component } from 'react';
 import posed from 'react-pose';
 import './Navbar.css';
 import {Link} from 'react-router-dom';
-import { ReactComponent as YourSvg }from './icons/home.svg'
+import { ReactComponent as YourSvg }from './icons/home.svg';
+import { MDBAnimation } from "mdbreact";
+import { ReactComponent as Plus }from './icons/arr.svg';
 
 const Content = posed.div({
   closed: { height: 0 },
@@ -29,14 +31,14 @@ export class Navbar extends Component {
       <div>
          <Fragment>
          {/* <Link to="/"><h1>Home</h1></Link> */}
-         <Link to="/"> <div className="home-div"><YourSvg className="home-svg"/></div></Link>
+         <MDBAnimation type="tada"><Link to="/"> <div className="home-div"><YourSvg className="home-svg" onClick={() => this.setState({ open: open === 'home' ? false : 'home' })}/></div></Link></MDBAnimation>
      
         
             <h2
               className="title"
               onClick={() => this.setState({ open: open === 'plc' ? false : 'plc' })}
             >
-             {/*  {open === 'plc' ? '🤯 ' : '🙂 '} */}
+             {/* {open === 'plc' ?<MDBAnimation type="rotateIn"><Plus/></MDBAnimation> : ' '}  */}
               PLC Network
             </h2>
             <Content className="content" pose={open === 'plc' ? 'open' : 'closed'}>
@@ -54,11 +56,11 @@ export class Navbar extends Component {
               Settings
             </h2>
             <Content className="content" pose={open === 'set' ? 'open' : 'closed'}>
-            <Link to="/"><div className="content-wrapper">DCU Configuration</div></Link>
-            <Link to="/"><div className="content-wrapper">Date / time</div></Link>
+            <Link to="/dcuconfig"><div className="content-wrapper">DCU Configuration</div></Link>
+            <Link to="/datetime"><div className="content-wrapper">Date / time</div></Link>
               <Link to="/ethernet"><div className="content-wrapper">Ethernet</div></Link>
-              <Link to="/"><div className="content-wrapper">Modem</div></Link>
-              <Link to="/"><div className="content-wrapper">Security</div></Link>
+              <Link to="/modem"><div className="content-wrapper">Modem</div></Link>
+              <Link to="/security"><div className="content-wrapper">Security</div></Link>
             </Content>
 
 
@@ -70,10 +72,10 @@ export class Navbar extends Component {
               Statistics
             </h2>
             <Content className="content" pose={open === 'stats' ? 'open' : 'closed'}>
-            <Link to="/"><div className="content-wrapper">DCU Statistics</div></Link>
-            <Link to="/"><div className="content-wrapper">PLC Statistics</div></Link>
-            <Link to="/"><div className="content-wrapper">Connection Statistics</div></Link>
-            <Link to="/"><div className="content-wrapper">System Info</div></Link>
+            <Link to="/dcustats"><div className="content-wrapper">* DCU Statistics</div></Link>
+            <Link to="/plcstats"><div className="content-wrapper">* PLC Statistics</div></Link>
+            <Link to="/connection"><div className="content-wrapper">Connection Statistics</div></Link>
+            <Link to="/system"><div className="content-wrapper">System Info</div></Link>
             </Content>
         
 
@@ -85,8 +87,8 @@ export class Navbar extends Component {
               Tasks
             </h2>
             <Content className="content" pose={open === 'task' ? 'open' : 'closed'}>
-            <Link to="/"><div className="content-wrapper">Add Task</div></Link>
-            <Link to="/"><div className="content-wrapper">Schedulle</div></Link>
+            <Link to="/addtask"><div className="content-wrapper">Add Task</div></Link>
+            <Link to="/schedulle"><div className="content-wrapper">Schedulle</div></Link>
             </Content>
 
 
@@ -98,8 +100,8 @@ export class Navbar extends Component {
               Firmware Update
             </h2>
             <Content className="content" pose={open === 'fw' ? 'open' : 'closed'}>
-            <Link to="/"><div className="content-wrapper">DCU Firmware</div></Link>
-            <Link to="/"><div className="content-wrapper">Meters Firmware</div></Link>
+            <Link to="/dcufw"><div className="content-wrapper">DCU Firmware</div></Link>
+            <Link to="/metersfw"><div className="content-wrapper">Meters Firmware</div></Link>
             </Content>
      
       </Fragment>

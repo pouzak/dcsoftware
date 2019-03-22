@@ -11,8 +11,7 @@
 		</meters_statistics>
 		<topology>
 			<log status="enabled"></log>
-listas
-				meter, mac, sapid, isconnected, level		</topology>
+listas, meter, mac, sapid, isconnected, level		</topology>
 	</prime_network>
 	<settings>
 		<date_time>
@@ -20,6 +19,12 @@ listas
 			<syncronization bool="true"></syncronization>
 			<time>21:14:00</time>
 		</date_time>
+		<dcu_configuration>
+			<id>5913434</id>
+			<model>Data Concentrator DC12</model>
+			<year>2018-01-01</year>
+			<comunication_protocol value1="PRIME" value2="G3">PRIME</comunication_protocol>
+		</dcu_configuration>
 		<ethernet>
 			<default_gateway>192.168.4.1</default_gateway>
 			<dns_server>192.168.0.123</dns_server>
@@ -34,7 +39,7 @@ listas
 		<modem>
 			<gprs status="enabled">
 				<apn>static.tele2.lt</apn>
-				<mode value="4G"></mode>
+				<mode value1="4G" value2="3G">4G</mode>
 				<password>xxxx</password>
 				<ping_ip>213.101.135.33</ping_ip>
 				<sms status="enabled">860601333</sms>

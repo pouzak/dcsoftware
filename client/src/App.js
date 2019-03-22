@@ -5,12 +5,14 @@ import Navbar2 from './components/Navbar2';
 //import axios from 'axios';
 import Dashboard from './components/Dashboard';
 import Ethernet from './components/Ethernet';
-import BlackList from './components/BlackList';
+import BillingChart from './components/BillingChart';
 import MeterStats from './components/MeterStats';
 import NavMobile from './components/NavMobile';
 import {BrowserRouter,  Route,  Switch} from 'react-router-dom';
 import {MDBCol,MDBRow } from 'mdbreact';
 import { Provider } from './Context';
+import Page404 from './components/Page404'
+import DCU_cfg from './components/DCU_cfg'
 
 
  
@@ -53,7 +55,7 @@ class App extends Component {
 
   
   render() {
-    console.log(this.state.width)
+    //console.log(this.state.width)
     const nav = this.state.navOpen ? (
       <MDBCol size="3" className="nav-bar float-right">
               <Navbar2 />
@@ -78,11 +80,11 @@ class App extends Component {
                 <MDBCol className="main">
                 <Switch>
                   <Route exact path="/" component={Dashboard}/>
-                  <Route exact path="/black_List" component={BlackList}/>
                   <Route exact path="/ethernet" component={Ethernet}/>
                   <Route exact path="/meterstats" component={MeterStats}/>
-                  <Route exact path="/topology" component={Navbar}/>
-
+                  <Route exact path="/topology" component={Page404}/>
+                  <Route exact path="/dcuconfig" component={DCU_cfg}/>
+                  <Route component={Page404} />
                   
                   
                 </Switch>

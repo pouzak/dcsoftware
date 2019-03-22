@@ -42,6 +42,9 @@
     padding: 10px 8px;
     margin: 0;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    
   }
   
   .content {
@@ -61,5 +64,8 @@
   
   .content-wrapper {
     padding: 5px 2px 6px 8px;
+  }
+  .ico{
+   
   }
   

@@ -7,6 +7,8 @@ import json
 import os
 import pprint
 import sqlite3 as sql
+import struct
+
 
 #init app
 app = Flask(__name__)
@@ -181,6 +183,40 @@ def txt():
     con.close()
     return (jsonify(res), 200)
 
+#►get meter name/send billing data
+@app.route('/api/billing',methods = ['POST'])
+def billing():
+    data = request.data
+    dataDict = json.loads(data)
+    meterName = dataDict['name']
+
+    con = sql.connect("disk.db")
+    con.row_factory = sql.Row
+    cur = con.cursor()
+    cur.execute('SELECT IC_Profile_Generic.Name FROM IC_Profile_Generic INNER JOIN LogicDevice_Information ON IC_Profile_Generic.SAP=LogicDevice_Information.SAP WHERE LogicDevice_Information.MeterName = ?', (meterName,))
+    rows = cur.fetchall()
+    
+    table = []
+    res = []
+    for row in rows:
+        for item in row:
+            table.append(item)
+    cur.execute("SELECT * FROM {}".format(table[0]))
+    rows = cur.fetchall()
+    names = ['id','clock','asumt','at1','at2','at3','at4','rsumt','rt1','rt2','rt3','rt4','r_sumt','power']
+    for row in rows:
+        obj = {}
+        for i in range(len(row)):
+            if isinstance(row[i], bytes):
+                obj[names[i]] = struct.unpack('llh0l', row[i])
+            elif row[i] != row[0]:
+                obj[names[i]] = row[i]/10000
+            else:
+                 obj[names[i]] = row[i]
+        res.append(obj) 
+        #print(struct.unpack('llh0l', row[1]))
+    con.close()
+    return (jsonify(res), 200)
 
 """     [
   "EGM0002091691", 

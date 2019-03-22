@@ -1,0 +1,30 @@
+.set-main{
+    padding-top: 8%;
+   /*  border: 2px solid red; */
+    line-height: 20px;
+
+}
+
+.set-main h1{
+    font-size: 3rem;
+    padding-bottom: 8%;
+
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+   
+}
+
+.cont input{
+    width: 200px;
+   
+
+}
+
+.set-main h3{
+ 
+    
+
+} 

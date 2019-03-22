@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { MDBDataTable,MDBBtnGroup, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdbreact';
 import axios from 'axios';
+import BillingModal from './BillingModal'
 
 
 
@@ -65,12 +66,25 @@ export class List extends Component {
   constructor() {
     super();
     this.state = {
-      data: null
+      data: null,
+      modal: false,
+      currentMeter: null
     };
   }
-  handleRowClick = (e) => {
+  handleRowClick = (item) => {
    //e.preventDefault();
-    console.log(e)
+    this.setState({
+      modal: true,
+      currentMeter: item
+    })
+    
+  }
+
+  modalState = () => {
+     this.setState({
+      modal: false,
+    }) 
+    
   }
 
   componentDidMount(){
@@ -96,8 +110,8 @@ export class List extends Component {
           Stats
         </MDBDropdownToggle>
         <MDBDropdownMenu basic color="info">
-          <MDBDropdownItem onClick={() => this.handleRowClick(item.name)}>Billing</MDBDropdownItem>
-          <MDBDropdownItem onClick={() => this.handleRowClick(item.name)}>Statistics</MDBDropdownItem>
+          <MDBDropdownItem onClick={() => this.handleRowClick(item)}>Billing</MDBDropdownItem>
+          <MDBDropdownItem onClick={() => this.modalState()}>Load Profile</MDBDropdownItem>
         </MDBDropdownMenu>
       </MDBDropdown>
     </MDBBtnGroup>
@@ -119,52 +133,6 @@ export class List extends Component {
   
    
   render() {
-    const dataa = {
-      columns : [
-        {
-          label: 'Name',
-          field: 'name',
-          sort: 'asc',
-          width: 150
-        },
-        {
-          label: 'Mac',
-          field: 'mac',
-          sort: 'asc',
-          width: 270
-        },
-        {
-          label: 'LNID',
-          field: 'lnid',
-          sort: 'asc',
-          width: 100
-        },
-        {
-          label: 'Availability',
-          field: 'availability',
-          sort: 'asc',
-          width: 100
-        },
-        {
-          label: 'FW',
-          field: 'fw',
-          sort: 'asc',
-          width: 100
-        }],
-      rows:  [
-        {
-          name: 'Tiger Nixon',
-          clickEvent: this.handleRowClick,
-          position: 'System Architect',
-          office: 'Edinburgh',
-          age: '61',
-          //buttun: <MDBBtn color="purple" clickEvent={() => this.handleRowClick(this.name)} outline size="sm">Button</MDBBtn>
-
-         
-          
-        }
-        
-      ] }
     //console.log(data)
     const table = this.state.data ? (
       <MDBDataTable
@@ -174,12 +142,15 @@ export class List extends Component {
         hover
         //data={this.state.data}
         data={this.state.data}
-        entries={5} 
+        entries={8} 
         entriesOptions={[ 5, 10, 15, 100 ]}
 
-  />) : (<div>Loading...</div>)
+  />) : (<div className="center-default">
+            <div class="spinner-border" role="status"></div>
+         </div>)
     return (
-      <div>
+      <div style={{padding: "50px"}}>
+        {this.state.modal ? (<BillingModal modal={this.modalState} meter={this.state.currentMeter}/>) : (null)}
         {table}
       </div>
     )
