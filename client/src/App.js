@@ -1,44 +1,39 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Navbar2 from './components/Navbar2';
-//import axios from 'axios';
-import Dashboard from './components/Dashboard';
-import Ethernet from './components/Ethernet';
-import BillingChart from './components/BillingChart';
-import MeterStats from './components/MeterStats';
-import NavMobile from './components/NavMobile';
-import {BrowserRouter,  Route,  Switch} from 'react-router-dom';
-import {MDBCol,MDBRow } from 'mdbreact';
-import { Provider } from './Context';
-import Page404 from './components/Page404'
-import DCU_cfg from './components/DCU_cfg'
+import React, { Component } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+import Ethernet from "./components/Ethernet";
+import MeterStats from "./components/MeterStats";
+import NavMobile from "./components/NavMobile";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { MDBCol, MDBRow } from "mdbreact";
+import { Provider } from "./Context";
+import Page404 from "./components/Page404";
+import DCU_cfg from "./components/DCU_cfg";
+import dcuStats from "./components/dcuStats";
 
-
- 
 class App extends Component {
   state = {
     navOpen: false,
     dc_data: null,
     width: 0,
     height: 0
-  }
+  };
   hoverHandler = () => {
     this.setState({
       navOpen: !this.state.navOpen
-    })
-  }
+    });
+  };
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', () => this.updateWindowDimensions());
+    window.addEventListener("resize", () => this.updateWindowDimensions());
   }
-  
 
-/* componentDidMount(){
+  /* componentDidMount(){
   axios
   .get('http://localhost:5000/cfg')
   .then(function (response) {
@@ -52,46 +47,36 @@ class App extends Component {
   });
 } */
 
-
-  
   render() {
-    //console.log(this.state.width)
-    const nav = this.state.navOpen ? (
-      <MDBCol size="3" className="nav-bar float-right">
-              <Navbar2 />
-            </MDBCol>
-    ) : (
-      <button> yes</button>
-    )
-
     return (
       <Provider>
         <BrowserRouter>
           <div className="App">
             <div className="gradient">
               <MDBRow className="dash">
-              {this.state.width > 1000? (
-                <MDBCol className="nav-container" size="2">
-                <div className="nav-bar">
-                <Navbar />
-                </div>
-                </MDBCol>
-              ): (<NavMobile />)}
+                {this.state.width > 1000 ? (
+                  <MDBCol className="nav-container" size="2">
+                    <div className="nav-bar">
+                      <Navbar />
+                    </div>
+                  </MDBCol>
+                ) : (
+                  <NavMobile />
+                )}
+
                 <MDBCol className="main">
-                <Switch>
-                  <Route exact path="/" component={Dashboard}/>
-                  <Route exact path="/ethernet" component={Ethernet}/>
-                  <Route exact path="/meterstats" component={MeterStats}/>
-                  <Route exact path="/topology" component={Page404}/>
-                  <Route exact path="/dcuconfig" component={DCU_cfg}/>
-                  <Route component={Page404} />
-                  
-                  
-                </Switch>
+                  <Switch>
+                    <Route exact path="/" component={Dashboard} />
+                    <Route exact path="/ethernet" component={Ethernet} />
+                    <Route exact path="/meterstats" component={MeterStats} />
+                    <Route exact path="/topology" component={Page404} />
+                    <Route exact path="/dcuconfig" component={DCU_cfg} />
+                    <Route exact path="/dcustats" component={dcuStats} />
+                    <Route component={Page404} />
+                  </Switch>
                 </MDBCol>
-                
               </MDBRow>
-              </div>
+            </div>
           </div>
         </BrowserRouter>
       </Provider>
@@ -105,8 +90,7 @@ export default App;
               <Navbar />
             </MDBCol> */
 
-
-         /*    <MDBRow className="main">
+/*    <MDBRow className="main">
             <MDBCol size="2.5" className="nav-bar float-right">
               <Navbar2 />
               </MDBCol>

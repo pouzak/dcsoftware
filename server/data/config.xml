@@ -11,30 +11,32 @@
 		</meters_statistics>
 		<topology>
 			<log status="enabled"></log>
-listas
-				meter, mac, sapid, isconnected, level		</topology>
+listas, meter, mac, sapid, isconnected, level		</topology>
 	</prime_network>
 	<settings>
 		<date_time>
-			<date>2018-10-12</date>
-			<syncronization bool="true"></syncronization>
-			<time>21:14:00</time>
+			<datetime>2028-06-07T15:46</datetime>
+			<sync bool="true"></sync>
 		</date_time>
+		<dcu_configuration>
+			<id>5913434</id>
+			<model>DC12</model>
+			<year>2018-01-01</year>
+			<communication_protocol value1="PRIME" value2="G3">G3</communication_protocol>
+		</dcu_configuration>
 		<ethernet>
-			<default_gateway>192.168.4.1</default_gateway>
-			<dns_server>192.168.0.123</dns_server>
-			<ethernet_type status="enabled">
-				<dhcp bool="true"></dhcp>
-				<static_ip bool="true"></static_ip>
-			</ethernet_type>
-			<ip_address>192.168.0.123</ip_address>
-			<subnet_mask>255.255.255.0</subnet_mask>
-			<subnet_mask>8.8.8.8</subnet_mask>
+			<default_gateway>212.212.1000</default_gateway>
+			<dns value1="AUTO" value2="Manual">AUTO</dns>
+			<dns_server>192.168.1.13</dns_server>
+			<dns_server2>192.168.0.2</dns_server2>
+			<ethernet_type value1="DHCP" value2="Static IP" value3="disabled">disabled</ethernet_type>
+			<ip_address>192.168.0.01</ip_address>
+			<subnet_mask>255.255.255.1</subnet_mask>
 		</ethernet>
 		<modem>
 			<gprs status="enabled">
 				<apn>static.tele2.lt</apn>
-				<mode value="4G"></mode>
+				<mode value1="4G" value2="3G">4G</mode>
 				<password>xxxx</password>
 				<ping_ip>213.101.135.33</ping_ip>
 				<sms status="enabled">860601333</sms>

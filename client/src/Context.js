@@ -21,7 +21,7 @@ export class Provider extends Component {
       }
 
       
-      valueChange = (item) => {
+      valueChange = () => {
         axios
         .post('api/save',this.state.dc_data)
         .then(res => {
@@ -31,13 +31,37 @@ export class Provider extends Component {
         
       }
      
-      
+      handleCheckbox = (path) => {
+        let st = path
+        st['@bool'] === "true" ? st['@bool'] ="false" : st['@bool'] = "true"
+        this.setState({
+          data: st
+        })
+        this.valueChange();
+    }
+
+
+      handleInputChange = (path, item, e) => {
+      console.log(path, item, e.target.value)
+      const newState = Object.assign({}, this.state);
+      var res = path.split('.').reduce(function(o, k) {
+        return o && o[k];
+      }, newState);
+      res[item]= e.target.value;
+      this.setState(newState)
+
+      }
+
+     
+        
 
   render() {
     return (
       <Context.Provider value={{
           data: this.state.dc_data,
-          valueChange: this.valueChange 
+          valueChange: this.valueChange,
+          handleInput: this.handleInputChange,
+          checkbox: this.handleCheckbox
           }}>
           {this.props.children}
       </Context.Provider>
