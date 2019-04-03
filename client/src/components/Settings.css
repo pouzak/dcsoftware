@@ -1,31 +1,54 @@
-.set-main{
-    padding-top: 8%;
-   /*  border: 2px solid red; */
-    line-height: 20px;
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.set-main {
+  padding-top: 8%;
+  /*  border: 2px solid red; */
+  line-height: 20px;
 }
 
-.set-main h1{
-    font-size: 3rem;
-    padding-bottom: 8%;
-
+.set-main h1 {
+  font-size: 3rem;
+  padding-bottom: 8%;
 }
 
-.cont{
-    display: flex;
-    align-items: center;
-   padding-bottom: 2%;
+.cont {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2%;
 }
 
-.cont input{
-    width: 200px;
-   
-
+.cont input {
+  width: 200px;
 }
-.set-main h3{
-    font-size: 1.3rem;
+.set-main h3 {
+  font-size: 1.3rem;
 }
 
-.datetime{
-    font-size: 10px;
+.datetime {
+  font-size: 10px;
+}
+.meter-table {
+  font-family: "Roboto", sans-serif;
+}
+.clear-svg {
+  float: right;
+  margin-right: 4rem;
+  transform: scale(1.4);
+  cursor: pointer;
+  z-index: 3;
+}
+.profile-container {
+  padding: 0 20%;
+}
+
+@media screen and (max-width: 1366px) {
+  .profile-container {
+    padding: 0 100px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  .profile-container {
+    padding: 0 10px;
+    width: auto;
+  }
 }

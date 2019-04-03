@@ -11,7 +11,7 @@ class BillingChart extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
+    //console.log(this.props);
     const names = [
       "id",
       "clock",
@@ -46,62 +46,60 @@ class BillingChart extends Component {
       "power"
     ];
 
-    let clock = this.props.meter.map(item => item.clock[0]);
-    let res = [];
-    var i;
+    let clock = [];
+    let total = [];
+    let avg = [];
+
+    this.props.meter.map(item => {
+      clock.push(String(item.clock[0]));
+      total.push(item.sumt);
+      avg.push(item.avg);
+    });
+
+    /*  var i;
     for (i = 0; i < ids.length; i++) {
       let obj = {};
       obj.name = names[i];
       obj.data = this.props.meter.map(item => item[ids[i]]);
       res.push(obj);
-    }
+    } */
 
     this.setState({
       options: {
-        chart: {
-          toolbar: {
-            show: true
-          },
-          zoom: {
-            enabled: true
-          }
+        stroke: {
+          width: [0, 4]
         },
-        responsive: [
+        title: {
+          text: "Profile Load"
+        },
+        labels: clock,
+
+        yaxis: [
           {
-            breakpoint: 480,
-            options: {
-              legend: {
-                position: "bottom",
-                offsetX: -10,
-                offsetY: 0
-              }
+            title: {
+              text: "Total Energy +A SumT"
+            }
+          },
+          {
+            opposite: true,
+            title: {
+              text: "Avg. Currrent Period Power +P"
             }
           }
-        ],
-        dataLabels: {
-          enabled: false
-        },
-        plotOptions: {
-          bar: {
-            horizontal: false
-          }
-        },
-
-        xaxis: {
-          categories: clock
-          //categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
-        },
-        yaxis: {
-          title: {
-            text: "Total Energy"
-          }
-        },
-        fill: {
-          opacity: 1
-        },
-        tooltip: {}
+        ]
       },
-      series: res.slice(2)
+      series: [
+        {
+          name: "Total Energy +A SumT",
+          type: "area",
+          data: total
+        },
+        {
+          name: "Avg. Currrent Period Power +P",
+          type: "line",
+          data: avg
+        }
+      ]
     });
   }
 
@@ -112,7 +110,7 @@ class BillingChart extends Component {
           <Chart
             options={this.state.options}
             series={this.state.series}
-            type="bar"
+            type="line"
             height="350"
           />
         ) : (

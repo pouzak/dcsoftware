@@ -1,0 +1,1139 @@
+00-01-01 00:00:00 bind server.
+00-01-01 00:00:03 68AAAAAAAAAAAA68:110434373337B616:
+00-01-01 00:00:03 6800000000000068:910A343733373333:333333337216
+00-01-01 00:00:03 Acmet addr:
+00-01-01 00:00:03 000000000000
+00-01-01 00:00:03 6800000000000068:1412343733373533:3333343333334533:33333333AA16
+00-01-01 00:00:03 6812000000000068:94007616
+00-01-01 00:00:03 Set acmet addr ok.
+00-01-01 00:00:03 !!TimeSetSysClock!! Set ext clock:18-1-15 18:38:14
+18-01-15 18:38:16 Gprs Init......
+18-01-15 18:38:31 ReadModuleInfo: 
+FIBO
+G620-A50
+S029
+110913
+H002
+101012
+OK
+18-01-15 18:38:31 
+manuf:FIBO
+model:G620-A50
+firmware_ver:S029
+firmware_release_date:110913
+hardware_ver:H002
+hardware_release_date:101012
+18-01-15 18:38:32 ReadModuleInfo: 
+$MYTYPE: 03,01,00
+OK
+18-01-15 18:38:33 ModuleReadIMEI: 
++CGSN: "862960013509007"
+OK
+18-01-15 18:38:33 Ä£¿éIMEI:862960013509007
+18-01-15 18:38:52 set PDU messgage mode failed.
+18-01-15 18:38:55 
+ERROR
+
+18-01-15 18:38:55 read phone number failed.
+18-01-15 18:38:57 
+ERROR
+
+18-01-15 18:38:57 read phone number failed.
+18-01-15 18:39:00 
+ERROR
+
+18-01-15 18:39:00 read phone number failed.
+18-01-15 21:05:32 bind server.
+18-01-15 21:05:32 bind server.
+18-01-15 21:05:32 uplink channel is GPRS/CDMA ...
+18-01-15 21:05:35 bind server.
+18-01-15 21:15:15 bind server.
+18-01-15 21:15:15 bind server.
+18-01-15 21:15:15 uplink channel is GPRS/CDMA ...
+18-01-15 21:15:19 bind server.
+18-01-15 23:57:30 bind server.
+18-01-15 23:57:30 bind server.
+18-01-15 23:57:30 uplink channel is GPRS/CDMA ...
+18-01-15 23:57:34 bind server.
+18-01-16 00:16:10 bind server.
+18-01-16 00:16:10 bind server.
+18-01-16 00:16:10 uplink channel is GPRS/CDMA ...
+18-01-16 00:16:14 bind server.
+18-01-16 07:27:27 bind server.
+18-01-16 07:27:27 bind server.
+18-01-16 07:27:27 uplink channel is GPRS/CDMA ...
+18-01-16 07:27:31 bind server.
+18-01-18 19:30:40 bind server.
+18-01-18 19:30:40 bind server.
+18-01-18 19:30:40 uplink channel is GPRS/CDMA ...
+18-01-18 19:30:44 bind server.
+18-01-18 20:15:16 bind server.
+18-01-18 20:15:16 bind server.
+18-01-18 20:15:16 uplink channel is GPRS/CDMA ...
+18-01-18 20:15:20 bind server.
+18-01-18 20:47:27 bind server.
+18-01-18 20:47:27 bind server.
+18-01-18 20:47:27 uplink channel is GPRS/CDMA ...
+18-01-18 20:47:31 bind server.
+18-01-22 07:41:46 bind server.
+18-01-22 07:41:46 bind server.
+18-01-22 07:41:46 uplink channel is GPRS/CDMA ...
+18-01-22 07:41:49 uplink channel is GPRS/CDMA ...
+18-01-22 07:41:49 Gprs Init......
+18-01-22 07:41:50 bind server.
+18-01-22 07:42:13 bind server.
+18-01-22 07:42:13 bind server.
+18-01-22 07:42:13 uplink channel is GPRS/CDMA ...
+18-01-22 07:42:16 uplink channel is GPRS/CDMA ...
+18-01-22 07:42:16 Gprs Init......
+18-01-22 07:42:17 bind server.
+18-01-22 07:42:27 ReadModuleInfo: 
+ZTE 
+ME3630  
+0B08
+050617
+MB_A
+130316
+OK
+18-01-22 07:42:27 
+manuf:ZTE 
+model:ME3630  
+firmware_ver:0B08
+firmware_release_date:050617
+hardware_ver:MB_A
+hardware_release_date:130316
+18-01-22 07:42:27 ReadModuleInfo: 
+$MYTYPE: 03,3f,00
+OK
+18-01-22 07:42:28 ModuleReadIMEI: 
++CGSN:"866732032732738"
+OK
+18-01-22 07:42:28 Ä£¿éIMEI:866732032732738
+18-01-22 07:42:42 set PDU messgage mode failed.
+18-01-22 07:42:44 
+ERROR
+
+18-01-22 07:42:44 read phone number failed.
+18-01-22 07:42:45 
+ERROR
+
+18-01-22 07:42:45 read phone number failed.
+18-01-22 07:42:47 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:47 0400003200684B00:000C00020C650101:0105D216
+18-01-22 07:42:47 SEND: C=A8H, AFN=0C, len=27
+18-01-22 07:42:47 688E008E0068A800:000C00020C650101:0105040000000000:0000000000000000
+18-01-22 07:42:47 0000000000000001:003416
+18-01-22 07:42:47 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:47 0400003200684B00:000C00020C660101:0205D416
+18-01-22 07:42:47 SEND: C=A8H, AFN=0C, len=27
+18-01-22 07:42:47 688E008E0068A800:000C00020C660101:0205040000000000:0000000000000000
+18-01-22 07:42:47 0000000000000001:003616
+18-01-22 07:42:47 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:47 0400003200684B00:000C00020C670101:0405D716
+18-01-22 07:42:47 SEND: C=A8H, AFN=0C, len=27
+18-01-22 07:42:47 688E008E0068A800:000C00020C670101:0405040000000000:0000000000000000
+18-01-22 07:42:47 0000000000000001:003916
+18-01-22 07:42:47 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:47 0400003200684B00:000C00020C680101:0805DC16
+18-01-22 07:42:47 SEND: C=A8H, AFN=0C, len=27
+18-01-22 07:42:47 688E008E0068A800:000C00020C680101:0805040000000000:0000000000000000
+18-01-22 07:42:47 0000000000000001:003E16
+18-01-22 07:42:47 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:47 0400003200684B00:000C00020C690101:0110E116
+18-01-22 07:42:47 
+ERROR
+
+18-01-22 07:42:47 read phone number failed.
+18-01-22 07:42:47 Right Module Type = ME3630  
+18-01-22 07:42:47 Gprs restart successed.
+18-01-22 07:42:47 SEND: C=A8H, AFN=0C, len=37
+18-01-22 07:42:47 68B600B60068A800:000C00020C690101:0110420722011804:0000000000000000
+18-01-22 07:42:47 0000000000000000:0000000000000000:000100C716
+18-01-22 07:42:47 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:47 0400003200684B00:000C00020C6A0101:0410E516
+18-01-22 07:42:48 SEND: C=A8H, AFN=0C, len=37
+18-01-22 07:42:48 68B600B60068A800:000C00020C6A0101:0410420722011804:0000000000000000
+18-01-22 07:42:48 0000000000000000:0000000000000000:000100CB16
+18-01-22 07:42:48 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:48 0400003200684B00:000C00020C6B0101:0210E416
+18-01-22 07:42:48 SEND: C=A8H, AFN=0C, len=32
+18-01-22 07:42:48 68A200A20068A800:000C00020C6B0101:0210420722011804:0000000000000000
+18-01-22 07:42:48 0000000000000000:000000000100CA16:
+18-01-22 07:42:48 RECV: C=4BH, AFN=0C, len=4
+18-01-22 07:42:48 0400003200684B00:000C00020C6C0101:0810EB16
+18-01-22 07:42:48 SEND: C=A8H, AFN=0C, len=32
+18-01-22 07:42:48 68A200A20068A800:000C00020C6C0101:0810420722011804:0000000000000000
+18-01-22 07:42:48 0000000000000000:000000000100D116:
+18-01-22 07:43:00 SIM¿¨¼ì²âÊ§°Ü.
+18-01-22 07:43:00 Gprs dail failed.
+18-01-22 07:43:00 Gprs Init......
+18-01-22 07:43:00 GprsGetModuleState: 10
+18-01-22 07:43:04 GPRS Module power off ok.
+18-01-22 07:43:06 GPRS module poweroff end wait 10s.
+18-01-22 07:43:42 Gprs Init......
+18-01-22 07:43:42 remote module is null.
+18-01-22 07:43:44 Gprs Init......
+18-01-22 07:43:44 remote module is null.
+18-01-22 07:43:46 Gprs Init......
+18-01-22 07:43:46 remote module is null.
+18-01-22 07:43:47 Gprs Init......
+18-01-22 07:43:47 remote module is null.
+18-01-22 07:43:50 Gprs Init......
+18-01-22 07:43:50 remote module is null.
+18-01-22 07:43:52 Gprs Init......
+18-01-22 07:43:52 remote module is null.
+18-01-22 07:43:54 Gprs Init......
+18-01-22 07:43:54 remote module is null.
+18-01-22 07:43:56 Gprs Init......
+18-01-22 07:43:56 remote module is null.
+18-01-22 07:43:58 Gprs Init......
+18-01-22 07:43:58 remote module is null.
+18-01-22 07:44:00 Gprs init failed(-1).
+18-01-22 07:44:00 SEND: C=C4H, AFN=0E, len=24
+18-01-22 07:44:00 688200820068C400:000C00000E600000:010002000001010E:4107220118013633
+18-01-22 07:44:00 3130363331306916:
+18-01-22 07:44:04 Send SMS(40): 0891683108200205F011000D91683108200205F000080028688200820068C400000C00000E600000010002000001010E41072201180136333130363331306916
+18-01-22 07:44:04 AT+CMGS=55
+18-01-22 07:44:10 Send SMS fail
+18-01-22 09:02:00 bind server.
+18-01-22 09:02:00 bind server.
+18-01-22 09:02:00 uplink channel is GPRS/CDMA ...
+18-01-22 09:02:03 uplink channel is GPRS/CDMA ...
+18-01-22 09:02:03 Gprs Init......
+18-01-22 09:02:04 bind server.
+18-01-22 09:02:21 ReadModuleInfo: 
+SIMW
+7100GWDL
+B010
+141215
+0103
+200215
+OK
+18-01-22 09:02:21 
+manuf:SIMW
+model:7100GWDL
+firmware_ver:B010
+firmware_release_date:141215
+hardware_ver:0103
+hardware_release_date:200215
+18-01-22 09:02:22 ReadModuleInfo: 
+$MYTYPE: 03,23,00
+OK
+18-01-22 09:02:34 ModuleReadIMEI: 
++CGSN: "866154025347889"
+OK
+18-01-22 09:02:34 Ä£¿éIMEI:866154025347889
+18-01-22 09:02:48 set PDU messgage mode failed.
+18-01-22 09:02:49 
+ERROR
+
+18-01-22 09:02:49 read phone number failed.
+18-01-22 09:02:51 
+ERROR
+
+18-01-22 09:02:51 read phone number failed.
+18-01-22 09:02:53 
+ERROR
+
+18-01-22 09:02:53 read phone number failed.
+18-01-22 09:02:53 Right Module Type = 7100GWDL
+18-01-22 09:02:53 Gprs restart successed.
+18-01-22 09:03:06 SIM¿¨¼ì²âÊ§°Ü.
+18-01-22 09:03:06 Gprs dail failed.
+18-01-22 09:03:06 Gprs Init......
+18-01-22 09:03:06 GprsGetModuleState: 10
+18-01-22 09:03:08 GPRS Module power off ok.
+18-01-22 09:03:11 GPRS module poweroff end wait 10s.
+18-01-22 09:03:31 find (gsmMuxd) proc.
+18-01-22 09:03:55 ReadModuleInfo: 
+SIMW
+7100GWDL
+B010
+141215
+0103
+200215
+OK
+18-01-22 09:03:55 
+manuf:SIMW
+model:7100GWDL
+firmware_ver:B010
+firmware_release_date:141215
+hardware_ver:0103
+hardware_release_date:200215
+18-01-22 09:03:56 ReadModuleInfo: 
+$MYTYPE: 03,23,00
+OK
+18-01-22 09:04:08 ModuleReadIMEI: 
++CGSN: "866154025347889"
+OK
+18-01-22 09:04:08 Ä£¿éIMEI:866154025347889
+18-01-22 09:04:22 set PDU messgage mode failed.
+18-01-22 09:04:23 
+ERROR
+
+18-01-22 09:04:23 read phone number failed.
+18-01-22 09:04:25 
+ERROR
+
+18-01-22 09:04:25 read phone number failed.
+18-01-22 09:04:27 
+ERROR
+
+18-01-22 09:04:27 read phone number failed.
+18-01-22 09:04:27 Right Module Type = 7100GWDL
+18-01-22 09:04:27 Gprs restart successed.
+18-01-22 09:04:39 SIM¿¨¼ì²âÊ§°Ü.
+18-01-22 09:04:39 Gprs dail failed.
+18-01-22 09:04:40 Gprs Init......
+18-01-22 09:04:40 GprsGetModuleState: 10
+18-01-22 09:04:41 GPRS Module power off ok.
+18-01-22 09:04:44 GPRS module poweroff end wait 10s.
+18-01-22 09:05:04 find (gsmMuxd) proc.
+18-01-22 09:05:28 ReadModuleInfo: 
+SIMW
+7100GWDL
+B010
+141215
+0103
+200215
+OK
+18-01-22 09:05:28 
+manuf:SIMW
+model:7100GWDL
+firmware_ver:B010
+firmware_release_date:141215
+hardware_ver:0103
+hardware_release_date:200215
+18-01-22 09:05:28 ReadModuleInfo: 
+$MYTYPE: 03,23,00
+OK
+18-01-22 09:05:40 ModuleReadIMEI: 
++CGSN: "866154025347889"
+OK
+18-01-22 09:05:40 Ä£¿éIMEI:866154025347889
+18-01-22 09:06:17 bind server.
+18-01-24 08:55:23 bind server.
+18-01-24 08:57:16 bind server.
+18-01-24 12:21:10 bind server.
+18-01-25 08:53:20 bind server.
+18-01-25 10:13:54 bind server.
+18-01-25 10:19:45 bind server.
+18-01-25 13:48:53 bind server.
+18-01-25 14:25:42 bind server.
+18-01-25 16:21:16 bind server.
+18-07-24 13:50:38 bind server.
+18-07-24 13:55:58 bind server.
+18-08-06 19:18:56 bind server.
+18-08-06 19:20:51 GprsGetModuleState: 1
+18-08-06 19:20:51 GPRS/CDMA init failed poweroff.
+18-08-06 19:20:52 GPRS module poweroff end wait 10s.
+18-08-06 19:23:34 bind server.
+18-08-06 19:26:09 GprsGetModuleState: 1
+18-08-06 19:26:09 GPRS/CDMA init failed poweroff.
+18-08-06 19:26:11 GPRS module poweroff end wait 10s.
+18-08-06 19:32:00 bind server.
+18-08-06 19:35:50 bind server.
+18-08-06 19:42:12 bind server.
+18-08-06 19:44:21 bind server.
+18-08-06 19:47:26 bind server.
+18-08-06 19:50:33 GprsGetModuleState: 1
+18-08-06 19:50:33 GPRS/CDMA init failed poweroff.
+18-08-06 19:50:35 GPRS module poweroff end wait 10s.
+18-08-06 19:53:20 bind server.
+18-08-06 20:09:31 bind server.
+18-08-06 20:14:16 GprsGetModuleState: 1
+18-08-06 20:14:16 GPRS/CDMA init failed poweroff.
+18-08-06 20:14:17 GPRS module poweroff end wait 10s.
+18-08-06 21:25:33 bind server.
+18-08-06 21:29:22 bind server.
+18-08-06 21:34:27 bind server.
+18-08-07 13:18:00 bind server.
+18-08-07 13:26:39 GprsGetModuleState: 1
+18-08-07 13:26:39 GPRS/CDMA init failed poweroff.
+18-08-07 13:26:41 GPRS module poweroff end wait 10s.
+18-08-07 13:32:27 GprsGetModuleState: 1
+18-08-07 13:32:27 GPRS/CDMA init failed poweroff.
+18-08-07 13:32:28 GPRS module poweroff end wait 10s.
+18-08-07 13:38:13 GprsGetModuleState: 1
+18-08-07 13:38:13 GPRS/CDMA init failed poweroff.
+18-08-07 13:38:15 GPRS module poweroff end wait 10s.
+18-08-07 13:44:01 GprsGetModuleState: 1
+18-08-07 13:44:01 GPRS/CDMA init failed poweroff.
+18-08-07 13:44:02 GPRS module poweroff end wait 10s.
+18-08-07 13:58:21 bind server.
+18-08-07 14:01:55 bind server.
+18-08-07 14:05:01 bind server.
+18-08-07 18:09:03 bind server.
+18-08-07 18:15:09 bind server.
+18-08-08 00:52:21 bind server.
+18-08-08 16:23:28 bind server.
+18-08-08 18:20:32 bind server.
+18-08-08 18:25:36 GprsGetModuleState: 1
+18-08-08 18:25:36 GPRS/CDMA init failed poweroff.
+18-08-08 18:25:38 GPRS module poweroff end wait 10s.
+18-08-08 18:30:50 GprsGetModuleState: 1
+18-08-08 18:30:50 GPRS/CDMA init failed poweroff.
+18-08-08 18:30:52 GPRS module poweroff end wait 10s.
+18-08-08 18:33:01 bind server.
+18-08-08 18:38:05 GprsGetModuleState: 1
+18-08-08 18:38:05 GPRS/CDMA init failed poweroff.
+18-08-08 18:38:06 GPRS module poweroff end wait 10s.
+18-08-08 18:42:23 bind server.
+18-08-08 18:46:39 bind server.
+18-08-09 10:19:54 bind server.
+18-08-09 16:43:48 GprsGetModuleState: 1
+18-08-09 16:43:48 GPRS/CDMA init failed poweroff.
+18-08-09 16:43:50 GPRS module poweroff end wait 10s.
+18-08-09 20:11:42 GprsGetModuleState: 1
+18-08-09 20:11:42 GPRS/CDMA init failed poweroff.
+18-08-09 20:11:43 GPRS module poweroff end wait 10s.
+18-08-09 22:27:13 GprsGetModuleState: 1
+18-08-09 22:27:13 GPRS/CDMA init failed poweroff.
+18-08-09 22:27:14 GPRS module poweroff end wait 10s.
+18-08-10 00:42:43 GprsGetModuleState: 1
+18-08-10 00:42:43 GPRS/CDMA init failed poweroff.
+18-08-10 00:42:47 GPRS module poweroff end wait 10s.
+18-08-10 02:58:18 GprsGetModuleState: 1
+18-08-10 02:58:18 GPRS/CDMA init failed poweroff.
+18-08-10 02:58:20 GPRS module poweroff end wait 10s.
+18-08-10 05:13:51 GprsGetModuleState: 1
+18-08-10 05:13:51 GPRS/CDMA init failed poweroff.
+18-08-10 05:13:53 GPRS module poweroff end wait 10s.
+18-08-10 07:29:28 GprsGetModuleState: 1
+18-08-10 07:29:28 GPRS/CDMA init failed poweroff.
+18-08-10 07:29:30 GPRS module poweroff end wait 10s.
+18-08-10 09:44:59 GprsGetModuleState: 1
+18-08-10 09:44:59 GPRS/CDMA init failed poweroff.
+18-08-10 09:45:01 GPRS module poweroff end wait 10s.
+18-08-10 10:39:36 GprsGetModuleState: 1
+18-08-10 10:39:36 GPRS/CDMA init failed poweroff.
+18-08-10 10:39:38 GPRS module poweroff end wait 10s.
+18-08-10 10:44:53 GprsGetModuleState: 1
+18-08-10 10:44:53 GPRS/CDMA init failed poweroff.
+18-08-10 10:44:54 GPRS module poweroff end wait 10s.
+18-08-10 15:01:13 GprsGetModuleState: 1
+18-08-10 15:01:13 GPRS/CDMA init failed poweroff.
+18-08-10 15:01:15 GPRS module poweroff end wait 10s.
+18-08-10 17:16:44 GprsGetModuleState: 1
+18-08-10 17:16:44 GPRS/CDMA init failed poweroff.
+18-08-10 17:16:46 GPRS module poweroff end wait 10s.
+18-08-10 19:32:15 GprsGetModuleState: 1
+18-08-10 19:32:15 GPRS/CDMA init failed poweroff.
+18-08-10 19:32:17 GPRS module poweroff end wait 10s.
+18-08-10 21:47:51 GprsGetModuleState: 1
+18-08-10 21:47:51 GPRS/CDMA init failed poweroff.
+18-08-10 21:47:52 GPRS module poweroff end wait 10s.
+18-08-11 00:03:26 GprsGetModuleState: 1
+18-08-11 00:03:26 GPRS/CDMA init failed poweroff.
+18-08-11 00:03:27 GPRS module poweroff end wait 10s.
+18-08-11 02:18:55 GprsGetModuleState: 1
+18-08-11 02:18:55 GPRS/CDMA init failed poweroff.
+18-08-11 02:18:57 GPRS module poweroff end wait 10s.
+18-08-11 04:34:27 GprsGetModuleState: 1
+18-08-11 04:34:27 GPRS/CDMA init failed poweroff.
+18-08-11 04:34:31 GPRS module poweroff end wait 10s.
+18-08-11 05:27:56 GprsGetModuleState: 1
+18-08-11 05:27:56 GPRS/CDMA init failed poweroff.
+18-08-11 05:28:01 GPRS module poweroff end wait 10s.
+18-08-11 05:33:06 GprsGetModuleState: 1
+18-08-11 05:33:06 GPRS/CDMA init failed poweroff.
+18-08-11 05:33:07 GPRS module poweroff end wait 10s.
+18-08-11 06:55:41 GprsGetModuleState: 1
+18-08-11 06:55:41 GPRS/CDMA init failed poweroff.
+18-08-11 06:55:46 GPRS module poweroff end wait 10s.
+18-08-11 09:11:14 GprsGetModuleState: 1
+18-08-11 09:11:14 GPRS/CDMA init failed poweroff.
+18-08-11 09:11:20 GPRS module poweroff end wait 10s.
+18-08-11 11:26:51 GprsGetModuleState: 1
+18-08-11 11:26:51 GPRS/CDMA init failed poweroff.
+18-08-11 11:26:53 GPRS module poweroff end wait 10s.
+18-08-11 13:42:22 GprsGetModuleState: 1
+18-08-11 13:42:22 GPRS/CDMA init failed poweroff.
+18-08-11 13:42:24 GPRS module poweroff end wait 10s.
+18-08-11 15:57:57 GprsGetModuleState: 1
+18-08-11 15:57:57 GPRS/CDMA init failed poweroff.
+18-08-11 15:57:59 GPRS module poweroff end wait 10s.
+18-08-11 18:13:26 GprsGetModuleState: 1
+18-08-11 18:13:26 GPRS/CDMA init failed poweroff.
+18-08-11 18:13:28 GPRS module poweroff end wait 10s.
+18-08-11 20:28:57 GprsGetModuleState: 1
+18-08-11 20:28:57 GPRS/CDMA init failed poweroff.
+18-08-11 20:28:59 GPRS module poweroff end wait 10s.
+18-08-11 22:09:39 GprsGetModuleState: 1
+18-08-11 22:09:39 GPRS/CDMA init failed poweroff.
+18-08-11 22:09:40 GPRS module poweroff end wait 10s.
+18-08-11 22:14:42 GprsGetModuleState: 1
+18-08-11 22:14:42 GPRS/CDMA init failed poweroff.
+18-08-11 22:14:43 GPRS module poweroff end wait 10s.
+18-08-11 22:50:11 GprsGetModuleState: 1
+18-08-11 22:50:11 GP18-08-13 16:45:55 bind server.
+18-08-13 19:03:09 GprsGetModuleState: 1
+18-08-13 19:03:09 GPRS/CDMA init failed poweroff.
+18-08-13 19:03:11 GPRS module poweroff end wait 10s.
+18-08-13 21:18:43 GprsGetModuleState: 1
+18-08-13 21:18:43 GPRS/CDMA init failed poweroff.
+18-08-13 21:18:44 GPRS module poweroff end wait 10s.
+18-08-13 23:34:13 GprsGetModuleState: 1
+18-08-13 23:34:13 GPRS/CDMA init failed poweroff.
+18-08-13 23:34:14 GPRS module poweroff end wait 10s.
+18-08-14 01:49:38 GprsGetModuleState: 1
+18-08-14 01:49:38 GPRS/CDMA init failed poweroff.
+18-08-14 01:49:40 GPRS module poweroff end wait 10s.
+18-08-14 04:05:11 GprsGetModuleState: 1
+18-08-14 04:05:11 GPRS/CDMA init failed poweroff.
+18-08-14 04:05:13 GPRS module poweroff end wait 10s.
+18-08-14 06:20:43 GprsGetModuleState: 1
+18-08-14 06:20:43 GPRS/CDMA init failed poweroff.
+18-08-14 06:20:45 GPRS module poweroff end wait 10s.
+18-08-14 08:36:15 GprsGetModuleState: 1
+18-08-14 08:36:15 GPRS/CDMA init failed poweroff.
+18-08-14 08:36:17 GPRS module poweroff end wait 10s.
+18-08-14 09:29:42 GprsGetModuleState: 1
+18-08-14 09:29:42 GPRS/CDMA init failed poweroff.
+18-08-14 09:29:43 GPRS module poweroff end wait 10s.
+18-08-14 09:34:40 GprsGetModuleState: 1
+18-08-14 09:34:40 GPRS/CDMA init failed poweroff.
+18-08-14 09:34:42 GPRS module poweroff end wait 10s.
+18-08-14 12:32:03 GprsGetModuleState: 1
+18-08-14 12:32:03 GPRS/CDMA init failed poweroff.
+18-08-14 12:32:05 GPRS module poweroff end wait 10s.
+18-08-14 19:52:22 GprsGetModuleState: 1
+18-08-14 19:52:22 GPRS/CDMA init failed poweroff.
+18-08-14 19:52:24 GPRS module poweroff end wait 10s.
+18-08-14 22:07:50 GprsGetModuleState: 1
+18-08-14 22:07:50 GPRS/CDMA init failed poweroff.
+18-08-14 22:07:55 GPRS module poweroff end wait 10s.
+18-08-15 00:23:27 GprsGetModuleState: 1
+18-08-15 00:23:27 GPRS/CDMA init failed poweroff.
+18-08-15 00:23:28 GPRS module poweroff end wait 10s.
+18-08-15 02:39:01 GprsGetModuleState: 1
+18-08-15 02:39:01 GPRS/CDMA init failed poweroff.
+18-08-15 02:39:02 GPRS module poweroff end wait 10s.
+18-08-15 04:54:29 GprsGetModuleState: 1
+18-08-15 04:54:29 GPRS/CDMA init failed poweroff.
+18-08-15 04:54:31 GPRS module poweroff end wait 10s.
+18-08-15 07:10:03 GprsGetModuleState: 1
+18-08-15 07:10:03 GPRS/CDMA init failed poweroff.
+18-08-15 07:10:04 GPRS module poweroff end wait 10s.
+18-08-15 09:25:40 GprsGetModuleState: 1
+18-08-15 09:25:40 GPRS/CDMA init failed poweroff.
+18-08-15 09:25:42 GPRS module poweroff end wait 10s.
+18-08-15 10:19:09 GprsGetModuleState: 1
+18-08-15 10:19:09 GPRS/CDMA init failed poweroff.
+18-08-15 10:19:14 GPRS module poweroff end wait 10s.
+18-08-15 10:25:00 GprsGetModuleState: 1
+18-08-15 10:25:00 GPRS/CDMA init failed poweroff.
+18-08-15 10:25:02 GPRS module poweroff end wait 10s.
+18-08-15 15:24:45 GprsGetModuleState: 1
+18-08-15 15:24:45 GPRS/CDMA init failed poweroff.
+18-08-15 15:24:46 GPRS module poweroff end wait 10s.
+18-08-15 18:29:53 GprsGetModuleState: 1
+18-08-15 18:29:53 GPRS/CDMA init failed poweroff.
+18-08-15 18:29:55 GPRS module poweroff end wait 10s.
+18-08-15 20:45:22 GprsGetModuleState: 1
+18-08-15 20:45:22 GPRS/CDMA init failed poweroff.
+18-08-15 20:45:23 GPRS module poweroff end wait 10s.
+18-08-15 23:00:58 GprsGetModuleState: 1
+18-08-15 23:00:58 GPRS/CDMA init failed poweroff.
+18-08-15 23:00:59 GPRS module poweroff end wait 10s.
+18-08-16 01:16:31 GprsGetModuleState: 1
+18-08-16 01:16:31 GPRS/CDMA init failed poweroff.
+18-08-16 01:16:36 GPRS module poweroff end wait 10s.
+18-08-16 03:31:58 GprsGetModuleState: 1
+18-08-16 03:31:58 GPRS/CDMA init failed poweroff.
+18-08-16 03:32:07 GPRS module poweroff end wait 10s.
+18-08-16 05:47:38 GprsGetModuleState: 1
+18-08-16 05:47:38 GPRS/CDMA init failed poweroff.
+18-08-16 05:47:39 GPRS module poweroff end wait 10s.
+18-08-16 21:07:20 GprsGetModuleState: 1
+18-08-16 21:07:20 GPRS/CDMA init failed poweroff.
+18-08-16 21:07:21 GPRS module poweroff end wait 10s.
+18-08-16 23:22:52 GprsGetModuleState: 1
+18-08-16 23:22:52 GPRS/CDMA init failed poweroff.
+18-08-16 23:22:58 GPRS module poweroff end wait 10s.
+18-08-17 01:38:28 GprsGetModuleState: 1
+18-08-17 01:38:28 GPRS/CDMA init failed poweroff.
+18-08-17 01:38:29 GPRS module poweroff end wait 10s.
+18-08-17 03:54:04 GprsGetModuleState: 1
+18-08-17 03:54:04 GPRS/CDMA init failed poweroff.
+18-08-17 03:54:13 GPRS module poweroff end wait 10s.
+18-08-17 06:09:37 GprsGetModuleState: 1
+18-08-17 06:09:37 GPRS/CDMA init failed poweroff.
+18-08-17 06:09:46 GPRS module poweroff end wait 10s.
+18-08-17 06:29:29 GprsGetModuleState: 1
+18-08-17 06:29:29 GPRS/CDMA init failed poweroff.
+18-08-17 06:29:31 GPRS module poweroff end wait 10s.
+18-08-17 06:34:52 GprsGetModuleState: 1
+18-08-17 06:34:52 GPRS/CDMA init failed poweroff.
+18-08-17 06:34:54 GPRS module poweroff end wait 10s.
+18-08-17 08:31:18 GprsGetModuleState: 1
+18-08-17 08:31:18 GPRS/CDMA init failed poweroff.
+18-08-17 08:31:19 GPRS module poweroff end wait 10s.
+18-08-17 11:20:41 GprsGetModuleState: 1
+18-08-17 11:20:41 GPRS/CDMA init failed poweroff.
+18-08-17 11:20:47 GPRS module poweroff end wait 10s.
+18-08-17 15:09:40 GprsGetModuleState: 1
+18-08-17 15:09:40 GPRS/CDMA init failed poweroff.
+18-08-17 15:09:41 GPRS module poweroff end wait 10s.
+18-08-17 17:25:10 GprsGetModuleState: 1
+18-08-17 17:25:10 GPRS/CDMA init failed poweroff.
+18-08-17 17:25:12 GPRS module poweroff end wait 10s.
+18-08-17 19:40:41 GprsGetModuleState: 1
+18-08-17 19:40:41 GPRS/CDMA init failed poweroff.
+18-08-17 19:40:42 GPRS module poweroff end wait 10s.
+18-08-17 21:56:13 GprsGetModuleState: 1
+18-08-17 21:56:13 GPRS/CDMA init failed poweroff.
+18-08-17 21:56:15 GPRS module poweroff end wait 10s.
+18-08-18 00:11:47 GprsGetModuleState: 1
+18-08-18 00:11:47 GPRS/CDMA init failed poweroff.
+18-08-18 00:11:48 GPRS module poweroff end wait 10s.
+18-08-18 02:27:20 GprsGetModuleState: 1
+18-08-18 02:27:20 GPRS/CDMA init failed poweroff.
+18-08-18 02:27:22 GPRS module poweroff end wait 10s.
+18-08-18 04:42:51 GprsGetModuleState: 1
+18-08-18 04:42:51 GPRS/CDMA init failed poweroff.
+18-08-18 04:42:53 GPRS module poweroff end wait 10s.
+18-08-18 05:36:19 GprsGetModuleState: 1
+18-08-18 05:36:19 GPRS/CDMA init failed poweroff.
+18-08-18 05:36:21 GPRS module poweroff end wait 10s.
+18-08-18 05:41:26 GprsGetModuleState: 1
+18-08-18 05:41:26 GPRS/CDMA init failed poweroff.
+18-08-18 05:41:27 GPRS module poweroff end wait 10s.
+18-08-18 07:04:06 GprsGetModuleState: 1
+18-08-18 07:04:06 GPRS/CDMA init failed poweroff.
+18-08-18 07:04:11 GPRS module poweroff end wait 10s.
+18-08-18 09:19:42 GprsGetModuleState: 1
+18-08-18 09:19:42 GPRS/CDMA init failed poweroff.
+18-08-18 09:19:43 GPRS module poweroff end wait 10s.
+18-08-18 11:35:13 GprsGetModuleState: 1
+18-08-18 11:35:13 GPRS/CDMA init failed poweroff.
+18-08-18 11:35:22 GPRS module poweroff end wait 10s.
+18-08-18 13:50:50 GprsGetModuleState: 1
+18-08-18 13:50:50 GPRS/CDMA init failed poweroff.
+18-08-18 13:50:52 GPRS module poweroff end wait 10s.
+18-08-18 14:38:12 bind server.
+18-08-18 18:09:05 GprsGetModuleState: 1
+18-08-18 18:09:05 GPRS/CDMA init failed poweroff.
+18-08-18 18:09:06 GPRS module poweroff end wait 10s.
+18-08-18 20:24:36 GprsGetModuleState: 1
+18-08-18 20:24:36 GPRS/CDMA init failed poweroff.
+18-08-18 20:24:38 GPRS module poweroff end wait 10s.
+18-08-18 22:40:07 GprsGetModuleState: 1
+18-08-18 22:40:07 GPRS/CDMA init failed poweroff.
+18-08-18 22:40:08 GPRS module poweroff end wait 10s.
+18-08-19 00:55:38 GprsGetModuleState: 1
+18-08-19 00:55:38 GPRS/CDMA init failed poweroff.
+18-08-19 00:55:42 GPRS module poweroff end wait 10s.
+18-08-19 03:11:12 GprsGetModuleState: 1
+18-08-19 03:11:12 GPRS/CDMA init failed poweroff.
+18-08-19 03:11:14 GPRS module poweroff end wait 10s.
+18-08-19 05:26:44 GprsGetModuleState: 1
+18-08-19 05:26:44 GPRS/CDMA init failed poweroff.
+18-08-19 05:26:45 GPRS module poweroff end wait 10s.
+18-08-19 07:42:13 GprsGetModuleState: 1
+18-08-19 07:42:13 GPRS/CDMA init failed poweroff.
+18-08-19 07:42:15 GPRS module poweroff end wait 10s.
+18-08-19 08:36:49 GprsGetModuleState: 1
+18-08-19 08:36:49 GPRS/CDMA init failed poweroff.
+18-08-19 08:36:50 GPRS module poweroff end wait 10s.
+18-08-19 08:41:58 GprsGetModuleState: 1
+18-08-19 08:41:58 GPRS/CDMA init failed poweroff.
+18-08-19 08:42:00 GPRS module poweroff end wait 10s.
+18-08-19 10:03:36 GprsGetModuleState: 1
+18-08-19 10:03:36 GPRS/CDMA init failed poweroff.
+18-08-19 10:03:37 GPRS module poweroff end wait 10s.
+18-08-19 12:19:07 GprsGetModuleState: 1
+18-08-19 12:19:07 GPRS/CDMA init failed poweroff.
+18-08-19 12:19:08 GPRS module poweroff end wait 10s.
+18-08-19 14:34:40 GprsGetModuleState: 1
+18-08-19 14:34:40 GPRS/CDMA init failed poweroff.
+18-08-19 14:34:41 GPRS module poweroff end wait 10s.
+18-08-19 16:50:11 GprsGetModuleState: 1
+18-08-19 16:50:11 GPRS/CDMA init failed poweroff.
+18-08-19 16:50:13 GPRS module poweroff end wait 10s.
+18-08-19 19:05:44 GprsGetModuleState: 1
+18-08-19 19:05:44 GPRS/CDMA init failed poweroff.
+18-08-19 19:05:46 GPRS module poweroff end wait 10s.
+18-08-19 21:21:17 GprsGetModuleState: 1
+18-08-19 21:21:17 GPRS/CDMA init failed poweroff.
+18-08-19 21:21:21 GPRS module poweroff end wait 10s.
+18-08-19 23:36:49 GprsGetModuleState: 1
+18-08-19 23:36:49 GPRS/CDMA init failed poweroff.
+18-08-19 23:36:50 GPRS module poweroff end wait 10s.
+18-08-20 01:18:37 GprsGetModuleState: 1
+18-08-20 01:18:37 GPRS/CDMA init failed poweroff.
+18-08-20 01:18:38 GPRS module poweroff end wait 10s.
+18-08-20 01:23:34 GprsGetModuleState: 1
+18-08-20 01:23:34 GPRS/CDMA init failed poweroff.
+18-08-20 01:23:36 GPRS module poweroff end wait 10s.
+18-08-20 01:57:59 GprsGetModuleState: 1
+18-08-20 01:57:59 GPRS/CDMA init failed poweroff.
+18-08-20 01:58:00 GPRS module poweroff end wait 10s.
+18-08-20 04:13:32 GprsGetModuleState: 1
+18-08-20 04:13:32 GPRS/CDMA init failed poweroff.
+18-08-20 04:13:32 GPRS module poweroff end wait 10s.
+18-08-20 06:29:06 GprsGetModuleState: 1
+18-08-20 06:29:06 GPRS/CDMA init failed poweroff.
+18-08-20 06:29:07 GPRS module poweroff end wait 10s.
+18-08-20 08:44:31 GprsGetModuleState: 1
+18-08-20 08:44:31 GPRS/CDMA init failed poweroff.
+18-08-20 08:44:37 GPRS module poweroff end wait 10s.
+18-08-20 11:00:08 GprsGetModuleState: 1
+18-08-20 11:00:08 GPRS/CDMA init failed poweroff.
+18-08-20 11:00:10 GPRS module poweroff end wait 10s.
+18-08-20 21:07:52 GprsGetModuleState: 1
+18-08-20 21:07:52 GPRS/CDMA init failed poweroff.
+18-08-20 21:07:54 GPRS module poweroff end wait 10s.
+18-08-20 23:38:08 GprsGetModuleState: 1
+18-08-20 23:38:08 GPRS/CDMA init failed poweroff.
+18-08-20 23:38:10 GPRS module poweroff end wait 10s.
+18-08-21 01:53:38 GprsGetModuleState: 1
+18-08-21 01:53:38 GPRS/CDMA init failed poweroff.
+18-08-21 01:53:39 GPRS module poweroff end wait 10s.
+18-08-21 04:09:07 GprsGetModuleState: 1
+18-08-21 04:09:07 GPRS/CDMA init failed poweroff.
+18-08-21 04:09:09 GPRS module poweroff end wait 10s.
+18-08-21 08:56:39 GprsGetModuleState: 1
+18-08-21 08:56:39 GPRS/CDMA init failed poweroff.
+18-08-21 08:56:41 GPRS module poweroff end wait 10s.
+18-08-21 11:35:50 GprsGetModuleState: 1
+18-08-21 11:35:50 GP18-09-13 09:04:01 bind server.
+18-09-13 11:53:49 GprsGetModuleState: 1
+18-09-13 11:53:49 GPRS/CDMA init failed poweroff.
+18-09-13 11:53:50 GPRS module poweroff end wait 10s.
+18-09-13 16:53:52 GprsGetModuleState: 1
+18-09-13 16:53:52 GPRS/CDMA init failed poweroff.
+18-09-13 16:53:53 GPRS module poweroff end wait 10s.
+18-09-13 19:59:17 GprsGetModuleState: 1
+18-09-13 19:59:17 GPRS/CDMA init failed poweroff.
+18-09-13 19:59:19 GPRS module poweroff end wait 10s.
+18-09-13 22:38:25 GprsGetModuleState: 1
+18-09-13 22:38:25 GPRS/CDMA init failed poweroff.
+18-09-13 22:38:26 GPRS module poweroff end wait 10s.
+18-09-14 01:10:54 GprsGetModuleState: 1
+18-09-14 01:10:54 GPRS/CDMA init failed poweroff.
+18-09-14 01:10:55 GPRS module poweroff end wait 10s.
+18-09-14 03:26:25 GprsGetModuleState: 1
+18-09-14 03:26:25 GPRS/CDMA init failed poweroff.
+18-09-14 03:26:26 GPRS module poweroff end wait 10s.
+18-09-14 07:28:55 GprsGetModuleState: 1
+18-09-14 07:28:55 GPRS/CDMA init failed poweroff.
+18-09-14 07:28:57 GPRS module poweroff end wait 10s.
+18-09-14 13:01:07 GprsGetModuleState: 1
+18-09-14 13:01:07 GPRS/CDMA init failed poweroff.
+18-09-14 13:01:09 GPRS module poweroff end wait 10s.
+18-09-14 16:55:59 GprsGetModuleState: 1
+18-09-14 16:55:59 GPRS/CDMA init failed poweroff.
+18-09-14 16:56:01 GPRS module poweroff end wait 10s.
+18-09-14 19:11:30 GprsGetModuleState: 1
+18-09-14 19:11:30 GPRS/CDMA init failed poweroff.
+18-09-14 19:11:32 GPRS module poweroff end wait 10s.
+18-09-14 21:27:00 GprsGetModuleState: 1
+18-09-14 21:27:00 GPRS/CDMA init failed poweroff.
+18-09-14 21:27:02 GPRS module poweroff end wait 10s.
+18-09-14 23:42:34 GprsGetModuleState: 1
+18-09-14 23:42:34 GPRS/CDMA init failed poweroff.
+18-09-14 23:42:35 GPRS module poweroff end wait 10s.
+18-09-15 01:58:05 GprsGetModuleState: 1
+18-09-15 01:58:05 GPRS/CDMA init failed poweroff.
+18-09-15 01:58:07 GPRS module poweroff end wait 10s.
+18-09-15 04:13:35 GprsGetModuleState: 1
+18-09-15 04:13:35 GPRS/CDMA init failed poweroff.
+18-09-15 04:13:37 GPRS module poweroff end wait 10s.
+18-09-15 06:29:07 GprsGetModuleState: 1
+18-09-15 06:29:07 GPRS/CDMA init failed poweroff.
+18-09-15 06:29:08 GPRS module poweroff end wait 10s.
+18-09-15 08:44:38 GprsGetModuleState: 1
+18-09-15 08:44:38 GPRS/CDMA init failed poweroff.
+18-09-15 08:44:40 GPRS module poweroff end wait 10s.
+18-09-15 11:00:12 GprsGetModuleState: 1
+18-09-15 11:00:12 GPRS/CDMA init failed poweroff.
+18-09-15 11:00:14 GPRS module poweroff end wait 10s.
+18-09-15 13:15:40 GprsGetModuleState: 1
+18-09-15 13:15:40 GPRS/CDMA init failed poweroff.
+18-09-15 13:15:42 GPRS module poweroff end wait 10s.
+18-09-15 15:31:10 GprsGetModuleState: 1
+18-09-15 15:31:10 GPRS/CDMA init failed poweroff.
+18-09-15 15:31:12 GPRS module poweroff end wait 10s.
+18-09-15 17:46:44 GprsGetModuleState: 1
+18-09-15 17:46:44 GPRS/CDMA init failed poweroff.
+18-09-15 17:46:46 GPRS module poweroff end wait 10s.
+18-09-15 20:02:17 GprsGetModuleState: 1
+18-09-15 20:02:17 GPRS/CDMA init failed poweroff.
+18-09-15 20:02:18 GPRS module poweroff end wait 10s.
+18-09-15 22:17:47 GprsGetModuleState: 1
+18-09-15 22:17:47 GPRS/CDMA init failed poweroff.
+18-09-15 22:17:49 GPRS module poweroff end wait 10s.
+18-09-16 00:33:18 GprsGetModuleState: 1
+18-09-16 00:33:18 GPRS/CDMA init failed poweroff.
+18-09-16 00:33:19 GPRS module poweroff end wait 10s.
+18-09-16 02:48:52 GprsGetModuleState: 1
+18-09-16 02:48:52 GPRS/CDMA init failed poweroff.
+18-09-16 02:48:53 GPRS module poweroff end wait 10s.
+18-09-16 05:04:24 GprsGetModuleState: 1
+18-09-16 05:04:24 GPRS/CDMA init failed poweroff.
+18-09-16 05:04:26 GPRS module poweroff end wait 10s.
+18-09-16 07:19:55 GprsGetModuleState: 1
+18-09-16 07:19:55 GPRS/CDMA init failed poweroff.
+18-09-16 07:19:57 GPRS module poweroff end wait 10s.
+18-09-16 09:35:24 GprsGetModuleState: 1
+18-09-16 09:35:24 GPRS/CDMA init failed poweroff.
+18-09-16 09:35:26 GPRS module poweroff end wait 10s.
+18-09-16 11:50:54 GprsGetModuleState: 1
+18-09-16 11:50:54 GPRS/CDMA init failed poweroff.
+18-09-16 11:50:55 GPRS module poweroff end wait 10s.
+18-09-16 14:06:24 GprsGetModuleState: 1
+18-09-16 14:06:24 GPRS/CDMA init failed poweroff.
+18-09-16 14:06:25 GPRS module poweroff end wait 10s.
+18-09-16 16:21:53 GprsGetModuleState: 1
+18-09-16 16:21:53 GPRS/CDMA init failed poweroff.
+18-09-16 16:21:55 GPRS module poweroff end wait 10s.
+18-09-16 18:37:24 GprsGetModuleState: 1
+18-09-16 18:37:24 GPRS/CDMA init failed poweroff.
+18-09-16 18:37:26 GPRS module poweroff end wait 10s.
+18-09-16 20:52:57 GprsGetModuleState: 1
+18-09-16 20:52:57 GPRS/CDMA init failed poweroff.
+18-09-16 20:52:58 GPRS module poweroff end wait 10s.
+18-09-16 23:08:29 GprsGetModuleState: 1
+18-09-16 23:08:29 GPRS/CDMA init failed poweroff.
+18-09-16 23:08:30 GPRS module poweroff end wait 10s.
+18-09-17 01:24:01 GprsGetModuleState: 1
+18-09-17 01:24:01 GPRS/CDMA init failed poweroff.
+18-09-17 01:24:03 GPRS module poweroff end wait 10s.
+18-09-17 03:39:29 GprsGetModuleState: 1
+18-09-17 03:39:29 GPRS/CDMA init failed poweroff.
+18-09-17 03:39:30 GPRS module poweroff end wait 10s.
+18-09-17 05:54:59 GprsGetModuleState: 1
+18-09-17 05:54:59 GPRS/CDMA init failed poweroff.
+18-09-17 05:55:01 GPRS module poweroff end wait 10s.
+18-09-17 08:10:29 GprsGetModuleState: 1
+18-09-17 08:10:29 GPRS/CDMA init failed poweroff.
+18-09-17 08:10:30 GPRS module poweroff end wait 10s.
+18-09-17 10:25:55 GprsGetModuleState: 1
+18-09-17 10:25:55 GPRS/CDMA init failed poweroff.
+18-09-17 10:25:56 GPRS module poweroff end wait 10s.
+18-09-17 12:50:23 GprsGetModuleState: 1
+18-09-17 12:50:23 GPRS/CDMA init failed poweroff.
+18-09-17 12:50:25 GPRS module poweroff end wait 10s.
+18-09-17 15:05:53 GprsGetModuleState: 1
+18-09-17 15:05:53 GPRS/CDMA init failed poweroff.
+18-09-17 15:05:55 GPRS module poweroff end wait 10s.
+18-09-17 17:21:30 GprsGetModuleState: 1
+18-09-17 17:21:30 GPRS/CDMA init failed poweroff.
+18-09-17 17:21:31 GPRS module poweroff end wait 10s.
+18-09-17 19:37:04 GprsGetModuleState: 1
+18-09-17 19:37:04 GPRS/CDMA init failed poweroff.
+18-09-17 19:37:06 GPRS module poweroff end wait 10s.
+18-09-17 21:52:30 GprsGetModuleState: 1
+18-09-17 21:52:30 GPRS/CDMA init failed poweroff.
+18-09-17 21:52:31 GPRS module poweroff end wait 10s.
+18-09-18 00:08:00 GprsGetModuleState: 1
+18-09-18 00:08:00 GPRS/CDMA init failed poweroff.
+18-09-18 00:08:01 GPRS module poweroff end wait 10s.
+18-09-18 02:23:31 GprsGetModuleState: 1
+18-09-18 02:23:31 GPRS/CDMA init failed poweroff.
+18-09-18 02:23:32 GPRS module poweroff end wait 10s.
+18-09-18 04:38:58 GprsGetModuleState: 1
+18-09-18 04:38:58 GPRS/CDMA init failed poweroff.
+18-09-18 04:38:59 GPRS module poweroff end wait 10s.
+18-09-18 06:54:30 GprsGetModuleState: 1
+18-09-18 06:54:30 GPRS/CDMA init failed poweroff.
+18-09-18 06:54:32 GPRS module poweroff end wait 10s.
+18-09-18 09:50:24 GprsGetModuleState: 1
+18-09-18 09:50:24 GPRS/CDMA init failed poweroff.
+18-09-18 09:50:26 GPRS module poweroff end wait 10s.
+18-09-18 12:05:58 GprsGetModuleState: 1
+18-09-18 12:05:58 GPRS/CDMA init failed poweroff.
+18-09-18 12:05:59 GPRS module poweroff end wait 10s.
+18-09-18 14:21:30 GprsGetModuleState: 1
+18-09-18 14:21:30 GPRS/CDMA init failed poweroff.
+18-09-18 14:21:32 GPRS module poweroff end wait 10s.
+18-09-18 16:36:57 GprsGetModuleState: 1
+18-09-18 16:36:57 GPRS/CDMA init failed poweroff.
+18-09-18 16:36:59 GPRS module poweroff end wait 10s.
+18-09-18 18:52:30 GprsGetModuleState: 1
+18-09-18 18:52:30 GPRS/CDMA init failed poweroff.
+18-09-18 18:52:32 GPRS module poweroff end wait 10s.
+18-09-18 21:08:01 GprsGetModuleState: 1
+18-09-18 21:08:01 GPRS/CDMA init failed poweroff.
+18-09-18 21:08:02 GPRS module poweroff end wait 10s.
+18-09-18 23:23:31 GprsGetModuleState: 1
+18-09-18 23:23:31 GPRS/CDMA init failed poweroff.
+18-09-18 23:23:32 GPRS module poweroff end wait 10s.
+18-09-19 01:39:03 GprsGetModuleState: 1
+18-09-19 01:39:03 GPRS/CDMA init failed poweroff.
+18-09-19 01:39:04 GPRS module poweroff end wait 10s.
+18-09-19 03:54:29 GprsGetModuleState: 1
+18-09-19 03:54:29 GPRS/CDMA init failed poweroff.
+18-09-19 03:54:31 GPRS module poweroff end wait 10s.
+18-09-19 06:09:58 GprsGetModuleState: 1
+18-09-19 06:09:58 GPRS/CDMA init failed poweroff.
+18-09-19 06:09:59 GPRS module poweroff end wait 10s.
+18-09-19 08:25:29 GprsGetModuleState: 1
+18-09-19 08:25:29 GPRS/CDMA init failed poweroff.
+18-09-19 08:25:31 GPRS module poweroff end wait 10s.
+18-09-19 10:40:58 GprsGetModuleState: 1
+18-09-19 10:40:58 GPRS/CDMA init failed poweroff.
+18-09-19 10:40:59 GPRS module poweroff end wait 10s.
+18-09-19 15:00:03 GprsGetModuleState: 1
+18-09-19 15:00:03 GPRS/CDMA init failed poweroff.
+18-09-19 15:00:05 GPRS module poweroff end wait 10s.
+18-09-19 17:15:35 GprsGetModuleState: 1
+18-09-19 17:15:35 GPRS/CDMA init failed poweroff.
+18-09-19 17:15:36 GPRS module poweroff end wait 10s.
+18-09-19 19:31:04 GprsGetModuleState: 1
+18-09-19 19:31:04 GPRS/CDMA init failed poweroff.
+18-09-19 19:31:06 GPRS module poweroff end wait 10s.
+18-09-19 21:46:33 GprsGetModuleState: 1
+18-09-19 21:46:33 GPRS/CDMA init failed poweroff.
+18-09-19 21:46:35 GPRS module poweroff end wait 10s.
+18-09-20 00:02:08 GprsGetModuleState: 1
+18-09-20 00:02:08 GPRS/CDMA init failed poweroff.
+18-09-20 00:02:10 GPRS module poweroff end wait 10s.
+18-09-20 02:17:37 GprsGetModuleState: 1
+18-09-20 02:17:37 GPRS/CDMA init failed poweroff.
+18-09-20 02:17:39 GPRS module poweroff end wait 10s.
+18-09-20 04:33:07 GprsGetModuleState: 1
+18-09-20 04:33:07 GPRS/CDMA init failed poweroff.
+18-09-20 04:33:09 GPRS module poweroff end wait 10s.
+18-09-20 06:48:41 GprsGetModuleState: 1
+18-09-20 06:48:41 GPRS/CDMA init failed poweroff.
+18-09-20 06:48:43 GPRS module poweroff end wait 10s.
+18-09-20 09:04:13 GprsGetModuleState: 1
+18-09-20 09:04:13 GPRS/CDMA init failed poweroff.
+18-09-20 09:04:15 GPRS module poweroff end wait 10s.
+18-09-20 13:14:18 GprsGetModuleState: 1
+18-09-20 13:14:18 GPRS/CDMA init failed poweroff.
+18-09-20 13:14:19 GPRS module poweroff end wait 10s.
+18-09-20 15:29:50 GprsGetModuleState: 1
+18-09-20 15:29:50 GPRS/CDMA init failed poweroff.
+18-09-20 15:29:51 GPRS module poweroff end wait 10s.
+18-09-20 17:45:21 GprsGetModuleState: 1
+18-09-20 17:45:21 GPRS/CDMA init failed poweroff.
+18-09-20 17:45:23 GPRS module poweroff end wait 10s.
+18-09-20 17:50:36 GprsGetModuleState: 1
+18-09-20 17:50:36 GPRS/CDMA init failed poweroff.
+18-09-20 17:50:37 GPRS module poweroff end wait 10s.
+18-09-20 20:06:07 GprsGetModuleState: 1
+18-09-20 20:06:07 GPRS/CDMA init failed poweroff.
+18-09-20 20:06:08 GPRS module poweroff end wait 10s.
+18-09-20 22:21:36 GprsGetModuleState: 1
+18-09-20 22:21:36 GPRS/CDMA init failed poweroff.
+18-09-20 22:21:37 GPRS module poweroff end wait 10s.
+18-09-21 00:37:05 GprsGetModuleState: 1
+18-09-21 00:37:05 GPRS/CDMA init failed poweroff.
+18-09-21 00:37:06 GPRS module poweroff end wait 10s.
+18-09-21 02:52:36 GprsGetModuleState: 1
+18-09-21 02:52:36 GPRS/CDMA init failed poweroff.
+18-09-21 02:52:38 GPRS module poweroff end wait 10s.
+18-09-21 05:08:01 GprsGetModuleState: 1
+18-09-21 05:08:01 GPRS/CDMA init failed poweroff.
+18-09-21 05:08:02 GPRS module poweroff end wait 10s.
+18-09-21 07:23:33 GprsGetModuleState: 1
+18-09-21 07:23:33 GPRS/CDMA init failed poweroff.
+18-09-21 07:23:35 GPRS module poweroff end wait 10s.
+18-09-21 09:39:02 GprsGetModuleState: 1
+18-09-21 09:39:02 GPRS/CDMA init failed poweroff.
+18-09-21 09:39:04 GPRS module poweroff end wait 10s.
+18-09-21 11:54:31 GprsGetModuleState: 1
+18-09-21 11:54:31 GPRS/CDMA init failed poweroff.
+18-09-21 11:54:32 GPRS module poweroff end wait 10s.
+18-09-21 14:09:59 GprsGetModuleState: 1
+18-09-21 14:09:59 GPRS/CDMA init failed poweroff.
+18-09-21 14:10:01 GPRS module poweroff end wait 10s.
+18-09-21 16:25:32 GprsGetModuleState: 1
+18-09-21 16:25:32 GPRS/CDMA init failed poweroff.
+18-09-21 16:25:33 GPRS module poweroff end wait 10s.
+18-09-21 19:03:33 GprsGetModuleState: 1
+18-09-21 19:03:33 GPRS/CDMA init failed poweroff.
+18-09-21 19:03:34 GPRS module poweroff end wait 10s.
+18-09-21 21:19:07 GprsGetModuleState: 1
+18-09-21 21:19:07 GPRS/CDMA init failed poweroff.
+18-09-21 21:19:09 GPRS module poweroff end wait 10s.
+18-09-21 23:34:44 GprsGetModuleState: 1
+18-09-21 23:34:44 GPRS/CDMA init failed poweroff.
+18-09-21 23:34:46 GPRS module poweroff end wait 10s.
+18-09-22 01:50:14 GprsGetModuleState: 1
+18-09-22 01:50:14 GPRS/CDMA init failed poweroff.
+18-09-22 01:50:16 GPRS module poweroff end wait 10s.
+18-09-22 04:05:47 GprsGetModuleState: 1
+18-09-22 04:05:47 GPRS/CDMA init failed poweroff.
+18-09-22 04:05:49 GPRS module poweroff end wait 10s.
+18-09-22 06:21:18 GprsGetModuleState: 1
+18-09-22 06:21:18 GPRS/CDMA init failed poweroff.
+18-09-22 06:21:20 GPRS module poweroff end wait 10s.
+18-09-22 08:36:52 GprsGetModuleState: 1
+18-09-22 08:36:52 GPRS/CDMA init failed poweroff.
+18-09-22 08:36:54 GPRS module poweroff end wait 10s.
+18-09-22 10:52:23 GprsGetModuleState: 1
+18-09-22 10:52:23 GPRS/CDMA init failed poweroff.
+18-09-22 10:52:25 GPRS module poweroff end wait 10s.
+18-09-22 13:07:55 GprsGetModuleState: 1
+18-09-22 13:07:55 GPRS/CDMA init failed poweroff.
+18-09-22 13:07:56 GPRS module poweroff end wait 10s.
+18-09-22 15:23:27 GprsGetModuleState: 1
+18-09-22 15:23:27 GPRS/CDMA init failed poweroff.
+18-09-22 15:23:29 GPRS module poweroff end wait 10s.
+18-09-22 17:38:57 GprsGetModuleState: 1
+18-09-22 17:38:57 GPRS/CDMA init failed poweroff.
+18-09-22 17:38:59 GPRS module poweroff end wait 10s.
+18-09-22 19:54:27 GprsGetModuleState: 1
+18-09-22 19:54:27 GPRS/CDMA init failed poweroff.
+18-09-22 19:54:28 GPRS module poweroff end wait 10s.
+18-09-22 22:09:58 GprsGetModuleState: 1
+18-09-22 22:09:58 GPRS/CDMA init failed poweroff.
+18-09-22 22:10:00 GPRS module poweroff end wait 10s.
+18-09-23 00:25:31 GprsGetModuleState: 1
+18-09-23 00:25:31 GPRS/CDMA init failed poweroff.
+18-09-23 00:25:32 GPRS module poweroff end wait 10s.
+18-09-23 02:41:02 GprsGetModuleState: 1
+18-09-23 02:41:02 GPRS/CDMA init failed poweroff.
+18-09-23 02:41:04 GPRS module poweroff end wait 10s.
+18-09-23 04:56:34 GprsGetModuleState: 1
+18-09-23 04:56:34 GPRS/CDMA init failed poweroff.
+18-09-23 04:56:35 GPRS module poweroff end wait 10s.
+18-09-23 07:12:03 GprsGetModuleState: 1
+18-09-23 07:12:03 GPRS/CDMA init failed poweroff.
+18-09-23 07:12:04 GPRS module poweroff end wait 10s.
+18-09-23 09:27:34 GprsGetModuleState: 1
+18-09-23 09:27:34 GPRS/CDMA init failed poweroff.
+18-09-23 09:27:36 GPRS module poweroff end wait 10s.
+18-09-23 11:43:03 GprsGetModuleState: 1
+18-09-23 11:43:03 GPRS/CDMA init failed poweroff.
+18-09-23 11:43:05 GPRS module poweroff end wait 10s.
+18-09-23 13:58:31 GprsGetModuleState: 1
+18-09-23 13:58:31 GPRS/CDMA init failed poweroff.
+18-09-23 13:58:32 GPRS module poweroff end wait 10s.
+18-09-23 16:14:02 GprsGetModuleState: 1
+18-09-23 16:14:02 GPRS/CDMA init failed poweroff.
+18-09-23 16:14:03 GPRS module poweroff end wait 10s.
+18-09-23 18:29:36 GprsGetModuleState: 1
+18-09-23 18:29:36 GPRS/CDMA init failed poweroff.
+18-09-23 18:29:37 GPRS module poweroff end wait 10s.
+18-09-23 20:45:01 GprsGetModuleState: 1
+18-09-23 20:45:01 GPRS/CDMA init failed poweroff.
+18-09-23 20:45:03 GPRS module poweroff end wait 10s.
+18-09-23 23:00:33 GprsGetModuleState: 1
+18-09-23 23:00:33 GPRS/CDMA init failed poweroff.
+18-09-23 23:00:35 GPRS module poweroff end wait 10s.
+18-09-24 01:16:03 GprsGetModuleState: 1
+18-09-24 01:16:03 GPRS/CDMA init failed poweroff.
+18-09-24 01:16:04 GPRS module poweroff end wait 10s.
+18-09-24 03:31:33 GprsGetModuleState: 1
+18-09-24 03:31:33 GPRS/CDMA init failed poweroff.
+18-09-24 03:31:35 GPRS module poweroff end wait 10s.
+18-09-24 05:47:05 GprsGetModuleState: 1
+18-09-24 05:47:05 GPRS/CDMA init failed poweroff.
+18-09-24 05:47:06 GPRS module poweroff end wait 10s.
+18-09-24 08:02:35 GprsGetModuleState: 1
+18-09-24 08:02:35 GPRS/CDMA init failed poweroff.
+18-09-24 08:02:36 GPRS module poweroff end wait 10s.
+18-09-24 10:18:10 GprsGetModuleState: 1
+18-09-24 10:18:10 GPRS/CDMA init failed poweroff.
+18-09-24 10:18:12 GPRS module poweroff end wait 10s.
+18-09-24 12:33:40 GprsGetModuleState: 1
+18-09-24 12:33:40 GPRS/CDMA init failed poweroff.
+18-09-24 12:33:42 GPRS module poweroff end wait 10s.
+18-09-24 14:49:11 GprsGetModuleState: 1
+18-09-24 14:49:11 GPRS/CDMA init failed poweroff.
+18-09-24 14:49:13 GPRS module poweroff end wait 10s.
+18-09-24 17:04:40 GprsGetModuleState: 1
+18-09-24 17:04:40 GPRS/CDMA init failed poweroff.
+18-09-24 17:04:42 GPRS module poweroff end wait 10s.
+18-09-24 19:20:08 GprsGetModuleState: 1
+18-09-24 19:20:08 GPRS/CDMA init failed poweroff.
+18-09-24 19:20:09 GPRS module poweroff end wait 10s.
+18-09-24 21:35:41 GprsGetModuleState: 1
+18-09-24 21:35:41 GPRS/CDMA init failed poweroff.
+18-09-24 21:35:43 GPRS module poweroff end wait 10s.
+18-09-24 23:51:10 GprsGetModuleState: 1
+18-09-24 23:51:10 GPRS/CDMA init failed poweroff.
+18-09-24 23:51:12 GPRS module poweroff end wait 10s.
+18-09-25 02:06:42 GprsGetModuleState: 1
+18-09-25 02:06:42 GPRS/CDMA init failed poweroff.
+18-09-25 02:06:44 GPRS module poweroff end wait 10s.
+18-09-25 04:22:13 GprsGetModuleState: 1
+18-09-25 04:22:13 GPRS/CDMA init failed poweroff.
+18-09-25 04:22:15 GPRS module poweroff end wait 10s.
+18-09-25 06:37:46 GprsGetModuleState: 1
+18-09-25 06:37:46 GPRS/CDMA init failed poweroff.
+18-09-25 06:37:47 GPRS module poweroff end wait 10s.
+18-09-25 08:53:18 GprsGetModuleState: 1
+18-09-25 08:53:18 GPRS/CDMA init failed poweroff.
+18-09-25 08:53:20 GPRS module poweroff end wait 10s.
+18-09-25 11:42:30 GprsGetModuleState: 1
+18-09-25 11:42:30 GPRS/CDMA init failed poweroff.
+18-09-25 11:42:31 GPRS module poweroff end wait 10s.
+18-09-25 13:57:58 GprsGetModuleState: 1
+18-09-25 13:57:58 GPRS/CDMA init failed poweroff.
+18-09-25 13:57:59 GPRS module poweroff end wait 10s.
+18-09-25 16:13:27 GprsGetModuleState: 1
+18-09-25 16:13:27 GPRS/CDMA init failed poweroff.
+18-09-25 16:13:28 GPRS module poweroff end wait 10s.
+18-09-25 18:28:55 GprsGetModuleState: 1
+18-09-25 18:28:55 GPRS/CDMA init failed poweroff.
+18-09-25 18:28:57 GPRS module poweroff end wait 10s.
+18-09-25 20:44:31 GprsGetModuleState: 1
+18-09-25 20:44:31 GPRS/CDMA init failed poweroff.
+18-09-25 20:44:33 GPRS module poweroff end wait 10s.
+18-09-25 22:59:58 GprsGetModuleState: 1
+18-09-25 22:59:58 GPRS/CDMA init failed poweroff.
+18-09-25 23:00:00 GPRS module poweroff end wait 10s.
+18-09-26 01:15:26 GprsGetModuleState: 1
+18-09-26 01:15:26 GPRS/CDMA init failed poweroff.
+18-09-26 01:15:27 GPRS module poweroff end wait 10s.
+18-09-26 03:30:53 GprsGetModuleState: 1
+18-09-26 03:30:53 GPRS/CDMA init failed poweroff.
+18-09-26 03:30:55 GPRS module poweroff end wait 10s.
+18-09-26 05:46:25 GprsGetModuleState: 1
+18-09-26 05:46:25 GPRS/CDMA init failed poweroff.
+18-09-26 05:46:27 GPRS module poweroff end wait 10s.
+18-09-26 08:01:55 GprsGetModuleState: 1
+18-09-26 08:01:55 GPRS/CDMA init failed poweroff.
+18-09-26 08:01:57 GPRS module poweroff end wait 10s.
+18-09-26 10:17:26 GprsGetModuleState: 1
+18-09-26 10:17:26 GPRS/CDMA init failed poweroff.
+18-09-26 10:17:28 GPRS module poweroff end wait 10s.
+18-09-26 12:32:56 GprsGetModuleState: 1
+18-09-26 12:32:56 GPRS/CDMA init failed poweroff.
+18-09-26 12:32:57 GPRS module poweroff end wait 10s.
+18-09-26 14:48:28 GprsGetModuleState: 1
+18-09-26 14:48:28 GPRS/CDMA init failed poweroff.
+18-09-26 14:48:29 GPRS module poweroff end wait 10s.
+18-09-26 17:03:59 GprsGetModuleState: 1
+18-09-26 17:03:59 GPRS/CDMA init failed poweroff.
+18-09-26 17:04:00 GPRS module poweroff end wait 10s.
+18-09-26 19:19:32 GprsGetModuleState: 1
+18-09-26 19:19:32 GPRS/CDMA init failed poweroff.
+18-09-26 19:19:33 GPRS module poweroff end wait 10s.
+18-09-26 21:14:55 GprsGetModuleState: 1
+18-09-26 21:14:55 GPRS/CDMA init failed poweroff.
+18-09-26 21:14:57 GPRS module poweroff end wait 10s.
+18-09-26 21:40:17 GprsGetModuleState: 1
+18-09-26 21:40:17 GPRS/CDMA init failed poweroff.
+18-09-26 21:40:18 GPRS module poweroff end wait 10s.
+18-09-26 23:55:50 GprsGetModuleState: 1
+18-09-26 23:55:50 GPRS/CDMA init failed poweroff.
+18-09-26 23:55:51 GPRS module poweroff end wait 10s.
+18-09-27 02:11:19 GprsGetModuleState: 1
+18-09-27 02:11:19 GPRS/CDMA init failed poweroff.
+18-09-27 02:11:21 GPRS module poweroff end wait 10s.
+18-09-27 04:26:53 GprsGetModuleState: 1
+18-09-27 04:26:53 GPRS/CDMA init failed poweroff.
+18-09-27 04:26:55 GPRS module poweroff end wait 10s.
+18-09-27 06:42:24 GprsGetModuleState: 1
+18-09-27 06:42:24 GPRS/CDMA init failed poweroff.
+18-09-27 06:42:26 GPRS module poweroff end wait 10s.
+18-09-27 08:57:57 GprsGetModuleState: 1
+18-09-27 08:57:57 GPRS/CDMA init failed poweroff.
+18-09-27 08:57:59 GPRS module poweroff end wait 10s.18-09-29 07:58:46 bind server.
+18-09-29 07:59:41 bind server.
+18-09-29 08:00:36 bind server.
+18-09-29 08:01:32 bind server.
+18-09-29 08:02:27 bind server.
+18-09-29 08:03:23 bind server.
+18-09-29 08:04:18 bind server.
+18-09-29 08:05:14 bind server.
+18-09-29 08:06:09 bind server.
+18-09-29 08:07:05 bind server.
+18-09-29 08:08:00 bind server.

@@ -9,6 +9,8 @@ import {
 } from "mdbreact";
 import axios from "axios";
 import BillingModal from "./BillingModal";
+import LoadProfile from "./LoadProfileModal";
+import "./Settings.css";
 
 /* const data = {
   columns: [
@@ -58,29 +60,37 @@ export class List extends Component {
     super();
     this.state = {
       data: null,
-      modal: false,
+      modalBilling: false,
+      modalProfile: false,
       currentMeter: null
     };
   }
-  handleRowClick = item => {
-    //e.preventDefault();
+  handleBilling = item => {
     this.setState({
-      modal: true,
+      modalBilling: true,
+      currentMeter: item
+    });
+  };
+
+  handleProfile = item => {
+    this.setState({
+      modalProfile: true,
       currentMeter: item
     });
   };
 
   modalState = () => {
     this.setState({
-      modal: false
+      modalBilling: false,
+      modalProfile: false
     });
   };
 
   componentDidMount() {
     axios
-      .get("api/txt")
+      .get("api/meterslist")
       .then(res => {
-        const datule = res.data.map((item, id) => {
+        const parsedData = res.data.map((item, id) => {
           let obj = {};
           obj.name = item.name;
           obj.mac =
@@ -110,12 +120,14 @@ export class List extends Component {
                   Stats
                 </MDBDropdownToggle>
                 <MDBDropdownMenu basic color="info">
-                  <MDBDropdownItem onClick={() => this.handleRowClick(item)}>
+                  <MDBDropdownItem onClick={() => this.handleBilling(item)}>
                     Billing
                   </MDBDropdownItem>
-                  <MDBDropdownItem onClick={() => this.modalState()}>
-                    Load Profile
-                  </MDBDropdownItem>
+                  {item.profile ? (
+                    <MDBDropdownItem onClick={() => this.handleProfile(item)}>
+                      Load Profile
+                    </MDBDropdownItem>
+                  ) : null}
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBBtnGroup>
@@ -127,9 +139,9 @@ export class List extends Component {
     ,<MDBBtn color="purple" onClick={() => this.handleRowClick(item.name)} outline size="sm">Billing</MDBBtn>]
  */
 
-        //console.log(res)
-        datule.shift();
-        this.setState({ data: { columns, rows: datule } });
+        //console.log(res);
+        parsedData.shift();
+        this.setState({ data: { columns, rows: parsedData } });
       })
       .catch(err => console.log(err));
   }
@@ -148,6 +160,7 @@ export class List extends Component {
           data={this.state.data}
           entries={9}
           entriesOptions={[5, 10, 15, 100]}
+          className="meter-table"
         />
       </div>
     ) : (
@@ -157,8 +170,15 @@ export class List extends Component {
     );
     return (
       <div style={{ padding: "50px" }}>
-        {this.state.modal ? (
+        {this.state.modalBilling ? (
           <BillingModal
+            modal={this.modalState}
+            meter={this.state.currentMeter}
+          />
+        ) : null}
+
+        {this.state.modalProfile ? (
+          <LoadProfile
             modal={this.modalState}
             meter={this.state.currentMeter}
           />

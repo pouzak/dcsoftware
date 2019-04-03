@@ -5,18 +5,18 @@
 			<mac_id>C0:94:A2:F6:15:20</mac_id>
 			<mac_id>C8:97:A2:E6:15:21</mac_id>
 		</blacklist>
-		<datasummary>listas hourly load, daily load monthly billing, daily billing</datasummary>
+		<datasummary></datasummary>
 		<meters_statistics>
 			<statistics database="db/db.sqlite"></statistics>
 		</meters_statistics>
 		<topology>
 			<log status="enabled"></log>
-listas, meter, mac, sapid, isconnected, level		</topology>
+		</topology>
 	</prime_network>
 	<settings>
 		<date_time>
 			<datetime>2028-06-07T15:46</datetime>
-			<sync bool="true"></sync>
+			<sync bool="false"></sync>
 		</date_time>
 		<dcu_configuration>
 			<id>5913434</id>
@@ -26,11 +26,11 @@ listas, meter, mac, sapid, isconnected, level		</topology>
 		</dcu_configuration>
 		<ethernet>
 			<default_gateway>212.212.1000</default_gateway>
-			<dns value1="AUTO" value2="Manual">AUTO</dns>
+			<dns value1="AUTO" value2="Manual">Manual</dns>
 			<dns_server>192.168.1.13</dns_server>
 			<dns_server2>192.168.0.2</dns_server2>
 			<ethernet_type value1="DHCP" value2="Static IP" value3="disabled">disabled</ethernet_type>
-			<ip_address>192.168.0.01</ip_address>
+			<ip_address>192.168.0.02</ip_address>
 			<subnet_mask>255.255.255.1</subnet_mask>
 		</ethernet>
 		<modem>
