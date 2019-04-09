@@ -22,15 +22,15 @@
 			<id>5913434</id>
 			<model>DC12</model>
 			<year>2018-01-01</year>
-			<communication_protocol value1="PRIME" value2="G3">G3</communication_protocol>
+			<communication_protocol value1="PRIME" value2="G3">PRIME</communication_protocol>
 		</dcu_configuration>
 		<ethernet>
 			<default_gateway>212.212.1000</default_gateway>
-			<dns value1="AUTO" value2="Manual">Manual</dns>
+			<dns value1="AUTO" value2="Manual">AUTO</dns>
 			<dns_server>192.168.1.13</dns_server>
 			<dns_server2>192.168.0.2</dns_server2>
-			<ethernet_type value1="DHCP" value2="Static IP" value3="disabled">disabled</ethernet_type>
-			<ip_address>192.168.0.02</ip_address>
+			<ethernet_type value1="DHCP" value2="Static IP" value3="disabled">Static IP</ethernet_type>
+			<ip_address>192.168.0.122</ip_address>
 			<subnet_mask>255.255.255.1</subnet_mask>
 		</ethernet>
 		<modem>

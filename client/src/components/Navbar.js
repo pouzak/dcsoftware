@@ -99,7 +99,7 @@ export class Navbar extends Component {
               <div className="content-wrapper">DCU Statistics</div>
             </Link>
             <Link to="/plcstats">
-              <div className="content-wrapper not">PLC Statistics</div>
+              <div className="content-wrapper">PLC Statistics</div>
             </Link>
             <Link to="/connection">
               <div className="content-wrapper not">Connection Statistics</div>

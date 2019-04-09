@@ -1,0 +1,149 @@
+Tue Oct  2 09:22:06 2018 [pid 583] CONNECT: Client "213.197.144.250"
+Tue Oct  2 09:22:08 2018 [pid 582] [root] OK LOGIN: Client "213.197.144.250"
+Tue Oct  2 10:54:58 2018 [pid 4565] CONNECT: Client "213.197.144.250"
+Tue Oct  2 10:54:58 2018 [pid 4564] [root] OK LOGIN: Client "213.197.144.250"
+Tue Oct  2 10:55:31 2018 [pid 4566] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 194.38Kbyte/sec
+Tue Oct  2 10:55:32 2018 [pid 4566] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.44Kbyte/sec
+Tue Oct  2 10:55:33 2018 [pid 4566] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 294 bytes, 1.39Kbyte/sec
+Tue Oct  2 13:32:15 2018 [pid 11260] CONNECT: Client "213.197.144.250"
+Tue Oct  2 13:32:16 2018 [pid 11259] [root] OK LOGIN: Client "213.197.144.250"
+Tue Oct  2 16:49:54 2018 [pid 11263] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 183.99Kbyte/sec
+Tue Oct  2 16:49:55 2018 [pid 11263] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.36Kbyte/sec
+Tue Oct  2 16:49:58 2018 [pid 11263] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 588 bytes, 0.18Kbyte/sec
+Tue Oct  2 20:49:23 2018 [pid 29877] CONNECT: Client "213.197.144.250"
+Tue Oct  2 20:49:24 2018 [pid 29876] [root] OK LOGIN: Client "213.197.144.250"
+Tue Oct  2 20:49:57 2018 [pid 29904] CONNECT: Client "213.197.144.250"
+Tue Oct  2 20:49:58 2018 [pid 29903] [root] OK LOGIN: Client "213.197.144.250"
+Tue Oct  2 20:50:30 2018 [pid 29905] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 85.08Kbyte/sec
+Tue Oct  2 20:50:30 2018 [pid 29905] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.28Kbyte/sec
+Tue Oct  2 20:50:31 2018 [pid 29905] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 1960 bytes, 8.06Kbyte/sec
+Wed Oct  3 09:12:17 2018 [pid 29088] CONNECT: Client "213.197.144.250"
+Wed Oct  3 09:12:18 2018 [pid 29087] [root] OK LOGIN: Client "213.197.144.250"
+Wed Oct  3 09:12:36 2018 [pid 29089] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 129.44Kbyte/sec
+Wed Oct  3 09:12:36 2018 [pid 29089] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.47Kbyte/sec
+Wed Oct  3 09:12:37 2018 [pid 29089] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 1372 bytes, 6.35Kbyte/sec
+Wed Oct  3 16:22:29 2018 [pid 14978] CONNECT: Client "213.197.144.250"
+Wed Oct  3 16:22:30 2018 [pid 14977] [root] OK LOGIN: Client "213.197.144.250"
+Wed Oct  3 16:22:52 2018 [pid 14981] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 1372 bytes, 3.75Kbyte/sec
+Wed Oct  3 19:17:39 2018 [pid 22470] CONNECT: Client "213.197.144.250"
+Wed Oct  3 19:17:40 2018 [pid 22469] [root] OK LOGIN: Client "213.197.144.250"
+Wed Oct  3 21:13:40 2018 [pid 27434] CONNECT: Client "213.197.144.250"
+Wed Oct  3 21:13:42 2018 [pid 27433] [root] OK LOGIN: Client "213.197.144.250"
+Thu Oct  4 09:35:30 2018 [pid 26592] CONNECT: Client "213.197.144.250"
+Thu Oct  4 09:35:31 2018 [pid 26591] [root] OK LOGIN: Client "213.197.144.250"
+Thu Oct  4 09:36:18 2018 [pid 26595] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 143.49Kbyte/sec
+Thu Oct  4 09:36:19 2018 [pid 26595] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.43Kbyte/sec
+Thu Oct  4 09:36:37 2018 [pid 26595] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 588 bytes, 0.24Kbyte/sec
+Thu Oct  4 18:14:36 2018 [pid 16313] CONNECT: Client "213.197.144.250"
+Thu Oct  4 18:14:37 2018 [pid 16312] [root] OK LOGIN: Client "213.197.144.250"
+Thu Oct  4 18:15:03 2018 [pid 16316] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 127.69Kbyte/sec
+Thu Oct  4 18:15:04 2018 [pid 16316] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.42Kbyte/sec
+Thu Oct  4 18:15:14 2018 [pid 16316] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 1294 bytes, 1.04Kbyte/sec
+Thu Oct  4 18:15:49 2018 [pid 16316] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 1274 bytes, 0.76Kbyte/sec
+Thu Oct  4 18:57:24 2018 [pid 18134] CONNECT: Client "213.197.144.250"
+Thu Oct  4 18:57:24 2018 [pid 18133] [root] OK LOGIN: Client "213.197.144.250"
+Thu Oct  4 22:07:27 2018 [pid 26220] CONNECT: Client "213.197.144.250"
+Thu Oct  4 22:07:28 2018 [pid 26219] [root] OK LOGIN: Client "213.197.144.250"
+Thu Oct  4 22:08:04 2018 [pid 26221] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 129.40Kbyte/sec
+Thu Oct  4 22:08:05 2018 [pid 26221] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.33Kbyte/sec
+Thu Oct  4 22:08:16 2018 [pid 26221] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 1274 bytes, 0.74Kbyte/sec
+Fri Oct  5 09:34:46 2018 [pid 23079] CONNECT: Client "213.197.144.250"
+Fri Oct  5 09:34:46 2018 [pid 23078] [root] OK LOGIN: Client "213.197.144.250"
+Fri Oct  5 09:43:30 2018 [pid 23080] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update.hex", 470188 bytes, 127.55Kbyte/sec
+Fri Oct  5 09:43:31 2018 [pid 23080] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_config.ini", 120 bytes, 0.38Kbyte/sec
+Fri Oct  5 09:43:41 2018 [pid 23080] [root] OK UPLOAD: Client "213.197.144.250", "/tmp/work/app/IMG/MTR/1B4Rv34q_0601S403GR__update_meterlist.ini", 980 bytes, 0.90Kbyte/sec
+Fri Oct  5 10:43:43 2018 [pid 26013] CONNECT: Client "213.197.144.250"
+Fri Oct  5 10:44:13 2018 [pid 26035] CONNECT: Client "213.197.144.250"
+Fri Oct  5 10:44:55 2018 [pid 26070] CONNECT: Client "213.197.144.250"
+Fri Oct  5 10:44:55 2018 [pid 26067] [root] OK LOGIN: Client "213.197.144.250"
+Fri Oct  5 10:46:42 2018 [pid 26071] [root] FAIL DOWNLOAD: Client "213.197.144.250", "/dev/ptmx", 0.00Kbyte/sec
+Fri Oct  5 10:48:23 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/tmppart.txt", 238 bytes, 0.98Kbyte/sec
+Fri Oct  5 10:49:30 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/disk.db", 1677312 bytes, 103.62Kbyte/sec
+Fri Oct  5 10:50:39 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255", 57 bytes, 0.27Kbyte/sec
+Fri Oct  5 10:50:40 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__00_05_00", 81 bytes, 0.28Kbyte/sec
+Fri Oct  5 10:50:40 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__05_57_15", 81 bytes, 0.70Kbyte/sec
+Fri Oct  5 10:50:41 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__06_00_00", 75 bytes, 0.42Kbyte/sec
+Fri Oct  5 10:50:41 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__06_07_57", 77 bytes, 0.47Kbyte/sec
+Fri Oct  5 10:50:42 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__08_03_15", 77 bytes, 0.61Kbyte/sec
+Fri Oct  5 10:50:43 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__10_04_57", 77 bytes, 0.37Kbyte/sec
+Fri Oct  5 10:50:43 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__12_06_08", 77 bytes, 1.05Kbyte/sec
+Fri Oct  5 10:50:43 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__14_02_26", 77 bytes, 0.37Kbyte/sec
+Fri Oct  5 10:50:44 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__16_04_04", 77 bytes, 0.46Kbyte/sec
+Fri Oct  5 10:50:44 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__18_05_51", 76 bytes, 0.43Kbyte/sec
+Fri Oct  5 10:50:45 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__20_03_47", 74 bytes, 8.37Kbyte/sec
+Fri Oct  5 10:50:45 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_09_30__22_14_00", 74 bytes, 0.71Kbyte/sec
+Fri Oct  5 10:50:46 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_10_01__00_02_35", 74 bytes, 0.55Kbyte/sec
+Fri Oct  5 10:50:46 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_2018_10_01__09_22_30", 80 bytes, 0.68Kbyte/sec
+Fri Oct  5 10:50:47 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__00_05_00", 14426 bytes, 29.96Kbyte/sec
+Fri Oct  5 10:50:48 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__05_57_15", 15409 bytes, 31.11Kbyte/sec
+Fri Oct  5 10:50:48 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__06_07_57", 509 bytes, 1.89Kbyte/sec
+Fri Oct  5 10:50:49 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__08_03_15", 461 bytes, 2.41Kbyte/sec
+Fri Oct  5 10:50:49 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__10_04_57", 461 bytes, 54.98Kbyte/sec
+Fri Oct  5 10:50:50 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__12_06_08", 461 bytes, 4.23Kbyte/sec
+Fri Oct  5 10:50:50 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__14_02_26", 461 bytes, 3.36Kbyte/sec
+Fri Oct  5 10:50:51 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__16_04_04", 461 bytes, 4.54Kbyte/sec
+Fri Oct  5 10:50:51 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__18_05_51", 462 bytes, 6.37Kbyte/sec
+Fri Oct  5 10:50:52 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__20_03_47", 415 bytes, 1.69Kbyte/sec
+Fri Oct  5 10:50:52 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_09_30__22_14_00", 415 bytes, 2.05Kbyte/sec
+Fri Oct  5 10:50:52 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_10_01__00_02_35", 415 bytes, 10.98Kbyte/sec
+Fri Oct  5 10:50:53 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/0_0_98_1_0_255_data/0_0_98_1_0_255_comp_2018_10_01__09_22_30", 15097 bytes, 35.12Kbyte/sec
+Fri Oct  5 10:51:05 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__07_00_00", 79 bytes, 0.27Kbyte/sec
+Fri Oct  5 10:51:06 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__08_00_00", 79 bytes, 0.22Kbyte/sec
+Fri Oct  5 10:51:06 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__09_00_00", 79 bytes, 0.48Kbyte/sec
+Fri Oct  5 10:51:07 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__10_00_00", 78 bytes, 0.32Kbyte/sec
+Fri Oct  5 10:51:07 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__11_00_00", 78 bytes, 0.48Kbyte/sec
+Fri Oct  5 10:51:07 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__12_00_00", 79 bytes, 0.92Kbyte/sec
+Fri Oct  5 10:51:08 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__13_00_00", 79 bytes, 0.48Kbyte/sec
+Fri Oct  5 10:51:08 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__14_00_00", 78 bytes, 0.54Kbyte/sec
+Fri Oct  5 10:51:09 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__15_00_00", 78 bytes, 0.29Kbyte/sec
+Fri Oct  5 10:51:09 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__16_00_01", 78 bytes, 0.37Kbyte/sec
+Fri Oct  5 10:51:10 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__17_00_00", 79 bytes, 0.16Kbyte/sec
+Fri Oct  5 10:51:11 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__18_00_00", 78 bytes, 0.65Kbyte/sec
+Fri Oct  5 10:51:11 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__19_00_00", 78 bytes, 0.80Kbyte/sec
+Fri Oct  5 10:51:11 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__20_00_00", 78 bytes, 0.42Kbyte/sec
+Fri Oct  5 10:51:12 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__21_00_00", 78 bytes, 0.98Kbyte/sec
+Fri Oct  5 10:51:12 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__22_00_00", 78 bytes, 0.42Kbyte/sec
+Fri Oct  5 10:51:13 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_09_30__23_00_00", 78 bytes, 0.23Kbyte/sec
+Fri Oct  5 10:51:13 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_10_01__00_00_00", 78 bytes, 0.93Kbyte/sec
+Fri Oct  5 10:51:14 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_2018_10_01__00_05_00", 76 bytes, 0.26Kbyte/sec
+Fri Oct  5 10:51:14 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__07_00_00", 1577 bytes, 7.93Kbyte/sec
+Fri Oct  5 10:51:15 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__08_00_00", 1494 bytes, 4.73Kbyte/sec
+Fri Oct  5 10:51:15 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__09_00_00", 1344 bytes, 5.00Kbyte/sec
+Fri Oct  5 10:51:16 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__10_00_00", 1156 bytes, 4.01Kbyte/sec
+Fri Oct  5 10:51:16 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__11_00_00", 1350 bytes, 10.88Kbyte/sec
+Fri Oct  5 10:51:17 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__12_00_00", 1263 bytes, 3.03Kbyte/sec
+Fri Oct  5 10:51:17 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__13_00_00", 1224 bytes, 4.65Kbyte/sec
+Fri Oct  5 10:51:18 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__14_00_00", 1128 bytes, 6.18Kbyte/sec
+Fri Oct  5 10:51:18 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__15_00_00", 988 bytes, 5.71Kbyte/sec
+Fri Oct  5 10:51:19 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__16_00_01", 1506 bytes, 10.67Kbyte/sec
+Fri Oct  5 10:51:20 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__17_00_00", 1557 bytes, 6.79Kbyte/sec
+Fri Oct  5 10:51:20 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__18_00_00", 1129 bytes, 95.08Kbyte/sec
+Fri Oct  5 10:51:20 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__19_00_00", 1084 bytes, 6.50Kbyte/sec
+Fri Oct  5 10:51:21 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__20_00_00", 2204 bytes, 8.59Kbyte/sec
+Fri Oct  5 10:51:21 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__21_00_00", 2955 bytes, 10.72Kbyte/sec
+Fri Oct  5 10:51:22 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__22_00_00", 2532 bytes, 6.38Kbyte/sec
+Fri Oct  5 10:51:23 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_09_30__23_00_00", 1921 bytes, 9.75Kbyte/sec
+Fri Oct  5 10:51:23 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_10_01__00_00_00", 2485 bytes, 18.17Kbyte/sec
+Fri Oct  5 10:51:24 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/1_0_99_1_0_255_data/1_0_99_1_0_255_comp_2018_10_01__00_05_00", 323 bytes, 2.02Kbyte/sec
+Fri Oct  5 10:51:38 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/acmet/battime.bin", 28 bytes, 0.15Kbyte/sec
+Fri Oct  5 10:51:42 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/acmet/energyflat@0.dat", 1304 bytes, 5.81Kbyte/sec
+Fri Oct  5 10:53:01 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/1log_PLCMetering.txt", 690316 bytes, 103.11Kbyte/sec
+Fri Oct  5 10:53:08 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_acmet0.log", 131490 bytes, 42.17Kbyte/sec
+Fri Oct  5 10:53:16 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_acmet1.log", 263324 bytes, 46.42Kbyte/sec
+Fri Oct  5 10:53:22 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_acmet2.log", 263516 bytes, 117.81Kbyte/sec
+Fri Oct  5 10:53:29 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_acmet3.log", 264096 bytes, 45.43Kbyte/sec
+Fri Oct  5 10:53:31 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_down4850.log", 1140 bytes, 19.34Kbyte/sec
+Fri Oct  5 10:53:35 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_downlink0.log", 3577 bytes, 13.57Kbyte/sec
+Fri Oct  5 10:53:37 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_plat0.log", 18199 bytes, 36.85Kbyte/sec
+Fri Oct  5 10:53:41 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_sys0.log", 264035 bytes, 130.61Kbyte/sec
+Fri Oct  5 10:53:44 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_sys1.log", 126976 bytes, 104.61Kbyte/sec
+Fri Oct  5 10:53:50 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_sys2.log", 263733 bytes, 68.06Kbyte/sec
+Fri Oct  5 10:53:57 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_sys3.log", 262987 bytes, 50.80Kbyte/sec
+Fri Oct  5 10:54:06 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/debug_uplink0.log", 48484 bytes, 27.70Kbyte/sec
+Fri Oct  5 10:54:12 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/log_PLCMetering.txt", 367442 bytes, 87.90Kbyte/sec
+Fri Oct  5 10:54:14 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/MIB_INFO_FILE.txt", 25239 bytes, 40.91Kbyte/sec
+Fri Oct  5 10:54:17 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/NETWORK_MAP_FILE.txt", 14639 bytes, 13.79Kbyte/sec
+Fri Oct  5 10:54:19 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/PIB_FILE.txt", 1253 bytes, 11.55Kbyte/sec
+Fri Oct  5 10:54:22 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/ReadTimeStatistics.txt", 27954 bytes, 20.21Kbyte/sec
+Fri Oct  5 10:54:25 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/tmp/work/data/log/STATISTICS.txt", 8657 bytes, 26.58Kbyte/sec
+Fri Oct  5 10:55:56 2018 [pid 26071] [root] OK DOWNLOAD: Client "213.197.144.250", "/var/log/messages", 7704 bytes, 6.40Kbyte/sec

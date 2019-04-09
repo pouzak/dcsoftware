@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+.plc-table td {
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+  /* line-height: 10px; */
+}
 .set-main {
   padding-top: 8%;
   /*  border: 2px solid red; */
@@ -40,6 +44,24 @@
   padding: 0 20%;
 }
 
+.stats-input {
+  display: flex;
+  padding-bottom: 2rem;
+}
+.stats-input .custom-select {
+  width: 150px;
+}
+
+.arrow-up {
+  position: fixed;
+  top: 80vh;
+  padding: 0;
+  right: 8vh;
+}
+
+.plc-root {
+  margin-top: 4rem;
+}
 @media screen and (max-width: 1366px) {
   .profile-container {
     padding: 0 100px;

@@ -196,6 +196,73 @@ def proifileLoad():
             res.append(obj)
     con.close()
     return (jsonify(res), 200)
+
+
+
+#plc stats
+# @app.route('/api/plcstats', methods=['POST'])
+# def plcstats():
+#     lines = [line.rstrip('\n') for line in open('data/log_PLCMetering.txt')]
+#     lines.reverse()
+#     count = request.args.get('count')
+#     start = request.args.get('start')
+#     print(start, int(count+start))
+#     return (jsonify(lines[int(start):int(count)+int(start)]))
+    
+@app.route('/api/plclog', methods=['POST'])
+def plcstats():
+    lines = [line.rstrip('\n') for line in open('data/log_PLCMetering.txt')]
+    lines.reverse()
+    if(request.args.get('count')):
+        count = request.args.get('count')
+        start = request.args.get('start')
+        return (jsonify(lines[int(start):int(count)+int(start)]))
+    elif(request.args.get('search')):
+        res = []
+        searchText = request.args.get('search')
+        limit = request.args.get('limit')
+        for line in lines:
+            result = line.lower().find(searchText.lower())
+            if(result > 0):
+                res.append(line)
+        return (jsonify(res[0:int(limit)]))
+    
+@app.route('/api/commlog', methods=['POST'])
+def communication():
+    lines = [line.rstrip('\n') for line in open('data/MIB_INFO_FILE.txt')]
+    lines.reverse()
+    if(request.args.get('count')):
+        count = request.args.get('count')
+        start = request.args.get('start')
+        return (jsonify(lines[int(start):int(count)+int(start)]))
+    elif(request.args.get('search')):
+        res = []
+        searchText = request.args.get('search')
+        limit = request.args.get('limit')
+        for line in lines:
+            result = line.lower().find(searchText.lower())
+            if(result > 0):
+                res.append(line)
+        return (jsonify(res[0:int(limit)]))
+
+    
+@app.route('/api/fwlog', methods=['POST'])
+def fwupdatelog():
+    lines = [line.rstrip('\n') for line in open('data/vsftpd.log')]
+    lines.reverse()
+    if(request.args.get('count')):
+        count = request.args.get('count')
+        start = request.args.get('start')
+        return (jsonify(lines[int(start):int(count)+int(start)]))
+    elif(request.args.get('search')):
+        res = []
+        searchText = request.args.get('search')
+        limit = request.args.get('limit')
+        for line in lines:
+            result = line.lower().find(searchText.lower())
+            if(result > 0):
+                res.append(line)
+        return (jsonify(res[0:int(limit)]))
     
 
 #debug app.run(debug=True)

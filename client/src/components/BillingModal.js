@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MDBBtn, MDBModal, MDBModalBody } from "mdbreact";
+import { MDBModal, MDBModalBody } from "mdbreact";
 import axios from "axios";
 import Chart from "./BillingChart";
 import { ReactComponent as ClearSVG } from "./icons/clear.svg";
