@@ -11,7 +11,6 @@ class BillingChart extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
     const names = [
       "id",
       "clock",

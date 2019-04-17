@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as YourSvg } from "./icons/home.svg";
 import { MDBAnimation } from "mdbreact";
+import { dcdata } from "../Context";
 
 const Content = posed.div({
   closed: { height: 0 },
@@ -32,6 +33,20 @@ export class Navbar extends Component {
               </div>
             </Link>
           </MDBAnimation>
+          {this.props.context.myList.length > 0 ? (
+            <MDBAnimation type="fadeIn">
+              <h2
+                className="title"
+                onClick={() =>
+                  this.setState({ open: open === "list" ? false : "list" })
+                }
+              >
+                <Link to="/mylist">
+                  My List [{this.props.context.myList.length}]
+                </Link>
+              </h2>
+            </MDBAnimation>
+          ) : null}
 
           <h2
             className="title"
@@ -95,11 +110,11 @@ export class Navbar extends Component {
             className="content"
             pose={open === "stats" ? "open" : "closed"}
           >
-            <Link to="/dcustats">
-              <div className="content-wrapper">DCU Statistics</div>
-            </Link>
             <Link to="/plcstats">
               <div className="content-wrapper">PLC Statistics</div>
+            </Link>
+            <Link to="/dcustats">
+              <div className="content-wrapper">DCU Statistics</div>
             </Link>
             <Link to="/connection">
               <div className="content-wrapper not">Connection Statistics</div>
@@ -151,7 +166,7 @@ export class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default dcdata(Navbar);
 
 /* <Fragment>
 <h1>Accordian demo</h1>

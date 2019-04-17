@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MDBContainer } from "mdbreact";
-import axios from "axios";
+//import axios from "axios";
 import "./Settings.css";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";

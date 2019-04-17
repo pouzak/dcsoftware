@@ -12,6 +12,7 @@ import Page404 from "./components/Page404";
 import DCU_cfg from "./components/DCU_cfg";
 import dcuStats from "./components/dcuStats";
 import PLCStats from "./components/PLCStats";
+import MyList from "./components/MyList";
 
 class App extends Component {
   state = {
@@ -49,7 +50,6 @@ class App extends Component {
 } */
 
   render() {
-    console.log(this.state.height);
     return (
       <Provider>
         <BrowserRouter>
@@ -75,6 +75,7 @@ class App extends Component {
                     <Route exact path="/dcuconfig" component={DCU_cfg} />
                     <Route exact path="/dcustats" component={dcuStats} />
                     <Route exact path="/plcstats" component={PLCStats} />
+                    <Route exact path="/mylist" component={MyList} />
                     <Route component={Page404} />
                   </Switch>
                 </MDBCol>

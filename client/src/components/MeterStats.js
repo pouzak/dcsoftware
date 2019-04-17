@@ -11,6 +11,7 @@ import axios from "axios";
 import BillingModal from "./BillingModal";
 import LoadProfile from "./LoadProfileModal";
 import "./Settings.css";
+import { dcdata } from "../Context";
 
 /* const data = {
   columns: [
@@ -128,10 +129,16 @@ export class List extends Component {
                       Load Profile
                     </MDBDropdownItem>
                   ) : null}
+                  <MDBDropdownItem
+                    onClick={() => this.props.context.handleMyList(item)}
+                  >
+                    Add To List
+                  </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBBtnGroup>
           ];
+
           return obj;
         });
 
@@ -147,7 +154,7 @@ export class List extends Component {
   }
 
   render() {
-    //console.log(data)
+    //console.log(this.props);
     const table = this.state.data ? (
       <div style={{ padding: "3%" }}>
         <MDBDataTable
@@ -156,6 +163,8 @@ export class List extends Component {
           bordered
           hover
           small
+          responsiveSm
+          entriesLabel="Show entries"
           //data={this.state.data}
           data={this.state.data}
           entries={9}
@@ -189,4 +198,10 @@ export class List extends Component {
   }
 }
 
-export default List;
+export default dcdata(List);
+
+// obj.name = (
+//   <p onClick={() => this.props.context.handleMyList(item)}>
+//     {item.name}
+//   </p>
+// );

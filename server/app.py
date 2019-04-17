@@ -263,6 +263,46 @@ def fwupdatelog():
             if(result > 0):
                 res.append(line)
         return (jsonify(res[0:int(limit)]))
+
+
+#mylist item
+
+@app.route('/api/listitem', methods=['POST'])
+def getlistiteminfo():
+    data = request.data
+    dataDict = json.loads(data)
+    meterName = dataDict['name']
+    result = {}
+
+    #search
+    plclog = [line.rstrip('\n') for line in open('data/log_PLCMetering.txt')]
+    plclog.reverse()
+    plcres = []
+    for item in plclog:
+        res = item.lower().find(meterName.lower())
+        if(res > 0):
+            plcres.append(item)
+
+    commlog = [line.rstrip('\n') for line in open('data/MIB_INFO_FILE.txt')]
+    commlog.reverse()
+    commres = []
+    for item in commlog:
+        res = item.lower().find(meterName.lower())
+        if(res > 0):
+            commres.append(item)
+
+    fwlog = [line.rstrip('\n') for line in open('data/vsftpd.log')]
+    fwres = []
+    for item in fwlog:
+        res = item.lower().find(meterName.lower())
+        if(res > 0):
+            fwres.append(item)
+
+    result['plc'] = plcres
+    result['comm'] = commres
+    result['fw'] = fwres
+    return (jsonify(result))
+
     
 
 #debug app.run(debug=True)
