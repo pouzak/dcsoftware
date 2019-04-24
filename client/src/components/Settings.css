@@ -51,6 +51,21 @@
 .stats-input .custom-select {
   width: 150px;
 }
+#modal-style {
+  width: 80%;
+  top: 1%;
+  left: 10%;
+  /* invisible scroll */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#modal-style::-webkit-scrollbar {
+  /* invisible scroll */
+  width: 0;
+  height: 0;
+}
 
 .arrow-up {
   position: fixed;
@@ -66,7 +81,21 @@
   box-shadow: 0px 2px 2px rgba(20, 20, 20, 0.2);
 }
 .exp-item {
-  padding-right: 3rem;
+  padding-right: 6rem;
+}
+.exp-item-name {
+  padding-right: 1rem;
+  opacity: 0.5;
+}
+.list-del {
+  border: 2px solid red;
+}
+.delete-ico {
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.delete-ico:hover {
+  transform: scale(1.3);
 }
 @media screen and (max-width: 1366px) {
   .profile-container {

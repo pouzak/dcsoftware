@@ -189,7 +189,7 @@ def proifileLoad():
         rows = cur.fetchall()
         for row in rows:
             obj = {}
-            obj['clock'] = struct.unpack('llh0l', row[1])
+            obj['clock'] = ["2018-????", '????', '????']
             obj['status'] = row[2]
             obj['sumt'] = row[3]/10000
             obj['avg'] = row[7]/10000

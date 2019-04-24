@@ -52,10 +52,31 @@ export class Provider extends Component {
     const find = this.state.myList.find(it => it.name === item.name);
 
     if (!find) {
+      const d = new Date();
+      var datestring =
+        d.getFullYear() +
+        "-" +
+        (d.getMonth() + 1) +
+        "-" +
+        d.getDate() +
+        ", " +
+        d.getHours() +
+        ":" +
+        d.getMinutes();
+      item.date = datestring;
       this.setState({
         myList: [...this.state.myList, item]
       });
     }
+  };
+
+  deleteFromList = name => {
+    const newList = this.state.myList.filter(item => {
+      return item.name !== name;
+    });
+    this.setState({
+      myList: newList
+    });
   };
 
   render() {
@@ -67,7 +88,8 @@ export class Provider extends Component {
           handleInput: this.handleInputChange,
           checkbox: this.handleCheckbox,
           handleMyList: this.handleMyList,
-          myList: this.state.myList
+          myList: this.state.myList,
+          deleteFromList: this.deleteFromList
         }}
       >
         {this.props.children}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import axios from "axios";
 
 class BillingChart extends Component {
   constructor(props) {
@@ -11,19 +12,20 @@ class BillingChart extends Component {
   }
 
   componentDidMount() {
-    //console.log(this.props);
+    axios
+      .post("api/loadprofile", this.props.meter)
+      .then(res => {
+        let clock = [];
+        let total = [];
+        let avg = [];
 
-    let clock = [];
-    let total = [];
-    let avg = [];
+        res.data.map(item => {
+          clock.push(String(item.clock[0]));
+          total.push(item.sumt);
+          avg.push(item.avg);
+        });
 
-    this.props.meter.map(item => {
-      clock.push(String(item.clock[0]));
-      total.push(item.sumt);
-      avg.push(item.avg);
-    });
-
-    /*  var i;
+        /*  var i;
     for (i = 0; i < ids.length; i++) {
       let obj = {};
       obj.name = names[i];
@@ -31,47 +33,46 @@ class BillingChart extends Component {
       res.push(obj);
     } */
 
-    this.setState({
-      options: {
-        stroke: {
-          width: [0, 4]
-        },
-        title: {
-          text: "Profile Load"
-        },
-        labels: clock,
+        this.setState({
+          options: {
+            stroke: {
+              width: [0, 4]
+            },
 
-        yaxis: [
-          {
-            title: {
-              text: "Total Energy +A SumT"
-            }
+            labels: clock,
+
+            yaxis: [
+              {
+                title: {
+                  text: "Total Energy +A SumT"
+                }
+              },
+              {
+                opposite: true,
+                title: {
+                  text: "Avg. Currrent Period Power +P"
+                }
+              }
+            ]
           },
-          {
-            opposite: true,
-            title: {
-              text: "Avg. Currrent Period Power +P"
+          series: [
+            {
+              name: "Total Energy +A SumT",
+              type: "area",
+              data: total
+            },
+            {
+              name: "Avg. Currrent Period Power +P",
+              type: "line",
+              data: avg
             }
-          }
-        ]
-      },
-      series: [
-        {
-          name: "Total Energy +A SumT",
-          type: "area",
-          data: total
-        },
-        {
-          name: "Avg. Currrent Period Power +P",
-          type: "line",
-          data: avg
-        }
-      ]
-    });
+          ]
+        });
+      })
+      .catch(err => console.log(err));
   }
 
   render() {
-    console.log(this.props);
     return (
       <div id="chart">
         {this.state.series ? (
