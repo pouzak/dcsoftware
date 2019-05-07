@@ -13,6 +13,8 @@ import DCU_cfg from "./components/DCU_cfg";
 import dcuStats from "./components/dcuStats";
 import PLCStats from "./components/PLCStats";
 import MyList from "./components/MyList";
+import BlackList from "./components/BlackList";
+import Toster from "./components/Toster";
 
 class App extends Component {
   state = {
@@ -35,26 +37,13 @@ class App extends Component {
     window.addEventListener("resize", () => this.updateWindowDimensions());
   }
 
-  /* componentDidMount(){
-  axios
-  .get('http://localhost:5000/cfg')
-  .then(function (response) {
-    console.log(response.data);
-    this.setState({
-      data: response.data
-    })
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-} */
-
   render() {
     return (
       <Provider>
         <BrowserRouter>
           <div className="App">
             <div className="gradient">
+              <Toster />
               <MDBRow className="dash">
                 {this.state.width > 1000 ? (
                   <MDBCol className="nav-container" size="2">
@@ -76,6 +65,7 @@ class App extends Component {
                     <Route exact path="/dcustats" component={dcuStats} />
                     <Route exact path="/plcstats" component={PLCStats} />
                     <Route exact path="/mylist" component={MyList} />
+                    <Route exact path="/blacklist" component={BlackList} />
                     <Route component={Page404} />
                   </Switch>
                 </MDBCol>

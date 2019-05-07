@@ -4,6 +4,7 @@ import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
 import "./Settings.css";
 import Fab from "@material-ui/core/Fab";
+import { MDBAnimation } from "mdbreact";
 
 export class Log_PLC extends Component {
   state = {

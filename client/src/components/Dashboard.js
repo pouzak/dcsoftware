@@ -26,7 +26,7 @@ class Test extends Component {
         <MDBRow>
           <MDBCol className="dashboard">
             <h3 className="dash-title display-4">Data Concentrator DC12 </h3>
-            <h3 className="welcome">Welcome to DC12 dashboard v.0.1.</h3>
+            <h3 className="welcome">Welcome to DC12 dashboard v.0.2</h3>
             <p className="lead">Current DCU Stats:</p>
             <p>Memory Usage: {memory} MB</p>
             <p>CPU Load: {cpu} %</p>

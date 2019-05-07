@@ -7,6 +7,7 @@ import { ReactComponent as ClearSVG } from "./icons/clear.svg";
 import "./Settings.css";
 import axios from "axios";
 import Chart from "./BillingChart";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const styles = theme => ({
   paper: {
@@ -44,7 +45,7 @@ class SimpleModal extends React.Component {
     const { classes } = this.props;
     const table = this.state.data
       ? this.state.data.map((item, id) => (
-          <tr key={id}>
+          <tr key={id} style={{ textAlign: "center" }}>
             <th scope="row">{item.id}</th>
             <td>{item.clock[0]}</td>
             <td>{item.asumt}</td>
@@ -71,7 +72,7 @@ class SimpleModal extends React.Component {
             aria-describedby="simple-modal-description"
             open={this.state.open}
           >
-            <div id="modal-style" className={classes.paper}>
+            <div id="modal-style-billing" className={classes.paper}>
               <div>
                 <h2
                   style={{ padding: "1rem 3rem" }}
@@ -80,9 +81,11 @@ class SimpleModal extends React.Component {
                   Billing Information [Meter - {this.props.meter.name}, FW -
                   {this.props.meter.fw}]
                 </h2>
-                <ClearSVG className="clear-svg" onClick={this.toggle} />
+                <Tooltip title="Close" placement="right">
+                  <ClearSVG className="clear-svg" onClick={this.toggle} />
+                </Tooltip>
                 <div>
-                  <div style={{ padding: "0px 200px" }}>
+                  <div className="billing-modal-container">
                     <Chart meter={this.state.data} />
 
                     <table className="table table-bordered table-hover table-sm table-responsive">

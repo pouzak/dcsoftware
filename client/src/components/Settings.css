@@ -3,6 +3,14 @@
   font-family: "Courier New", Courier, monospace;
   /* line-height: 10px; */
 }
+
+.blacklist-table {
+  padding: 0 3rem 4rem 3rem;
+}
+.blbutton {
+  margin-right: 0;
+  padding-bottom: 2rem;
+}
 .set-main {
   padding-top: 8%;
   /*  border: 2px solid red; */
@@ -12,6 +20,9 @@
 .set-main h1 {
   font-size: 3rem;
   padding-bottom: 8%;
+}
+.active-link {
+  border-radius: 8px 8px 8px 8px;
 }
 
 .cont {
@@ -33,15 +44,35 @@
 .meter-table {
   font-family: "Roboto", sans-serif;
 }
+
+label {
+  color: black;
+}
+
+.dataTables_info {
+  color: black;
+}
+
 .clear-svg {
   float: right;
-  margin-right: 4rem;
+  margin-right: 3%;
   transform: scale(1.4);
+
   cursor: pointer;
   z-index: 3;
+  transition: all ease-in-out 0.2s;
+}
+.clear-svg:hover {
+  transform: scale(1.7);
+}
+.loadprof-container {
+  padding: 0 5%;
 }
 .profile-container {
-  padding: 0 20%;
+  padding: 0 5%;
+}
+.profile-table {
+  margin: 0 20%;
 }
 
 .stats-input {
@@ -51,10 +82,28 @@
 .stats-input .custom-select {
   width: 150px;
 }
-#modal-style {
-  width: 80%;
+#modal-style-billing {
+  width: 90%;
   top: 1%;
-  left: 10%;
+  left: 5%;
+  /* invisible scroll */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.billing-modal-container {
+  padding: 0 10rem;
+}
+
+#modal-style-billing::-webkit-scrollbar {
+  /* invisible scroll */
+  width: 0;
+  height: 0;
+}
+#modal-style {
+  width: 70%;
+  top: 1%;
+  left: 15%;
   /* invisible scroll */
   overflow-y: scroll;
   scrollbar-width: none;
@@ -97,15 +146,46 @@
 .delete-ico:hover {
   transform: scale(1.3);
 }
+.page-item {
+  color: black;
+}
 @media screen and (max-width: 1366px) {
   .profile-container {
-    padding: 0 100px;
+    padding: 0 20px;
     width: auto;
+  }
+  .blacklist-table {
+    padding: 0;
+  }
+  .loadprof-container {
+    padding: 0 5%;
+  }
+  .billing-modal-container {
+    padding: 0 4rem;
+  }
+  .clear-svg {
+    margin-right: 1%;
+  }
+  .blacklist-table {
+    padding: 0 6rem 0 6rem;
   }
 }
 @media screen and (max-width: 769px) {
   .profile-container {
     padding: 0 10px;
     width: auto;
+  }
+  #modal-style-billing {
+    width: 96%;
+    top: 1%;
+    left: 2%;
+  }
+  .billing-modal-container {
+    padding: 0 3rem;
+  }
+  #modal-style {
+    width: 96%;
+    top: 1%;
+    left: 2%;
   }
 }

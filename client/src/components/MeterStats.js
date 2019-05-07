@@ -120,10 +120,12 @@ export class List extends Component {
                 >
                   Stats
                 </MDBDropdownToggle>
-                <MDBDropdownMenu basic color="info">
+
+                <MDBDropdownMenu basic color="primary">
                   <MDBDropdownItem onClick={() => this.handleBilling(item)}>
                     Billing
                   </MDBDropdownItem>
+
                   {item.profile ? (
                     <MDBDropdownItem onClick={() => this.handleProfile(item)}>
                       Load Profile
@@ -133,6 +135,11 @@ export class List extends Component {
                     onClick={() => this.props.context.handleMyList(item)}
                   >
                     Add To List
+                  </MDBDropdownItem>
+                  <MDBDropdownItem
+                    onClick={() => this.props.context.addToBlackList(item)}
+                  >
+                    Add To Black List
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>

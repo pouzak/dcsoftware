@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, g, send_file, send_from_directory
+from flask import Flask, request, jsonify, g, send_file, send_from_directory, session
 import xml.etree.ElementTree as et
 import xmltodict
 import json
@@ -24,6 +24,26 @@ def serve(path):
     else:
         return send_from_directory('build', 'index.html') """
  
+
+
+UPLOAD_FOLDER = 'data'
+ALLOWED_EXTENSIONS = set(['xml,txt'])
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+@app.route('/api/upload', methods=['POST'])
+def fileUpload():
+    target=os.path.join(UPLOAD_FOLDER)
+    
+    if not os.path.isdir(target):
+        os.mkdir(target)
+ 
+    file = request.files['file'] 
+    print(file)
+    destination="/".join([target, 'test.xml'])
+    file.save(destination)
+    session['uploadFilePath']=destination
+    response="Whatever you wish too return"
+    return response
 
 #PLC network, get meter list
 @app.route('/api/example',methods = ['GET'])
@@ -303,10 +323,81 @@ def getlistiteminfo():
     result['fw'] = fwres
     return (jsonify(result))
 
+
+@app.route('/api/blacklist',methods = ['GET'])
+def blacklist():
+   con = sql.connect('disk.db')
+   con.row_factory = sql.Row
+   
+   cur = con.cursor()
+   #cur.execute("select * from IC_Data")
+   
+   cur.execute("SELECT * FROM BlackNameList_Information")
+   res = []
+   rows = cur.fetchall()
+   for row in rows:
+       obj = {}
+       obj['sap'] = row[0]
+       obj['name'] = row[1]
+       res.append(obj)
+   con.close()
+   res.reverse()
+   return (jsonify(res))
+
+
+@app.route('/api/bldelete',methods = ['POST'])
+def bldelete():
+    data = request.data
+    dataDict = json.loads(data)
+    meterName = dataDict['name']
+   
+    con = sql.connect('disk.db')
+    con.row_factory = sql.Row
+    
+    cur = con.cursor()
+    #cur.execute("select * from IC_Data")
+    
+    cur.execute("DELETE FROM BlackNameList_Information WHERE MeterName = ?", (meterName,))
+    con.commit()
+    con.close()
+#   
+    return (jsonify(dataDict))
+
+
+@app.route('/api/bladd',methods = ['POST'])
+def bladd():
+    data = request.data
+    dataDict = json.loads(data)
+    meterName = dataDict['name']
+   
+    con = sql.connect('disk.db')
+    con.row_factory = sql.Row
+    
+    cur = con.cursor()
+    #cur.execute("select * from IC_Data")
+    
+    cur.execute("SELECT * FROM BlackNameList_Information WHERE MeterName = ?", (meterName,))
+    rows = cur.fetchall()
+    if(len(rows) == 0):
+        cur.execute("SELECT * FROM LogicDevice_Information  WHERE MeterName = ?", (meterName,))
+        rows = cur.fetchall()
+        sap = rows[0][0]
+        cur.execute("INSERT INTO BlackNameList_Information (SAP, MeterName) VALUES (?, ?)",(sap, meterName))
+        con.commit()
+        con.close()
+        return (jsonify({'meter':meterName, 'sap':sap}))
+    else:
+        return json.dumps({'status':'no'}), 204
+        
+#   
+  
+
+    
     
 
 #debug app.run(debug=True)
 
     #run server
 if __name__ == '__main__':
+    app.secret_key = os.urandom(24)
     app.run(debug=True)

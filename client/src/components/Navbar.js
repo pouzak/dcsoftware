@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from "react";
 import posed from "react-pose";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as YourSvg } from "./icons/home.svg";
 import { MDBAnimation } from "mdbreact";
 import { dcdata } from "../Context";
@@ -17,11 +17,10 @@ export class Navbar extends Component {
   render() {
     const { open } = this.state;
     return (
-      <div>
+      <div className="nav-main">
         <Fragment>
-          {/* <Link to="/"><h1>Home</h1></Link> */}
           <MDBAnimation type="tada">
-            <Link to="/">
+            <NavLink to="/" activeClassName="selected">
               {" "}
               <div className="home-div">
                 <YourSvg
@@ -31,7 +30,7 @@ export class Navbar extends Component {
                   }
                 />
               </div>
-            </Link>
+            </NavLink>
           </MDBAnimation>
           {this.props.context.myList.length > 0 ? (
             <MDBAnimation type="fadeIn">
@@ -61,14 +60,14 @@ export class Navbar extends Component {
             className="content"
             pose={open === "plc" ? "open" : "closed"}
           >
-            <Link to="/meterstats">
+            <NavLink to="/meterstats" activeClassName="active-link">
               <div className="content-wrapper">Meter Statistics</div>
+            </NavLink>
+            <Link to="/blacklist">
+              <div className="content-wrapper">Black List</div>
             </Link>
             <Link to="/topology">
               <div className="content-wrapper not">Topology</div>
-            </Link>
-            <Link to="/black_list">
-              <div className="content-wrapper not">Black List</div>
             </Link>
           </Content>
 

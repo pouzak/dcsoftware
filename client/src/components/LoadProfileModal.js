@@ -8,22 +8,7 @@ import "./Settings.css";
 import axios from "axios";
 import Chart from "./LoadProfileChart";
 import { MDBContainer } from "mdbreact";
-
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
-function getModalStyle() {
-  const top = 50;
-  const left = 50;
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
-    width: "1000px"
-  };
-}
+import Tooltip from "@material-ui/core/Tooltip";
 
 const styles = theme => ({
   paper: {
@@ -63,7 +48,7 @@ class SimpleModal extends React.Component {
     const { classes } = this.props;
     const table = this.state.data
       ? this.state.data.map((item, id) => (
-          <tr key={id}>
+          <tr key={id} style={{ textAlign: "center" }}>
             <th scope="row">{id + 1}</th>
             <td>{item.clock[0]}</td>
             <td>{item.status}</td>
@@ -92,24 +77,28 @@ class SimpleModal extends React.Component {
                   Load Profile [Meter - {this.props.meter.name}, FW -{" "}
                   {this.props.meter.fw}]
                 </h2>
-                <ClearSVG className="clear-svg" onClick={this.toggle} />
-                <div>
+                <Tooltip title="Close" placement="right">
+                  <ClearSVG className="clear-svg" onClick={this.toggle} />
+                </Tooltip>
+                <div className="profile-container">
                   <MDBContainer>
                     <Chart meter={this.state.data} />
-                    <table className="table table-bordered table-hover table-sm">
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Clock</th>
-                          <th style={{ width: "4rem" }} scope="col">
-                            Hourly Profile Status
-                          </th>
-                          <th scope="col">Total Energy +A SumT</th>
-                          <th scope="col">Avg. Currrent Period Power +P</th>
-                        </tr>
-                      </thead>
-                      <tbody>{table}</tbody>
-                    </table>
+                    <div className="profile-table">
+                      <table className="table table-bordered table-hover table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Clock</th>
+                            <th style={{ width: "4rem" }} scope="col">
+                              Hourly Profile Status
+                            </th>
+                            <th scope="col">Total Energy +A SumT</th>
+                            <th scope="col">Avg. Currrent Period Power +P</th>
+                          </tr>
+                        </thead>
+                        <tbody>{table}</tbody>
+                      </table>
+                    </div>
                   </MDBContainer>
                 </div>
               </div>

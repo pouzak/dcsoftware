@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Redirect } from "react-router-dom";
 //import PropTypes from "prop-types";
 //import { withStyles } from "@material-ui/core/styles";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
@@ -16,15 +17,7 @@ import Grid from "@material-ui/core/Grid";
 import BillingChart from "./MyListBillingChart";
 import ProfileChart from "./MyListProfileLoadChart";
 import posed from "react-pose";
-import {
-  MDBBtn,
-  MDBListGroup,
-  MDBListGroupItem,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader,
-  MDBModalFooter
-} from "mdbreact";
+import { MDBBtn, MDBListGroup, MDBListGroupItem } from "mdbreact";
 //import Notifications from "./Notifications";
 
 const Pose = posed.div({
@@ -51,7 +44,6 @@ const Pose = posed.div({
 export class MyList extends Component {
   state = {
     //active: ""
-    modal: false
   };
 
   click = item => {
@@ -67,14 +59,14 @@ export class MyList extends Component {
       .catch(err => console.log(err));
   };
 
-  deleteItem = () => {
+  deleteItem = item => {
     this.setState({
-      [this.state.active]: undefined
+      [item]: undefined
     });
-    this.props.context.deleteFromList(this.state.active);
+    this.props.context.deleteFromList(item);
     //console.log(newstate);
     //
-    this.toggle();
+
     // const newstate = this.state;
     //this.setState({ ...this.state, [name]: undefined });
   };
@@ -86,17 +78,10 @@ export class MyList extends Component {
     this.setState({
       active: name
     });
-    this.toggle();
   };
 
   changeLimit = (name, count) => {
     this.setState({ [name]: { ...this.state[name], limit: count } });
-  };
-
-  toggle = () => {
-    this.setState({
-      modal: !this.state.modal
-    });
   };
 
   render() {
@@ -105,20 +90,6 @@ export class MyList extends Component {
       <div style={{ paddingBottom: "5rem", textAlign: "center" }}>
         {this.props.context.myList.length > 0 ? (
           <MDBContainer className="set-main">
-            <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
-              <MDBModalHeader toggle={this.toggle}>
-                {this.state.active}
-              </MDBModalHeader>
-              <MDBModalBody>Are You sure want to delete?</MDBModalBody>
-              <MDBModalFooter>
-                <MDBBtn color="primary" onClick={() => this.toggle(null)}>
-                  Back
-                </MDBBtn>
-                <MDBBtn color="danger" onClick={() => this.deleteItem()}>
-                  Delete
-                </MDBBtn>
-              </MDBModalFooter>
-            </MDBModal>
             <h1>My List</h1>
 
             {this.props.context.myList.map(item => (
@@ -137,6 +108,20 @@ export class MyList extends Component {
                         <Typography className="exp-item-name">
                           Added: {item.date}
                         </Typography>
+                        <Typography className="exp-item">
+                          <DeleteIco
+                            //onClick={() => this.setActive(item.name)}
+                            onClick={() => {
+                              if (
+                                window.confirm(
+                                  "Are you sure you wish to delete this item?"
+                                )
+                              )
+                                this.deleteItem(item.name);
+                            }}
+                            className="delete-ico"
+                          />
+                        </Typography>
                       </div>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
@@ -152,11 +137,19 @@ export class MyList extends Component {
                           <div>
                             <h2>
                               Meter Name: {item.name}{" "}
-                              <DeleteIco
+                              {/* <DeleteIco
                                 style={{ float: "right" }}
-                                onClick={() => this.setActive(item.name)}
+                                //onClick={() => this.setActive(item.name)}
+                                onClick={() => {
+                                  if (
+                                    window.confirm(
+                                      "Are you sure you wish to delete this item?"
+                                    )
+                                  )
+                                    this.deleteItem(item.name);
+                                }}
                                 className="delete-ico"
-                              />
+                              /> */}
                             </h2>
 
                             <hr />
@@ -396,7 +389,8 @@ export class MyList extends Component {
             ))}
           </MDBContainer>
         ) : (
-          <h2 style={{ paddingTop: "20rem" }}>List is empty :(</h2>
+          // <h2 style={{ paddingTop: "20rem" }}>List is empty :(</h2>
+          <Redirect to="/" />
         )}
       </div>
     );

@@ -33,6 +33,27 @@ class BillingChart extends Component {
 
     this.setState({
       options: {
+        chart: {
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 300,
+            animateGradually: {
+              enabled: true,
+              delay: 50
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350
+            }
+          },
+          toolbar: {
+            show: false
+          },
+          zoom: {
+            enabled: true
+          }
+        },
         stroke: {
           width: [0, 4]
         },
