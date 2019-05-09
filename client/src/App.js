@@ -42,8 +42,8 @@ class App extends Component {
       <Provider>
         <BrowserRouter>
           <div className="App">
+            <Toster />
             <div className="gradient">
-              <Toster />
               <MDBRow className="dash">
                 {this.state.width > 1000 ? (
                   <MDBCol className="nav-container" size="2">

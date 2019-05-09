@@ -27,6 +27,14 @@ h1 {
   color: black;
 }
 
+.nav-center {
+  border: 2px solid green;
+  position: relative;
+  width: 80%;
+  z-index: 99;
+  background-color: white;
+}
+
 .content {
   color: black;
   overflow: hidden;

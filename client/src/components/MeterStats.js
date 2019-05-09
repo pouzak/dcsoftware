@@ -185,7 +185,7 @@ export class List extends Component {
       </div>
     );
     return (
-      <div style={{ padding: "50px" }}>
+      <div className="data-table-container">
         {this.state.modalBilling ? (
           <BillingModal
             modal={this.modalState}

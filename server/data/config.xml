@@ -22,7 +22,7 @@
 			<id>5913434</id>
 			<model>DC12</model>
 			<year>2018-01-01</year>
-			<communication_protocol value1="PRIME" value2="G3">PRIME</communication_protocol>
+			<communication_protocol value1="PRIME" value2="G3">G3</communication_protocol>
 		</dcu_configuration>
 		<ethernet>
 			<default_gateway>192.16.1.11</default_gateway>
