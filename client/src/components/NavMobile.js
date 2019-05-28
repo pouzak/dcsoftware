@@ -4,18 +4,13 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-
 import IconButton from "@material-ui/core/IconButton";
-
 import { ReactComponent as MenuIcon } from "./icons/menu.svg";
-
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
-
 import ListItemText from "@material-ui/core/ListItemText";
-
 import Navbar from "./Navbar";
 
 const styles = {
@@ -102,8 +97,6 @@ class ButtonAppBar extends React.Component {
             role="button"
             style={{ padding: "20px" }}
             className="dash"
-            // onClick={this.toggleDrawer("left", false)}
-            // onKeyDown={this.toggleDrawer("left", false)}
           >
             <Navbar />
           </div>
@@ -132,52 +125,3 @@ ButtonAppBar.propTypes = {
 };
 
 export default withStyles(styles)(ButtonAppBar);
-
-// import React, { Component } from "react";
-// import {
-//   MDBNavbar,
-//   MDBNavbarBrand,
-//   NavbarNav,
-//   MDBNavbarToggler,
-//   MDBCollapse,
-//   MDBContainer
-// } from "mdbreact";
-// import Navbar from "./Navbar";
-
-// class NavMobile extends Component {
-//   state = {
-//     collapseID: ""
-//   };
-
-//   toggleCollapse = collapseID => () => {
-//     this.setState(prevState => ({
-//       collapseID: prevState.collapseID !== collapseID ? collapseID : ""
-//     }));
-//   };
-
-//   render() {
-//     return (
-//       <MDBContainer style={{ marginBottom: "0px" }} className="nav-center">
-//         <MDBNavbar style={{ marginTop: "20px", boxShadow: "none" }} light>
-//           <MDBContainer>
-//             <MDBNavbarBrand>DC12</MDBNavbarBrand>
-//             <MDBNavbarToggler
-//               onClick={this.toggleCollapse("navbarCollapse1")}
-//             />
-//             <MDBCollapse
-//               id="navbarCollapse1"
-//               isOpen={this.state.collapseID}
-//               navbar
-//             >
-//               <NavbarNav left>
-//                 <Navbar />
-//               </NavbarNav>
-//             </MDBCollapse>
-//           </MDBContainer>
-//         </MDBNavbar>
-//       </MDBContainer>
-//     );
-//   }
-// }
-
-// export default NavMobile;

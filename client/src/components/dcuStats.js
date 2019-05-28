@@ -38,7 +38,7 @@ class dcuStats extends Component {
         grid: {
           borderColor: "#e7e7e7",
           row: {
-            colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+            colors: ["#f3f3f3", "transparent"],
             opacity: 0.5
           }
         },
@@ -68,7 +68,6 @@ class dcuStats extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    //console.log(e.target.name.value)
     let numbers = [];
     let i = 0;
     if (!isNaN(e.target.name.value)) {
@@ -91,7 +90,6 @@ class dcuStats extends Component {
           }
         ]
       });
-      //console.log(this.state)
     }
   };
 
@@ -155,29 +153,3 @@ class dcuStats extends Component {
 }
 
 export default dcuStats;
-
-/* <MDBContainer className="set-main">
-<h1>DCU Statistics</h1>
-
-<MDBRow className="cont">
-  <MDBCol size="3">
-    <h3 className="float-right">CPU Load:</h3>
-  </MDBCol >
-   <h3 className="float-right"> <CountUp end={Math.floor(Math.random() * 15) + 2}/> %</h3>
-
-   <MDBCol size="3">
-    <h3 className="float-right">RAM:</h3>
-  </MDBCol >
-   <h3 className="float-right">  <CountUp end={Math.floor(Math.random() * 400) + 6000} duration={0.4}/> MB</h3>
-
-   <MDBCol size="3">
-    <h3 className="float-right">Temperature:</h3>
-  </MDBCol >
-   <h3 className="float-right"> <CountUp end={Math.floor(Math.random() * 2) + 28}/> %</h3>
-  
-
-</MDBRow>
-<div style={{padding: "0 5rem"}}>
-<Chart options={this.state.options} series={this.state.series} type="line" height="400"/>
-</div>
-</MDBContainer> */

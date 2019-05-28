@@ -53,7 +53,6 @@ export class Navbar extends Component {
               this.setState({ open: open === "plc" ? false : "plc" })
             }
           >
-            {/* {open === 'plc' ?<MDBAnimation type="rotateIn"><Plus/></MDBAnimation> : ' '}  */}
             PLC Network
           </h2>
           <Content
@@ -166,40 +165,3 @@ export class Navbar extends Component {
 }
 
 export default dcdata(Navbar);
-
-/* <Fragment>
-<h1>Accordian demo</h1>
-{data.map(({ title, content }, i) => (
-  <Fragment>
-    <h2
-      className="title"
-      onClick={() => this.setState({ open: open === i ? false : i })}
-    >
-      {open === i ? '🤯 ' : '🙂 '}
-      {title}
-    </h2>
-    <Content className="content" pose={open === i ? 'open' : 'closed'}>
-      <div className="content-wrapper">{content}</div>
-    </Content>
-  </Fragment>
-))}
-</Fragment> */
-
-/* <Fragment>
-        <h1>Accordian demo</h1>
-     
-        
-            <h2
-              className="title"
-              onClick={() => this.setState({ open: open === 'plc' ? false : 'plc' })}
-            >
-              {open === 'plc' ? '🤯 ' : '🙂 '}
-              Laba diena
-            </h2>
-            <Content className="content" pose={open === 'plc' ? 'open' : 'closed'}>
-              <div className="content-wrapper">labas</div>
-              <div className="content-wrapper">labas</div>
-            </Content>
-        
-     
-      </Fragment> */

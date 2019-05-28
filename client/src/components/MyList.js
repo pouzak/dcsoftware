@@ -1,12 +1,9 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-//import PropTypes from "prop-types";
-//import { withStyles } from "@material-ui/core/styles";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
-//import { ReactComponent as Delsvg } from "./icons/delete.svg";
 import { ReactComponent as Svg } from "./icons/expand.svg";
 import { ReactComponent as DeleteIco } from "./icons/delete.svg";
 import { MDBContainer } from "mdbreact";
@@ -18,7 +15,6 @@ import BillingChart from "./MyListBillingChart";
 import ProfileChart from "./MyListProfileLoadChart";
 import posed from "react-pose";
 import { MDBBtn, MDBListGroup, MDBListGroupItem } from "mdbreact";
-//import Notifications from "./Notifications";
 
 const Pose = posed.div({
   hoverable: true,
@@ -34,17 +30,10 @@ const Pose = posed.div({
     boxShadow: "0px 3px 12px rgba(0,0,0,0.3)",
     zIndex: 5
   }
-  // press: {
-  //   scale: 1.1,
-  //   boxShadow: "0px 2px 5px rgba(0,0,0,0.1)",
-  //   zIndex: 5
-  // }
 });
 
 export class MyList extends Component {
-  state = {
-    //active: ""
-  };
+  state = {};
 
   click = item => {
     axios
@@ -64,11 +53,6 @@ export class MyList extends Component {
       [item]: undefined
     });
     this.props.context.deleteFromList(item);
-    //console.log(newstate);
-    //
-
-    // const newstate = this.state;
-    //this.setState({ ...this.state, [name]: undefined });
   };
 
   handleState = (name, state) => {
@@ -85,7 +69,6 @@ export class MyList extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div style={{ paddingBottom: "5rem", textAlign: "center" }}>
         {this.props.context.myList.length > 0 ? (
@@ -110,7 +93,6 @@ export class MyList extends Component {
                         </Typography>
                         <Typography className="exp-item">
                           <DeleteIco
-                            //onClick={() => this.setActive(item.name)}
                             onClick={() => {
                               if (
                                 window.confirm(
@@ -125,7 +107,6 @@ export class MyList extends Component {
                       </div>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
-                      {/* <Typography>{this.state[item.name]}</Typography> */}
                       <Typography
                         style={{
                           width: "100%",
@@ -135,23 +116,7 @@ export class MyList extends Component {
                       >
                         {this.state[item.name] ? (
                           <div>
-                            <h2>
-                              Meter Name: {item.name}{" "}
-                              {/* <DeleteIco
-                                style={{ float: "right" }}
-                                //onClick={() => this.setActive(item.name)}
-                                onClick={() => {
-                                  if (
-                                    window.confirm(
-                                      "Are you sure you wish to delete this item?"
-                                    )
-                                  )
-                                    this.deleteItem(item.name);
-                                }}
-                                className="delete-ico"
-                              /> */}
-                            </h2>
-
+                            <h2>Meter Name: {item.name} </h2>
                             <hr />
                             <Grid
                               container
@@ -389,7 +354,6 @@ export class MyList extends Component {
             ))}
           </MDBContainer>
         ) : (
-          // <h2 style={{ paddingTop: "20rem" }}>List is empty :(</h2>
           <Redirect to="/" />
         )}
       </div>
@@ -398,109 +362,3 @@ export class MyList extends Component {
 }
 
 export default dcdata(MyList);
-
-// <Typography className="exp-item">
-// {item.mac.slice(0, 2) +
-//   ":" +
-//   item.mac.slice(2, 4) +
-//   ":" +
-//   item.mac.slice(4, 6) +
-//   ":" +
-//   item.mac.slice(6, 8) +
-//   ":" +
-//   item.mac.slice(8, 10) +
-//   ":" +
-//   item.mac.slice(10, 12)}
-// </Typography>
-
-// {this.state[item.name] ? (
-//   <div>
-//     <h2>Meter Name: {item.name}</h2>
-//     <hr />
-//     {this.state[item.name].plc.length > 0 ? (
-//       <div>
-//         <h4>PLC logs:</h4>
-//         <div
-//           style={{ padding: "2rem", textAlign: "center" }}
-//         >
-//           {this.state[item.name].plc.map((item, index) => (
-//             <p key={index}>{item}</p>
-//           ))}
-//         </div>
-//       </div>
-//     ) : null}
-
-//     {this.state[item.name].comm.length > 0 ? (
-//       <div>
-//         <h4>Cummunication logs:</h4>
-//         <div
-//           style={{ padding: "2rem", textAlign: "center" }}
-//         >
-//           {this.state[item.name].comm.map((item, index) => (
-//             <p key={index}>{item}</p>
-//           ))}
-//         </div>
-//       </div>
-//     ) : null}
-
-//     {this.state[item.name].fw.length > 0 ? (
-//       <div>
-//         <h4>Fw logs:</h4>
-//         <div
-//           style={{ padding: "2rem", textAlign: "center" }}
-//         >
-//           {this.state[item.name].fw.map((item, index) => (
-//             <p key={index}>{item}</p>
-//           ))}
-//         </div>
-//       </div>
-//     ) : null}
-//   </div>
-// ) : null}
-// </Typography>
-// </ExpansionPanelDetails>
-// </ExpansionPanel>
-// ))}
-// </MDBContainer>
-// ) : (
-// <div className="center-default">
-// <div className="spinner-border" role="status" />
-// </div>
-// )}
-
-// {this.state[item.name].comm.length > 0 ? (
-//   <div>
-//     <Grid
-//       item
-//       xs={6}
-//       style={{
-//         border: "2px solid black"
-//       }}
-//     >
-//       <div style={{ float: "left" }}>
-//         <p>
-//           PLC Log: Found
-//           {
-//             this.state[item.name].plc.length
-//           }{" "}
-//           items
-//         </p>
-//       </div>
-//     </Grid>
-//     <Grid
-//       item
-//       xs={8}
-//       style={{
-//         border: "2px solid black"
-//       }}
-//     >
-//       <Button
-//         size="small"
-//         variant="contained"
-//         color="secondary"
-//       >
-//         Secondary
-//       </Button>
-//     </Grid>
-//   </div>
-// ) : null}

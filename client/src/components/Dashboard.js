@@ -8,7 +8,7 @@ let memory;
 let cpu;
 let temp;
 
-class Test extends Component {
+class Dashboard extends Component {
   componentDidMount() {
     this.update();
   }
@@ -48,45 +48,4 @@ class Test extends Component {
   }
 }
 
-export default Test;
-
-/* <Consumer>
-{value => {
-      const {data} = value;
-      //console.log(data)
-      return (
-      <div className="centered">
-        {data ? (
-          <MDBRow >
-          <MDBCol className="dashboard">
-  
-              <h3 className="dash-title display-4">Data Concentrator DC12 </h3>
-              <h3 className="welcome">
-                Welcome to DC12 dashboard v.0.1. 
-              </h3>
-              <p className="lead">
-                Current DCU Stats: 
-              </p>
-              <p>Memory Usage: {memory} KB</p>
-              <p>CPU Load: {cpu} %</p>
-              <p className="lead">
-              <Link to="/">
-                <MDBBtn color="primary">Refresh</MDBBtn>
-                </Link>
-                <Link to="/">
-                <MDBBtn color="danger">Restart</MDBBtn>
-                </Link>
-              </p>
-        
-          </MDBCol>
-        </MDBRow>
-          ):(
-          
-          <div class="spinner-border" role="status"></div>
-      
-          )}
-      </div>
-      
-      )
-    }}
-</Consumer> */
+export default Dashboard;

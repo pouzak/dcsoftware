@@ -4,7 +4,6 @@ import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
 import "./Settings.css";
 import Fab from "@material-ui/core/Fab";
-import { MDBAnimation } from "mdbreact";
 
 export class Log_PLC extends Component {
   state = {
@@ -46,7 +45,6 @@ export class Log_PLC extends Component {
               }`
             )
             .then(this.setState({ start: 1, count: 30 }))
-            //.then(response => response.json())
             .then(res => this.setState({ data: res.data }));
         } else if (!this.state.query) {
           this.setState({ start: 1, data: [], count: 30 });
@@ -111,7 +109,6 @@ export class Log_PLC extends Component {
 
           <select
             className="browser-default custom-select "
-            //defaultValue="Results limit"
             onChange={this.handleChange}
           >
             <option value="" selected hidden>

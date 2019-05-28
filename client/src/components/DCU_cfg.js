@@ -20,18 +20,6 @@ class Ethernet extends Component {
       file: ev.target.files[0],
       name: ev.target.files[0].name
     });
-
-    // const data = new FormData();
-    // data.append("file", ev.target.files[0]);
-    // console.log(ev.target.files[0].name);
-    //data.append("filename", this.fileName.value);
-
-    // fetch("/api/upload", {
-    //   method: "POST",
-    //   body: data
-    // }).then(response => {
-    //   console.log(response);
-    // });
   }
   upload = e => {
     e.preventDefault();
@@ -54,23 +42,14 @@ class Ethernet extends Component {
   };
 
   handleChange = (path, e) => {
-    //this.props.context.handleInput('dc_data.config.settings.dcu_configuration.communication_protocol', '#text' , e)\
-
     this.props.context.handleInput(path, "#text", e);
-    /* let {name, value} = e.target;
-    this.setState({
-      [name]: value,
-    
-    }); */
     this.props.context.valueChange();
   };
 
   tost = () => {
     toast.success("Clock updated!");
-    //this.props.context.valueChange();
   };
   date = () => {
-    //toast.success("Clock updated!");
     if (this.props.context.valueChange()) this.tost();
   };
 
@@ -80,15 +59,11 @@ class Ethernet extends Component {
         <Consumer>
           {value => {
             const { data, checkbox } = value;
-            //const checkboxPath = data.config.settings.ethernet.ethernet_type.dhcp;
-            //console.log(data)
-
             return (
               <div>
                 {data ? (
                   <MDBContainer className="set-main">
                     <h1>DCU Configuration</h1>
-                    {/* <p>{data.config.settings.ethernet.ethernet_type.dhcp['@bool']}</p> */}
                     <MDBRow className="cont">
                       <MDBCol size="4">
                         <h3 className="float-right">Device ID:</h3>
@@ -103,10 +78,6 @@ class Ethernet extends Component {
                           disabled
                         />
                       </MDBCol>
-
-                      {/* <MDBCol size="2">
-                    <div><MDBBtn color="primary" size="md" onClick={() => valueChange()}>Change</MDBBtn></div>
-                    </MDBCol> */}
                     </MDBRow>
 
                     <MDBRow className="cont">
@@ -147,7 +118,6 @@ class Ethernet extends Component {
                       </MDBCol>
 
                       <MDBCol size="2">
-                        {/*  <input type="text" id="example1" className="form-control" value={data.config.settings.dcu_configuration.communication_protocol['#text']} disabled/> */}
                         <select
                           className="browser-default custom-select "
                           defaultValue={
@@ -201,17 +171,6 @@ class Ethernet extends Component {
                               accept=".xml,.txt"
                               style={{ width: "150px" }}
                             />
-
-                            {/* {this.state.name ? (
-                              <p
-                                style={{
-                                  fontSize: "0.5rem"
-                                }}
-                              >
-                                {this.state.name}
-                              </p>
-                            ) : null} */}
-
                             {this.state.name ? (
                               <button onClick={e => this.upload(e)}>
                                 Upload {this.state.name}
@@ -227,10 +186,6 @@ class Ethernet extends Component {
                           </div>
                         </MDBCol>
                       </form>
-
-                      {/* <MDBCol size="2">
-                    <div><MDBBtn color="primary" size="md" onClick={() => valueChange()}>Change</MDBBtn></div>
-                    </MDBCol> */}
                     </MDBRow>
 
                     <MDBRow className="cont">
@@ -239,8 +194,6 @@ class Ethernet extends Component {
                       </MDBCol>
 
                       <MDBCol size="2">
-                        {/*  <input type="text" id="example1" className="form-control" value={data.config.settings.dcu_configuration.communication_protocol['#text']} disabled/> */}
-
                         <Checkbox
                           checked={JSON.parse(
                             data.config.settings.date_time.sync["@bool"]
@@ -272,17 +225,6 @@ class Ethernet extends Component {
                         <MDBCol size="2">
                           <div style={{ width: "50px" }}>
                             <form noValidate>
-                              {/*  <TextField
-                        id="time"
-                        type="time"
-                        defaultValue="07:30"
-                        InputLabelProps={{
-                          shrink: true,
-                        }}
-                        inputProps={{
-                          step: 60, // 5 min
-                        }}
-                      /> */}
                               <TextField
                                 id="datetime-local"
                                 type="datetime-local"
@@ -305,8 +247,6 @@ class Ethernet extends Component {
                           </div>
                         </MDBCol>
                       </MDBRow>
-
-                      {/* apply changes button */}
                       <MDBRow className="cont">
                         <MDBCol size="4" />
                         <MDBCol size="2">
@@ -338,29 +278,3 @@ class Ethernet extends Component {
 }
 
 export default dcdata(Ethernet);
-
-/* <MDBContainer className="set-main">
-                  <h1>DCU Configuration</h1>
-                  {/* <p>{data.config.settings.ethernet.ethernet_type.dhcp['@bool']}</p> 
-                  <MDBRow className="cont">
-                  <MDBCol size="3">
-                     <h3>ID:</h3>
-                  </MDBCol>
-
-                  <MDBCol size="2">
-                  <Checkbox
-                  checked={JSON.parse(data.config.settings.ethernet.ethernet_type.dhcp['@bool'])}
-                  onChange={() => checkbox(this.props.context.data.config.settings.ethernet.ethernet_type.dhcp)}
-                    value="checked"
-                    color="secondary"
-                    
-                    />
-                  </MDBCol>
-
-                  <MDBCol size="2">
-                  <div><MDBBtn color="primary" size="md" onClick={() => valueChange()}>Change</MDBBtn></div>
-                  </MDBCol>
-                   
-                 </MDBRow>
-              </MDBContainer>
- */

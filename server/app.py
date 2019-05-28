@@ -3,19 +3,18 @@ import xml.etree.ElementTree as et
 import xmltodict
 import json
 import os
-import pprint
 import sqlite3 as sql
 import struct
 
 
 #init app
 app = Flask(__name__)
-#app = Flask(__name__,  static_folder='build')
-
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['JSON_SORT_KEYS'] = False
 
-# Serve React App
+# Serve React App on Heroku
+
+#app = Flask(__name__,  static_folder='build')
 """ @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
@@ -26,55 +25,14 @@ def serve(path):
  
 
 
-UPLOAD_FOLDER = 'data'
-ALLOWED_EXTENSIONS = set(['xml,txt'])
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+#XML file
 
-@app.route('/api/upload', methods=['POST'])
-def fileUpload():
-    target=os.path.join(UPLOAD_FOLDER)
-    
-    if not os.path.isdir(target):
-        os.mkdir(target)
- 
-    file = request.files['file'] 
-    print(file)
-    destination="/".join([target, 'test.xml'])
-    file.save(destination)
-    session['uploadFilePath']=destination
-    response="Whatever you wish too return"
-    return response
-
-#PLC network, get meter list
-@app.route('/api/example',methods = ['GET'])
-def list():
-   con = sql.connect('disk.db')
-   con.row_factory = sql.Row
-   
-   cur = con.cursor()
-   #cur.execute("select * from IC_Data")
-   
-   cur.execute("SELECT * FROM LogicDevice_Information")
-   res = []
-   rows = cur.fetchall()
-   for row in rows:
-       if(row[3] != ''):
-            res.append(row[3])
-   con.close()
-   return (jsonify(res))
-
-   #return (jsonify({"msg":"ok"}))
-   
-
-
-
-#xml
 file_name = 'config.xml'
 full_file = os.path.join('data/', file_name)
 
 
+#Open XML and parse to JSON
 
-#xml to json
 @app.route('/api/cfg', methods=['GET'])
 def get_xml():
     with open(full_file) as fd:
@@ -83,43 +41,30 @@ def get_xml():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+#Save JSON to XML cfg file
 
 @app.route('/api/save', methods=['POST'])
 def save_xml():
-    #with open('config.xml') as fd:
-        #doc = xmltodict.parse(fd.read())
-    #rez = xmltodict.unparse(item)
     data = request.data
     dataDict = json.loads(data)
-    #print(dataDict)
     parsed = xmltodict.unparse(dataDict, pretty=True)
     with open('data/config.xml', 'w') as file:
         file.write(parsed)
-    #return (jsonify(dataDict), 200)
     return (jsonify(dataDict), 200)
 
 
-
-#PLC stats, get meters list
+#PLC stats, get meters list data
 
 @app.route('/api/meterslist', methods=['GET'])
 def txt():
     con = sql.connect("disk.db")
     con.row_factory = sql.Row
-   
     cur = con.cursor()
-   #cur.execute("select * from IC_Data")
-   
     cur.execute("SELECT * FROM LogicDevice_Information")
     rows = cur.fetchall()
-
-    
     lines = [line.rstrip('\n') for line in open('data/NETWORK_MAP_FILE.txt')]
     stats = [line.rstrip('\n') for line in open('data/STATISTICS.txt')]
     res = []  
-    #liness = " ".join(lines[1].split())
-    #linesss = liness.split(' ')
-    
     statsArray = []
     for line in lines:
         obj = {}
@@ -149,8 +94,7 @@ def txt():
     return (jsonify(res), 200)
 
 
-
-#get meter name/send billing data
+#Get meter name/send billing data as response
 
 @app.route('/api/billing',methods = ['POST'])
 def billing():
@@ -188,7 +132,8 @@ def billing():
     return (jsonify(res), 200)
 
 
-#load profile
+#Load profile data
+
 @app.route('/api/loadprofile',methods = ['POST'])
 def proifileLoad():
     data = request.data
@@ -217,18 +162,8 @@ def proifileLoad():
     con.close()
     return (jsonify(res), 200)
 
+#PLC log
 
-
-#plc stats
-# @app.route('/api/plcstats', methods=['POST'])
-# def plcstats():
-#     lines = [line.rstrip('\n') for line in open('data/log_PLCMetering.txt')]
-#     lines.reverse()
-#     count = request.args.get('count')
-#     start = request.args.get('start')
-#     print(start, int(count+start))
-#     return (jsonify(lines[int(start):int(count)+int(start)]))
-    
 @app.route('/api/plclog', methods=['POST'])
 def plcstats():
     lines = [line.rstrip('\n') for line in open('data/log_PLCMetering.txt')]
@@ -246,6 +181,8 @@ def plcstats():
             if(result > 0):
                 res.append(line)
         return (jsonify(res[0:int(limit)]))
+
+#Communication log
     
 @app.route('/api/commlog', methods=['POST'])
 def communication():
@@ -265,6 +202,7 @@ def communication():
                 res.append(line)
         return (jsonify(res[0:int(limit)]))
 
+#FW log
     
 @app.route('/api/fwlog', methods=['POST'])
 def fwupdatelog():
@@ -285,7 +223,7 @@ def fwupdatelog():
         return (jsonify(res[0:int(limit)]))
 
 
-#mylist item
+#get list item PLC, FW, COMM logs entries with one call
 
 @app.route('/api/listitem', methods=['POST'])
 def getlistiteminfo():
@@ -293,8 +231,6 @@ def getlistiteminfo():
     dataDict = json.loads(data)
     meterName = dataDict['name']
     result = {}
-
-    #search
     plclog = [line.rstrip('\n') for line in open('data/log_PLCMetering.txt')]
     plclog.reverse()
     plcres = []
@@ -323,15 +259,13 @@ def getlistiteminfo():
     result['fw'] = fwres
     return (jsonify(result))
 
+#get black list items
 
 @app.route('/api/blacklist',methods = ['GET'])
 def blacklist():
    con = sql.connect('disk.db')
    con.row_factory = sql.Row
-   
    cur = con.cursor()
-   #cur.execute("select * from IC_Data")
-   
    cur.execute("SELECT * FROM BlackNameList_Information")
    res = []
    rows = cur.fetchall()
@@ -344,25 +278,22 @@ def blacklist():
    res.reverse()
    return (jsonify(res))
 
+#delete from black list
 
 @app.route('/api/bldelete',methods = ['POST'])
 def bldelete():
     data = request.data
     dataDict = json.loads(data)
     meterName = dataDict['name']
-   
     con = sql.connect('disk.db')
     con.row_factory = sql.Row
-    
     cur = con.cursor()
-    #cur.execute("select * from IC_Data")
-    
     cur.execute("DELETE FROM BlackNameList_Information WHERE MeterName = ?", (meterName,))
     con.commit()
     con.close()
-#   
     return (jsonify(dataDict))
 
+#add to black list
 
 @app.route('/api/bladd',methods = ['POST'])
 def bladd():
@@ -388,12 +319,29 @@ def bladd():
         return (jsonify({'meter':meterName, 'sap':sap}))
     else:
         return json.dumps({'status':'no'}), 204
-        
-#   
-  
 
+
+#XML cfg file upload
+
+UPLOAD_FOLDER = 'data'
+ALLOWED_EXTENSIONS = set(['xml,txt'])
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+@app.route('/api/upload', methods=['POST'])
+def fileUpload():
+    target=os.path.join(UPLOAD_FOLDER)
     
-    
+    if not os.path.isdir(target):
+        os.mkdir(target)
+ 
+    file = request.files['file'] 
+    print(file)
+    destination="/".join([target, 'test.xml'])
+    file.save(destination)
+    session['uploadFilePath']=destination
+    response="Whatever you wish too return"
+    return response
+
 
 #debug app.run(debug=True)
 

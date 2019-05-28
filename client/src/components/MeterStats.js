@@ -13,10 +13,6 @@ import LoadProfile from "./LoadProfileModal";
 import "./Settings.css";
 import { dcdata } from "../Context";
 
-/* const data = {
-  columns: [
-    { */
-
 const columns = [
   {
     label: "Name",
@@ -148,12 +144,6 @@ export class List extends Component {
 
           return obj;
         });
-
-        /* <MDBBtn color="purple" onClick={() => this.handleRowClick(item.name)} outline size="sm">Billing</MDBBtn>
-    ,<MDBBtn color="purple" onClick={() => this.handleRowClick(item.name)} outline size="sm">Billing</MDBBtn>]
- */
-
-        //console.log(res);
         parsedData.shift();
         this.setState({ data: { columns, rows: parsedData } });
       })
@@ -161,18 +151,15 @@ export class List extends Component {
   }
 
   render() {
-    //console.log(this.props);
     const table = this.state.data ? (
       <div style={{ padding: "3%" }}>
         <MDBDataTable
-          //striped
           sortable={false}
           bordered
           hover
           small
           responsiveSm
           entriesLabel="Show entries"
-          //data={this.state.data}
           data={this.state.data}
           entries={9}
           entriesOptions={[5, 10, 15, 100]}
@@ -206,9 +193,3 @@ export class List extends Component {
 }
 
 export default dcdata(List);
-
-// obj.name = (
-//   <p onClick={() => this.props.context.handleMyList(item)}>
-//     {item.name}
-//   </p>
-// );

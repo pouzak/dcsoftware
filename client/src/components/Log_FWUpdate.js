@@ -110,7 +110,6 @@ export class Log_PLC extends Component {
 
           <select
             className="browser-default custom-select "
-            //defaultValue="Results limit"
             onChange={this.handleChange}
           >
             <option value="" selected hidden>

@@ -15,23 +15,23 @@
 	</prime_network>
 	<settings>
 		<date_time>
-			<datetime>2012-12-13T20:48</datetime>
-			<sync bool="true"></sync>
+			<datetime>2016-12-13T20:48</datetime>
+			<sync bool="false"></sync>
 		</date_time>
 		<dcu_configuration>
 			<id>5913434</id>
 			<model>DC12</model>
 			<year>2018-01-01</year>
-			<communication_protocol value1="PRIME" value2="G3">G3</communication_protocol>
+			<communication_protocol value1="PRIME" value2="G3">PRIME</communication_protocol>
 		</dcu_configuration>
 		<ethernet>
-			<default_gateway>192.16.1.11</default_gateway>
-			<dns value1="AUTO" value2="Manual">AUTO</dns>
-			<dns_server>1.1.1.1</dns_server>
+			<default_gateway>192.16.1.111</default_gateway>
+			<dns value1="AUTO" value2="Manual">Manual</dns>
+			<dns_server>1.1.1.0</dns_server>
 			<dns_server2>0.0.0.1</dns_server2>
-			<ethernet_type value1="DHCP" value2="Static IP" value3="disabled">Static IP</ethernet_type>
+			<ethernet_type value1="DHCP" value2="Static IP" value3="disabled">DHCP</ethernet_type>
 			<ip_address>192.168.0.10</ip_address>
-			<subnet_mask>255.255.255.192</subnet_mask>
+			<subnet_mask>255.255.255.0</subnet_mask>
 		</ethernet>
 		<modem>
 			<gprs status="enabled">

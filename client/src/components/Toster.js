@@ -1,5 +1,5 @@
 import React from "react";
-import { Bounce, Flip, ToastContainer } from "react-toastify";
+import { Flip, ToastContainer } from "react-toastify";
 import "./Toster.css";
 
 const Toster = () => {

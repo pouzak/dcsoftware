@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { MDBContainer } from "mdbreact";
-//import axios from "axios";
 import "./Settings.css";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -13,7 +12,7 @@ export class PLCStats extends Component {
     value: 0
   };
 
-  handleTabChange = (event, value) => {
+  handleTabChange = value => {
     this.setState({ value });
   };
 

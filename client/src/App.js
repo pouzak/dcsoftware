@@ -79,23 +79,3 @@ class App extends Component {
 }
 
 export default App;
-//<div onClick={()=> this.hoverHandler() }>{nav}</div>
-/* <MDBCol size="2.5" className="nav-bar float-right">
-              <Navbar />
-            </MDBCol> */
-
-/*    <MDBRow className="main">
-            <MDBCol size="2.5" className="nav-bar float-right">
-              <Navbar2 />
-              </MDBCol>
-              <MDBCol className="dash">
-                <Test />
-              </MDBCol>
-            
-            </MDBRow>
-             <p>{this.state.dc_data ? (<p>{this.state.dc_data.config.settings.date_time.date}</p>): (<div class="spinner-border" role="status"></div>)}</p>
-
-    <Route path="/stories/:id" component ={Post} />
-                <Route path="/addstory" component ={AddStory}/>
-
-            */

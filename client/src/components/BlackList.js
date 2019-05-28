@@ -5,7 +5,6 @@ import "./Settings.css";
 import { MDBRow, MDBCol, MDBBtn, MDBContainer } from "mdbreact";
 import { dcdata } from "../Context";
 import axios from "axios";
-//import Modal from "@material-ui/core/Modal";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -13,7 +12,6 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { toast } from "react-toastify";
 import { ReactComponent as DeleteIco } from "./icons/delete.svg";
-//import { ReactComponent as Plus } from "./icons/plus.svg";
 import Tooltip from "@material-ui/core/Tooltip";
 
 class BlackList extends Component {
@@ -22,13 +20,7 @@ class BlackList extends Component {
   };
 
   handleChange = (path, e) => {
-    //this.props.context.handleInput('dc_data.config.settings.dcu_configuration.communication_protocol', '#text' , e)
     this.props.context.handleInput(path, "#text", e);
-    /* let {name, value} = e.target;
-    this.setState({
-      [name]: value,
-    
-    }); */
     this.props.context.valueChange();
   };
 
@@ -66,7 +58,6 @@ class BlackList extends Component {
         if (res.status === 200) {
           this.deleteItem(item);
           toast.info(`${item.name} deleted`);
-          console.log(res);
         }
       })
       .catch(err => console.log(err));
@@ -89,22 +80,9 @@ class BlackList extends Component {
     return (
       <div className="blacklist-table">
         <MDBContainer className="set-main">
-          {/* <Modal open={this.state.modal}>yes</Modal> */}
           <h1>Black List</h1>
-
           <MDBRow className="cont">
             <MDBCol size="12">
-              {/* <MDBListGroup style={{ width: "80%", color: "black" }}>
-                {data ? (
-                  data.map(item => (
-                    <MDBListGroupItem>
-                      {item.sap}, {item.name}
-                    </MDBListGroupItem>
-                  ))
-                ) : (
-                  <p>List is empty</p>
-                )}
-              </MDBListGroup> */}
               <div>
                 <Table>
                   <TableHead style={{ backgroundColor: "#F2F1F1" }}>
@@ -148,7 +126,6 @@ class BlackList extends Component {
                                   )
                                     this.handleDelete(row);
                                 }}
-                                // onClick={() => this.handleDelete(row)}
                                 className="delete-ico"
                               />
                             </Tooltip>
@@ -184,16 +161,6 @@ class BlackList extends Component {
                   </MDBBtn>
                 </Tooltip>
               ) : null}
-              {/* <Tooltip title="Add to list" placement="left">
-                <MDBBtn
-                  className="float-right"
-                  size="sm"
-                  color="dark"
-                  
-                >
-                  add
-                </MDBBtn>
-              </Tooltip> */}
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -203,5 +170,3 @@ class BlackList extends Component {
 }
 
 export default dcdata(BlackList);
-
-// border: "2px solid red"
