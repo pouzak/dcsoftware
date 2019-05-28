@@ -1,10 +1,8 @@
-# PLC Data Concentrator Graphical Management Interface</br>
-
-
+# PLC Data Concentrator Graphical Management Interface
 
 </br>
 </br>
-![alt text](https://github.com/pouzak/musicblog_app/blob/master/screen.jpg)
+![alt text](https://github.com/pouzak/dcsoftware/blob/master/screen.jpg)
 </br>
 </br>
 ### Tech
