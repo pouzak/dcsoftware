@@ -5,13 +5,14 @@
 ![alt text](https://github.com/pouzak/dcsoftware/blob/master/screen.jpg)
 </br>
 </br>
+
 ### Tech
 
  - Python/Flask REST API based back-end;
  - ReactJS based front-end (used create-react-app);
  - Material Design and MDB design elements;
  
- </br>
+</br>
 </br>
 
 ### Installation
