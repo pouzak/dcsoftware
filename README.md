@@ -5,7 +5,7 @@
 
 </br>
 </br>
-![alt text](https://github.com/pouzak/dcsoftware/blob/master/screen.jpg)
+![alt text](https://raw.githubusercontent.com/pouzak/dcsoftware/master/screen.jpg)
 </br>
 </br>
 
