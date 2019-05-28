@@ -1,5 +1,4 @@
-# PLC Data Concentrator Graphical Management Interface
-
+# PLC Data Concentrator Graphical Management Interface</br>
 
 
 
@@ -8,7 +7,6 @@
 ![alt text](https://github.com/pouzak/musicblog_app/blob/master/screen.jpg)
 </br>
 </br>
-
 ### Tech
 
  - Python/Flask REST API based back-end;
